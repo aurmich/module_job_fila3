@@ -56,6 +56,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerQueue(): void
     {
+<<<<<<< HEAD
         Queue::before(function (JobProcessing $event) {
             $this->jobStarted($event->job);
         });
@@ -95,6 +96,29 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerSchedule(Schedule $schedule): void
     {
+=======
+        /*
+        Queue::before(static function (JobProcessing $event) {
+           self::jobStarted($event->job);
+        });
+
+        Queue::after(static function (JobProcessed $event) {
+           self::jobFinished($event->job);
+        });
+
+        Queue::failing(static function (JobFailed $event) {
+           self::jobFinished($event->job, true, $event->exception);
+        });
+
+        Queue::exceptionOccurred(static function (JobExceptionOccurred $event) {
+           self::jobFinished($event->job, true, $event->exception);
+        });
+        */
+    }
+
+    /*
+    public function registerSchedule(Schedule $schedule): void {
+>>>>>>> 0458200 (.)
         if (Schema::hasTable('tasks')) {
             $tasks = app(Task::class)
                 ->query()
@@ -102,6 +126,7 @@ class JobServiceProvider extends XotBaseServiceProvider
                 ->where('is_active', true)
                 ->get();
 
+<<<<<<< HEAD
             $tasks->each(function ($task) use ($schedule) {
                 if (! $task instanceof Task) {
                     throw new \Exception('['.__LINE__.']['.class_basename($this).']');
@@ -139,4 +164,43 @@ class JobServiceProvider extends XotBaseServiceProvider
             });
         }
     }
+=======
+            $tasks->each(
+                function ($task) use ($schedule) {
+                    if (! $task instanceof Task) {
+                        throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+                    }
+                    //
+                    // var \Illuminate\Console\Scheduling\Event
+                    //
+                    $event = $schedule->command($task->command, $task->compileParameters(true));
+                    // --- funziona solo con daily per ora
+                    $event->{$task->expression}()
+                        ->name($task->description)
+                        ->timezone($task->timezone)
+                        ->before(function () use ($task) {
+                            //Access to an undefined property Illuminate\Console\Scheduling\Event::$start.
+                            //$event->start = microtime(true);
+                            Executing::dispatch($task);
+                        })
+                        ->thenWithOutput(function ($output) use ($event, $task) {
+                            Executed::dispatch($task, $event->start ?? microtime(true), $output);
+                        });
+                    if ($task->dont_overlap) {
+                        $event->withoutOverlapping();
+                    }
+                    if ($task->run_in_maintenance) {
+                        $event->evenInMaintenanceMode();
+                    }
+                    if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
+                        $event->onOneServer();
+                    }
+                    if ($task->run_in_background) {
+                        $event->runInBackground();
+                    }
+                });
+        }
+    }
+    */
+>>>>>>> 0458200 (.)
 }

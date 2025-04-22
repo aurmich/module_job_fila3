@@ -90,6 +90,7 @@ class Task extends BaseModel
     use HasFactory;
     use Notifiable;
 
+<<<<<<< HEAD
     /**
      * Compila i parametri del task per l'esecuzione.
      *
@@ -111,6 +112,9 @@ class Task extends BaseModel
 
         return $parameters;
     }
+=======
+    /** @var list<string> */
+>>>>>>> 0458200 (.)
     protected $fillable = [
         'id',
         'description',

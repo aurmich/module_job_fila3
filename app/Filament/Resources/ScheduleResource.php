@@ -37,6 +37,11 @@ class ScheduleResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
+<<<<<<< HEAD
+=======
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+>>>>>>> 0458200 (.)
     /** @var DataCollection<CommandData> */
     protected static DataCollection $commands;
 
@@ -64,7 +69,11 @@ class ScheduleResource extends XotBaseResource
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
 
         return [
+<<<<<<< HEAD
             'main_section' => Section::make([
+=======
+            Section::make([
+>>>>>>> 0458200 (.)
                 Select::make('command')
                     ->options(fn () => $commands_opts)
                     ->reactive()
@@ -123,6 +132,7 @@ class ScheduleResource extends XotBaseResource
             ])->inlineLabel(false),
         ];
     }
+<<<<<<< HEAD
 
     public static function getRelations(): array
     {
@@ -130,4 +140,6 @@ class ScheduleResource extends XotBaseResource
             //
         ];
     }
+=======
+>>>>>>> 0458200 (.)
 }
