@@ -119,11 +119,7 @@ class WorkerCheck extends Command
         $pid = exec($command);
         $this->comment($pid);
 
-<<<<<<< HEAD
         return is_string($pid) ? $pid : (string) $pid;
-=======
-        return (string) $pid;
->>>>>>> 0458200 (.)
     }
     */
     /**

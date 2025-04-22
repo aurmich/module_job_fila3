@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [
     {
         "name": "broad",
@@ -29,6 +28,3 @@
         "ns": "Modules\\Job\\Http\\Livewire\\Schedule\\Status"
     }
 ]
-=======
-[{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
->>>>>>> 0458200 (.)

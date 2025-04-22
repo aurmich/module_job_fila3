@@ -73,11 +73,7 @@ class Crud extends Component
                     foreach ($command_filter as $filter) {
                         if (fnmatch($filter, $command->getName())) {
                             return $whitelist;
-<<<<<<< HEAD
                         }
-=======
-                        }U/Notifications/VerifyEmail.php
->>>>>>> 0458200 (.)
                     }
 
                     return ! $whitelist;
@@ -88,14 +84,10 @@ class Crud extends Component
 
         return $all_commands->sortBy(
             static function (Command $command): string {
-<<<<<<< HEAD
                 $name = $command->getName();
                 if ($name === null) {
                     return '';
                 }
-=======
-                $name = (string) $command->getName();
->>>>>>> 0458200 (.)
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }

@@ -194,11 +194,7 @@ class Schedule extends BaseModel
                 // Replace eval with a safer function or an allowed list of callable functions
                 $arguments[$argument] = $this->evaluateFunction($value['value']);
             } else {
-<<<<<<< HEAD
                 $arguments[(string) ($value['name'] ?? $argument)] = is_string($value) ? $value : (string) $value['value'];
-=======
-                $arguments[(string) ($value['name'] ?? $argument)] = (string) $value['value'];
->>>>>>> 0458200 (.)
             }
         }
 
@@ -221,11 +217,7 @@ class Schedule extends BaseModel
             if (is_array($value)) {
                 Assert::nullOrString($value['name']);
 
-<<<<<<< HEAD
                 return '--'.((string) ($value['name'] ?? $key)).'='.(string) $value['value'];
-=======
-                return '--'.((string) ($value['name'] ?? $key)).'='.((string) $value['value']);
->>>>>>> 0458200 (.)
             }
 
             return "--{$value}";
@@ -237,7 +229,7 @@ class Schedule extends BaseModel
      *
      * @param string $functionString Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
-     * 
+     *
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -248,7 +240,6 @@ class Schedule extends BaseModel
         if (in_array($functionString, $allowedFunctions, true)) {
             // Chiamiamo la funzione in modo sicuro
             try {
-<<<<<<< HEAD
                 // Utilizziamo uno switch invece di if per evitare il falso positivo di PHPStan
                 switch ($functionString) {
                     case 'strtolower':
@@ -257,20 +248,13 @@ class Schedule extends BaseModel
                         return strtoupper('test_string');
                     default:
                         return null;
-=======
-                if ($functionString === 'strtolower') {
-                    return strtolower('TEST_STRING');
-                }
-                if ($functionString === 'strtoupper') {
-                    return strtoupper('test_string');
->>>>>>> 0458200 (.)
                 }
             } catch (\Exception $e) {
                 // Log error or handle exception
                 return null;
             }
         }
-        
+
         // Funzione non consentita
         return null;
     }

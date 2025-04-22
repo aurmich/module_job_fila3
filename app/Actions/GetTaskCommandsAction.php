@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> 0458200 (.)
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\QueueableAction\QueueableAction;
@@ -40,12 +37,8 @@ class GetTaskCommandsAction
         */
         return $all_commands->sortBy(
             static function (Command $command): string {
-<<<<<<< HEAD
                 $name = $command->getName();
                 Assert::string($name);
-=======
-                $name = (string) $command->getName();
->>>>>>> 0458200 (.)
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }
