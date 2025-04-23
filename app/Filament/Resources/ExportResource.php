@@ -40,26 +40,10 @@ class ExportResource extends XotBaseResource
             'error_message' => \Filament\Forms\Components\Textarea::make('error_message')
                 ->maxLength(65535)
                 ->columnSpanFull(),
-            'total_records' => \Filament\Forms\Components\TextInput::make('total_records')
-                ->numeric(),
-            'processed_records' => \Filament\Forms\Components\TextInput::make('processed_records')
-                ->numeric(),
-            'file_path' => \Filament\Forms\Components\TextInput::make('file_path')
-                ->maxLength(255),
-            'completed_at' => \Filament\Forms\Components\DateTimePicker::make('completed_at'),
             'created_at' => \Filament\Forms\Components\DateTimePicker::make('created_at')
                 ->disabled(),
             'updated_at' => \Filament\Forms\Components\DateTimePicker::make('updated_at')
                 ->disabled(),
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListExports::route('/'),
-            'create' => Pages\CreateExport::route('/create'),
-            'edit' => Pages\EditExport::route('/{record}/edit'),
         ];
     }
 }

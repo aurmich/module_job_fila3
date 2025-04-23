@@ -69,11 +69,6 @@ class ScheduleObserver
             if ($scheduleService !== null) {
                 $scheduleService->clearCache();
             }
-    protected function clearCache()
-    {
-        if (config('job::cache.enabled')) {
-            $scheduleService = app(ScheduleService::class);
-            $scheduleService->clearCache();
         }
     }
 }

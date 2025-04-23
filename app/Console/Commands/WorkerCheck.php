@@ -120,8 +120,6 @@ class WorkerCheck extends Command
         $this->comment($pid);
 
         return is_string($pid) ? $pid : (string) $pid;
-        return is_string($pid) ? $pid : (string) $pid;
-        return (string) $pid;
     }
     */
     /**

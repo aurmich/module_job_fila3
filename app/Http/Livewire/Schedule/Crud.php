@@ -88,7 +88,6 @@ class Crud extends Component
                 if ($name === null) {
                     return '';
                 }
-
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }

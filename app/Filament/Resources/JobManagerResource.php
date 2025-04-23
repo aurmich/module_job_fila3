@@ -38,25 +38,6 @@ class JobManagerResource extends XotBaseResource
             'attempt' => TextInput::make('attempt')
                 ->required(),
             'exception_message' => Textarea::make('exception_message')
-    protected static ?string $navigationIcon = 'heroicon-o-play';
-
-    public static function getFormSchema(): array
-    {
-        return [
-            TextInput::make('job_id')
-                ->required()
-                ->maxLength(255),
-            TextInput::make('name')
-                ->maxLength(255),
-            TextInput::make('queue')
-                ->maxLength(255),
-            DateTimePicker::make('started_at'),
-            DateTimePicker::make('finished_at'),
-            Toggle::make('failed')
-                ->required(),
-            TextInput::make('attempt')
-                ->required(),
-            Textarea::make('exception_message')
                 ->maxLength(65535),
         ];
     }

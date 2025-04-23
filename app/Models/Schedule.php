@@ -195,8 +195,6 @@ class Schedule extends BaseModel
                 $arguments[$argument] = $this->evaluateFunction($value['value']);
             } else {
                 $arguments[(string) ($value['name'] ?? $argument)] = is_string($value) ? $value : (string) $value['value'];
-                $arguments[(string) ($value['name'] ?? $argument)] = is_string($value) ? $value : (string) $value['value'];
-                $arguments[(string) ($value['name'] ?? $argument)] = (string) $value['value'];
             }
         }
 
@@ -220,8 +218,6 @@ class Schedule extends BaseModel
                 Assert::nullOrString($value['name']);
 
                 return '--'.((string) ($value['name'] ?? $key)).'='.(string) $value['value'];
-                return '--'.((string) ($value['name'] ?? $key)).'='.(string) $value['value'];
-                return '--'.((string) ($value['name'] ?? $key)).'='.((string) $value['value']);
             }
 
             return "--{$value}";
@@ -233,7 +229,7 @@ class Schedule extends BaseModel
      *
      * @param string $functionString Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
-     *
+     * 
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -252,18 +248,13 @@ class Schedule extends BaseModel
                         return strtoupper('test_string');
                     default:
                         return null;
-                if ($functionString === 'strtolower') {
-                    return strtolower('TEST_STRING');
-                }
-                if ($functionString === 'strtoupper') {
-                    return strtoupper('test_string');
                 }
             } catch (\Exception $e) {
                 // Log error or handle exception
                 return null;
             }
         }
-
+        
         // Funzione non consentita
         return null;
     }

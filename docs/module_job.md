@@ -119,26 +119,4 @@ composer format        # Formatta il codice
 - Gestione permessi
 
 ## Changelog
-Le modifiche vengono tracciate nel repository GitHub.
-
-## Risoluzione Conflitti Git
-
-### GetTaskCommandsAction.php
-
-Il conflitto nel file `GetTaskCommandsAction.php` è stato risolto mantenendo:
-- Una singola importazione della classe `Assert` da `Webmozart\Assert`
-- L'implementazione originale del metodo `execute()` con la corretta tipizzazione
-- La chiamata a `Assert::string($name)` per garantire la correttezza del tipo di dato
-
-La versione risolta utilizza l'approccio più sicuro che garantisce la tipizzazione corretta tramite `Assert::string()` invece della conversione diretta a stringa con `(string)`. 
-
-### ExportResource.php
-
-Il conflitto nel file `ExportResource.php` è stato risolto mantenendo:
-- La struttura con chiavi nomeate nel form schema (es. `'name' => \Filament\Forms\Components\TextInput::make('name')`)
-- Tutti i campi disponibili dalle diverse versioni, combinando sia i campi di base che quelli aggiuntivi
-- L'attributo `columnSpanFull()` per il campo `error_message`
-- I campi per tracciare lo stato dell'esportazione (`total_records`, `processed_records`, ecc.)
-- Lo schema completo delle pagine Filament per la risorsa
-
-La soluzione mantiene la funzionalità completa della risorsa di esportazione, garantendo che tutti i campi necessari per tracciare lo stato dell'esportazione siano presenti.
+Le modifiche vengono tracciate nel repository GitHub. 

@@ -97,10 +97,6 @@ class ViewSchedule extends Page implements HasTable
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br($state))),
-                    ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
-            ]), Tables\Columns\Layout\Panel::make([
-                Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
-                    ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
             ])->collapsible()
             // ->collapsed(config('job::history_collapsed'))
             ,

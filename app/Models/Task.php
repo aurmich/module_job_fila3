@@ -111,9 +111,6 @@ class Task extends BaseModel
 
         return $parameters;
     }
-    /** @var list<string> */
-
-    /** @var list<string> */
     protected $fillable = [
         'id',
         'description',

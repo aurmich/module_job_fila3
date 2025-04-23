@@ -47,36 +47,6 @@ private function evaluateFunction(string $functionString): mixed
 
 3. Eliminato l'uso di `call_user_func` che potrebbe portare a problemi di sicurezza e sostituito con un approccio più sicuro basato su condizioni esplicite.
 
-
-
-
-
-
-
- 070c1ee (.)
-
-
-
- a4b668e (.)
- d3c6606 (fix: auto resolve conflict)
-
-
-
- a4b668e (.)
-
-
- 410dbb3 (.)
- 86feb56 (fix: auto resolve conflict)
-
-
-
-
-
- a4b668e (.)
-
-
- 410dbb3 (.)
- 8877b16 (.)
 ### 2. Tipo di ritorno non compatibile nei metodi getFormSchema() delle risorse Filament
 
 **Problema**: I metodi `getFormSchema()` nelle risorse Filament (ad esempio `ImportResource`, `JobBatchResource`, `JobManagerResource`, `ScheduleResource`) restituivano un array indicizzato numericamente `array<int, Component>` mentre la classe base `XotBaseResource` richiede un array associativo con chiavi di tipo stringa `array<string, Component>`.
@@ -125,41 +95,6 @@ private function evaluateFunction(string $functionString): mixed
 
 **Pattern applicato**: _Principle of Least Knowledge_ - Le classi figlie non dovrebbero preoccuparsi di dettagli di implementazione dell'interfaccia utente che possono essere gestiti dalla classe base.
 
-
-
-
-
-
- 0458200 (.)
-
- 070c1ee (.)
-
-
- 86feb56 (fix: auto resolve conflict)
-
-
- 0458200 (.)
- a4b668e (.)
-
- d3c6606 (fix: auto resolve conflict)
-
-
-
- 0458200 (.)
- 410dbb3 (.)
- 86feb56 (fix: auto resolve conflict)
-
-
-
-
-
- 0458200 (.)
- a4b668e (.)
-
-
- 0458200 (.)
- 410dbb3 (.)
- 8877b16 (.)
 ## Altri Miglioramenti da Applicare
 
 ### 1. Analisi dei seguenti file:
@@ -175,37 +110,9 @@ private function evaluateFunction(string $functionString): mixed
 2. **Gestione sicura delle eccezioni**: Aggiunta gestione delle eccezioni per prevenire errori a runtime.
 3. **Implementazione sicura**: Evitato l'uso di funzioni potenzialmente pericolose come `call_user_func` con input non controllato.
 4. **Documentazione migliorata**: Aggiunta documentazione PHPDoc completa per spiegare i tipi di parametri e di ritorno.
-
-
-
-
-
- d3c6606 (fix: auto resolve conflict)
-
-
- 86feb56 (fix: auto resolve conflict)
 5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
 6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
 
-
-
-5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
-6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
-
- 0458200 (.)
- a4b668e (.)
-
-
- 0458200 (.)
- 410dbb3 (.)
-
- 0458200 (.)
-
-
-5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
-6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
-
- 070c1ee (.)
 ## Prossimi Passi
 
 1. Applicare principi simili agli altri file identificati nel modulo.

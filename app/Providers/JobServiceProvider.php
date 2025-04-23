@@ -35,7 +35,20 @@ class JobServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-
+        /*
+            $this->app->resolving(Schedule::class, function ($schedule) {
+                dddx($schedule);
+                //
+            });
+            */
+        // $this->app->booted(function () {
+        // $schedule = $this->app->make(Schedule::class);
+        // try {
+        //    $this->registerSchedule($schedule);
+        // } catch (\Illuminate\Database\QueryException $e) {
+        //    echo $e->getMessage();
+        // }
+        // });
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
         $this->registerQueue();
@@ -99,73 +112,31 @@ class JobServiceProvider extends XotBaseServiceProvider
                     $parameters = [];
                 }
 
-                // Costruire il comando di artisan o la funzione
-                if ($task->isCommandTask()) {
-                    // Convalidare il comando
-                    $command = $task->command;
-                    if (! is_string($command) || empty(trim($command))) {
-                        return;
-                    }
+                $event = $schedule->command($task->command, $parameters);
 
-                    // Aggiungere i parametri
-                    $scheduleEvent = $schedule->command($command, $parameters);
-                    if (count($parameters) > 0) {
-                        $scheduleEvent->withoutOverlapping();
-                    }
-                } else {
-                    // Task personalizzato con funzione
-                    $scheduleEvent = $schedule->call(function () use ($task) {
-                        // Prima dell'esecuzione
-                        event(new Executing($task));
-
-                        // Eseguire l'azione
-                        try {
-                            $start = microtime(true);
-                            $output = '';
-                            app()->call([app($task->command), 'handle'], $task->compileParameters(false) ?? []);
-                            event(new Executed($task, $start, $output));
-                        } catch (\Throwable $e) {
-                            report($e);
-                            // Gestione errori
-                        }
+                $event->{$task->expression}()
+                    ->name($task->description)
+                    ->timezone($task->timezone)
+                    ->before(function () use ($task) {
+                        Executing::dispatch($task);
+                    })
+                    ->thenWithOutput(function ($output) use ($event, $task) {
+                        Executed::dispatch($task, $event->start ?? microtime(true), $output);
                     });
-                }
 
-                // Applicare la frequenza
-                $frequencies = $task->frequencies;
-                foreach ($frequencies as $frequency) {
-                    $scheduleEvent = $this->applyFrequency($scheduleEvent, $frequency);
+                if ($task->dont_overlap) {
+                    $event->withoutOverlapping();
                 }
-
-                // Applicare opzioni
-                $this->applyOptions($scheduleEvent, $task);
+                if ($task->run_in_maintenance) {
+                    $event->evenInMaintenanceMode();
+                }
+                if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
+                    $event->onOneServer();
+                }
+                if ($task->run_in_background) {
+                    $event->runInBackground();
+                }
             });
         }
-    }
-
-    /**
-     * Applica la frequenza all'evento pianificato.
-     *
-     * @param \Illuminate\Console\Scheduling\Event $event
-     * @param object $frequency
-     * @return \Illuminate\Console\Scheduling\Event
-     */
-    protected function applyFrequency($event, $frequency)
-    {
-        // Implementazione per applicare la frequenza all'evento pianificato
-        return $event;
-    }
-
-    /**
-     * Applica le opzioni all'evento pianificato.
-     *
-     * @param \Illuminate\Console\Scheduling\Event $event
-     * @param Task $task
-     * @return \Illuminate\Console\Scheduling\Event
-     */
-    protected function applyOptions($event, Task $task)
-    {
-        // Implementazione per applicare le opzioni all'evento pianificato
-        return $event;
     }
 }

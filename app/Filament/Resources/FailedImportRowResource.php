@@ -26,16 +26,6 @@ class FailedImportRowResource extends XotBaseResource
                 ->required()
                 ->columnSpanFull(),
             'error_message' => Forms\Components\Textarea::make('error_message')
-            Forms\Components\TextInput::make('import_class')
-                ->required()
-                ->maxLength(255),
-            Forms\Components\TextInput::make('row_number')
-                ->numeric()
-                ->required(),
-            Forms\Components\Textarea::make('row_data')
-                ->required()
-                ->columnSpanFull(),
-            Forms\Components\Textarea::make('error_message')
                 ->required()
                 ->columnSpanFull(),
         ];
@@ -44,15 +34,6 @@ class FailedImportRowResource extends XotBaseResource
     public static function getRelations(): array
     {
         return [
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListFailedImportRows::route('/'),
-            'create' => Pages\CreateFailedImportRow::route('/create'),
-            'edit' => Pages\EditFailedImportRow::route('/{record}/edit'),
         ];
     }
 }

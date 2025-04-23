@@ -39,7 +39,6 @@ class GetTaskCommandsAction
             static function (Command $command): string {
                 $name = $command->getName();
                 Assert::string($name);
-
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }
