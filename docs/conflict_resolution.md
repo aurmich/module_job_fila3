@@ -4,7 +4,71 @@
 
 Questo documento descrive i conflitti git identificati nel modulo Job e la strategia adottata per risolverli. I conflitti sono stati analizzati in base al loro impatto sul funzionamento dell'applicazione.
 
-## Conflitti Principali
+## Aggiornamento (2023-11-17)
+
+Sono stati risolti ulteriori conflitti nei seguenti file:
+
+### 1. File di Configurazione dei Componenti
+
+**Criticità: MEDIA**
+
+I file `app/Http/Livewire/_components.json` e `app/Console/Commands/_components.json` presentavano conflitti significativi, con marcatori di conflitto multipli e annidati.
+
+**Problema:**
+- File con molteplici conflitti git annidati
+- Due versioni in conflitto: una formattata su una singola riga e una formattata con indentazione
+- Contenuto identico ma con differenze nella formattazione
+
+**Analisi:**
+- I componenti registrati erano identici in entrambe le versioni
+- La versione su più righe con indentazione è più leggibile e manutenibile
+- Non ci sono differenze funzionali tra le versioni
+
+**Strategia di risoluzione:**
+- Mantenere la versione più leggibile con indentazione adeguata
+- Rimuovere completamente tutti i marcatori di conflitto
+- Assicurarsi che tutti i componenti siano correttamente registrati
+
+**Soluzione implementata:**
+- File JSON ripuliti mantenendo il formato indentato
+- Eliminazione di tutti i marcatori di conflitto
+
+**Impatto potenziale:**
+- Miglioramento della leggibilità e manutenibilità
+- Nessun impatto funzionale sulla registrazione dei componenti
+
+### 2. File di Documentazione PHPStan
+
+**Criticità: BASSA**
+
+I file `docs/phpstan/level_*.md` e `docs/phpstan/level_8.json` contenevano anch'essi conflitti git.
+
+**Problema:**
+- Marcatori di conflitto presenti in file di documentazione
+- Righe vuote e tag di fine branch non necessari
+- File JSON con contenuto valido ma con marcatori di conflitto
+
+**Analisi:**
+- Il contenuto effettivo dei rapporti era identico in tutte le versioni
+- Si tratta di documentazione tecnica, non di codice eseguibile
+- Tutti i file riportavano lo stesso errore relativo alla classe `Modules\Broker\Models\Profile`
+
+**Strategia di risoluzione:**
+- Mantenere il contenuto informativo completo dei rapporti
+- Rimuovere tutti i marcatori di conflitto e le righe superflue
+- Assicurarsi che il file JSON sia sintatticamente valido
+
+**Soluzione implementata:**
+- Rimozione di tutti i marcatori di conflitto
+- Pulizia delle righe vuote non necessarie e dei tag di branch
+- Mantenimento del contenuto informativo completo
+
+**Impatto potenziale:**
+- Documentazione più pulita e leggibile
+- Nessun impatto funzionale sull'applicazione
+- File JSON validi per future analisi
+
+## Conflitti Principali (Precedenti)
 
 ### 1. .gitignore
 
@@ -151,4 +215,4 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 ## Collegamenti
 
-- [Documentazione Generale Risoluzione Conflitti](../../docs/risoluzione_conflitti_git.md) 
+- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
