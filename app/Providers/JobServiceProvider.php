@@ -35,6 +35,13 @@ class JobServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 070c1ee (.)
         /*
             $this->app->resolving(Schedule::class, function ($schedule) {
                 dddx($schedule);
@@ -49,6 +56,11 @@ class JobServiceProvider extends XotBaseServiceProvider
         //    echo $e->getMessage();
         // }
         // });
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> 070c1ee (.)
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
         $this->registerQueue();
@@ -56,6 +68,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerQueue(): void
     {
+<<<<<<< HEAD
         /*
         Queue::before(static function (JobProcessing $event) {
            self::jobStarted($event->job);
@@ -73,6 +86,27 @@ class JobServiceProvider extends XotBaseServiceProvider
            self::jobFinished($event->job, true, $event->exception);
         });
         */
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+        Queue::before(function (JobProcessing $event) {
+            $this->jobStarted($event->job);
+        });
+
+        Queue::after(function (JobProcessed $event) {
+            $this->jobFinished($event->job);
+        });
+
+        Queue::failing(function (JobFailed $event) {
+            $this->jobFinished($event->job, true, $event->exception);
+        });
+
+        Queue::exceptionOccurred(function (JobExceptionOccurred $event) {
+            $this->jobFinished($event->job, true, $event->exception);
+        });
+>>>>>>> 070c1ee (.)
     }
 
     /**
@@ -95,8 +129,39 @@ class JobServiceProvider extends XotBaseServiceProvider
         // Per ora lo lasciamo vuoto in attesa di implementazione specifica
     }
 
+<<<<<<< HEAD
     public function registerSchedule(Schedule $schedule): void
     {
+=======
+    public function registerSchedule(Schedule $schedule): void 
+    {
+<<<<<<< HEAD
+=======
+=======
+        /*
+        Queue::before(static function (JobProcessing $event) {
+           self::jobStarted($event->job);
+        });
+
+        Queue::after(static function (JobProcessed $event) {
+           self::jobFinished($event->job);
+        });
+
+        Queue::failing(static function (JobFailed $event) {
+           self::jobFinished($event->job, true, $event->exception);
+        });
+
+        Queue::exceptionOccurred(static function (JobExceptionOccurred $event) {
+           self::jobFinished($event->job, true, $event->exception);
+        });
+        */
+    }
+
+    /*
+    public function registerSchedule(Schedule $schedule): void {
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> 070c1ee (.)
         if (Schema::hasTable('tasks')) {
             $tasks = app(Task::class)
                 ->query()
@@ -104,6 +169,53 @@ class JobServiceProvider extends XotBaseServiceProvider
                 ->where('is_active', true)
                 ->get();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+            $tasks->each(function ($task) use ($schedule) {
+                if (! $task instanceof Task) {
+                    throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+                }
+
+                $parameters = $task->compileParameters(true);
+                if (!is_array($parameters)) {
+                    $parameters = [];
+                }
+
+                $event = $schedule->command($task->command, $parameters);
+                
+                $event->{$task->expression}()
+                    ->name($task->description)
+                    ->timezone($task->timezone)
+                    ->before(function () use ($task) {
+                        Executing::dispatch($task);
+                    })
+                    ->thenWithOutput(function ($output) use ($event, $task) {
+                        Executed::dispatch($task, $event->start ?? microtime(true), $output);
+                    });
+
+                if ($task->dont_overlap) {
+                    $event->withoutOverlapping();
+                }
+                if ($task->run_in_maintenance) {
+                    $event->evenInMaintenanceMode();
+                }
+                if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
+                    $event->onOneServer();
+                }
+                if ($task->run_in_background) {
+                    $event->runInBackground();
+                }
+            });
+        }
+    }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 070c1ee (.)
             $tasks->each(
                 function ($task) use ($schedule) {
                     if (! $task instanceof Task) {
@@ -140,4 +252,10 @@ class JobServiceProvider extends XotBaseServiceProvider
                 });
         }
     }
+<<<<<<< HEAD
+=======
+    */
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> 070c1ee (.)
 }

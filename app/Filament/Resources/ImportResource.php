@@ -12,8 +12,11 @@ class ImportResource extends XotBaseResource
 {
     protected static ?string $model = Import::class;
 
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+=======
+>>>>>>> 070c1ee (.)
     public static function getFormSchema(): array
     {
         return [
@@ -39,8 +42,11 @@ class ImportResource extends XotBaseResource
                 ->numeric(),
             'processed_rows' => \Filament\Forms\Components\TextInput::make('processed_rows')
                 ->numeric(),
+<<<<<<< HEAD
             'failed_rows' => \Filament\Forms\Components\TextInput::make('failed_rows')
                 ->numeric(),
+=======
+>>>>>>> 070c1ee (.)
         ];
     }
 
@@ -49,6 +55,7 @@ class ImportResource extends XotBaseResource
         return [
         ];
     }
+<<<<<<< HEAD
 
     public static function getPages(): array
     {
@@ -58,4 +65,6 @@ class ImportResource extends XotBaseResource
             'edit' => Pages\EditImport::route('/{record}/edit'),
         ];
     }
+=======
+>>>>>>> 070c1ee (.)
 }

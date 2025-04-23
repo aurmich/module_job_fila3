@@ -37,8 +37,11 @@ class ScheduleResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+=======
+>>>>>>> 070c1ee (.)
     /** @var DataCollection<CommandData> */
     protected static DataCollection $commands;
 

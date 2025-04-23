@@ -34,9 +34,17 @@ class JobStatus extends Page
     {
         $result = Process::run('dir');
         $this->out = '';
+<<<<<<< HEAD
         Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
+=======
+        $output = mb_convert_encoding($result->output(), 'UTF-8');
+        Assert::string($output, '['.__LINE__.']['.class_basename($this).']');
+        $this->out .= $output;
+        $errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8');
+        Assert::string($errorOutput, '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> 070c1ee (.)
         $this->out .= $errorOutput;
         $this->out .= now();
     }

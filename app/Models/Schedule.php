@@ -229,7 +229,11 @@ class Schedule extends BaseModel
      *
      * @param string $functionString Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> 070c1ee (.)
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -254,7 +258,11 @@ class Schedule extends BaseModel
                 return null;
             }
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 070c1ee (.)
         // Funzione non consentita
         return null;
     }
