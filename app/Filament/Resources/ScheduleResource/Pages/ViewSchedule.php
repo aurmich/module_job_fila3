@@ -94,16 +94,34 @@ class ViewSchedule extends Page implements HasTable
                     }),
                 Tables\Columns\TextColumn::make('output')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
 =======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> a4b668e (.)
+>>>>>>> d3c6606 (fix: auto resolve conflict)
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br($state))),
+<<<<<<< HEAD
 >>>>>>> 070c1ee (.)
+=======
+<<<<<<< HEAD
+=======
+=======
+                    ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
+            ]), Tables\Columns\Layout\Panel::make([
+                Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
+                    ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
+>>>>>>> 0458200 (.)
+>>>>>>> a4b668e (.)
+>>>>>>> d3c6606 (fix: auto resolve conflict)
             ])->collapsible()
             // ->collapsed(config('job::history_collapsed'))
             ,

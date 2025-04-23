@@ -48,9 +48,15 @@ private function evaluateFunction(string $functionString): mixed
 3. Eliminato l'uso di `call_user_func` che potrebbe portare a problemi di sicurezza e sostituito con un approccio più sicuro basato su condizioni esplicite.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 070c1ee (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> a4b668e (.)
+>>>>>>> d3c6606 (fix: auto resolve conflict)
 ### 2. Tipo di ritorno non compatibile nei metodi getFormSchema() delle risorse Filament
 
 **Problema**: I metodi `getFormSchema()` nelle risorse Filament (ad esempio `ImportResource`, `JobBatchResource`, `JobManagerResource`, `ScheduleResource`) restituivano un array indicizzato numericamente `array<int, Component>` mentre la classe base `XotBaseResource` richiede un array associativo con chiavi di tipo stringa `array<string, Component>`.
@@ -100,10 +106,17 @@ private function evaluateFunction(string $functionString): mixed
 **Pattern applicato**: _Principle of Least Knowledge_ - Le classi figlie non dovrebbero preoccuparsi di dettagli di implementazione dell'interfaccia utente che possono essere gestiti dalla classe base.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  0458200 (.)
 =======
 >>>>>>> 070c1ee (.)
+=======
+=======
+=======
+>>>>>>> 0458200 (.)
+>>>>>>> a4b668e (.)
+>>>>>>> d3c6606 (fix: auto resolve conflict)
 ## Altri Miglioramenti da Applicare
 
 ### 1. Analisi dei seguenti file:
@@ -120,9 +133,19 @@ private function evaluateFunction(string $functionString): mixed
 3. **Implementazione sicura**: Evitato l'uso di funzioni potenzialmente pericolose come `call_user_func` con input non controllato.
 4. **Documentazione migliorata**: Aggiunta documentazione PHPDoc completa per spiegare i tipi di parametri e di ritorno.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> d3c6606 (fix: auto resolve conflict)
 5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
 6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
+=======
+<<<<<<< HEAD
+5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
+6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
+=======
+>>>>>>> 0458200 (.)
+>>>>>>> a4b668e (.)
 
  0458200 (.)
 

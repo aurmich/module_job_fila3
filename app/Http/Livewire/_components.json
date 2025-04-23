@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
+=======
+<<<<<<< HEAD
+>>>>>>> d3c6606 (fix: auto resolve conflict)
 [
     {
         "name": "broad",
@@ -31,4 +37,9 @@
 ]
 =======
 [{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
+<<<<<<< HEAD
 >>>>>>> 070c1ee (.)
+=======
+>>>>>>> 0458200 (.)
+>>>>>>> a4b668e (.)
+>>>>>>> d3c6606 (fix: auto resolve conflict)
