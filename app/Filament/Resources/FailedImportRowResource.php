@@ -16,13 +16,6 @@ class FailedImportRowResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
             'import_class' => Forms\Components\TextInput::make('import_class')
                 ->required()
                 ->maxLength(255),
@@ -33,10 +26,6 @@ class FailedImportRowResource extends XotBaseResource
                 ->required()
                 ->columnSpanFull(),
             'error_message' => Forms\Components\Textarea::make('error_message')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
             Forms\Components\TextInput::make('import_class')
                 ->required()
                 ->maxLength(255),
@@ -47,10 +36,6 @@ class FailedImportRowResource extends XotBaseResource
                 ->required()
                 ->columnSpanFull(),
             Forms\Components\Textarea::make('error_message')
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
                 ->required()
                 ->columnSpanFull(),
         ];
@@ -61,11 +46,6 @@ class FailedImportRowResource extends XotBaseResource
         return [
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
     public static function getPages(): array
     {
@@ -75,8 +55,4 @@ class FailedImportRowResource extends XotBaseResource
             'edit' => Pages\EditFailedImportRow::route('/{record}/edit'),
         ];
     }
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
 }

@@ -50,6 +50,7 @@ private function evaluateFunction(string $functionString): mixed
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 070c1ee (.)
@@ -66,6 +67,16 @@ private function evaluateFunction(string $functionString): mixed
 
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+
+
+
+
+ a4b668e (.)
+
+
+ 410dbb3 (.)
+>>>>>>> 8877b16 (.)
 ### 2. Tipo di ritorno non compatibile nei metodi getFormSchema() delle risorse Filament
 
 **Problema**: I metodi `getFormSchema()` nelle risorse Filament (ad esempio `ImportResource`, `JobBatchResource`, `JobManagerResource`, `ScheduleResource`) restituivano un array indicizzato numericamente `array<int, Component>` mentre la classe base `XotBaseResource` richiede un array associativo con chiavi di tipo stringa `array<string, Component>`.
@@ -117,6 +128,7 @@ private function evaluateFunction(string $functionString): mixed
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  0458200 (.)
 =======
@@ -136,6 +148,18 @@ private function evaluateFunction(string $functionString): mixed
  0458200 (.)
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+
+
+
+
+ 0458200 (.)
+ a4b668e (.)
+
+
+ 0458200 (.)
+ 410dbb3 (.)
+>>>>>>> 8877b16 (.)
 ## Altri Miglioramenti da Applicare
 
 ### 1. Analisi dei seguenti file:
@@ -162,18 +186,18 @@ private function evaluateFunction(string $functionString): mixed
 >>>>>>> 86feb56 (fix: auto resolve conflict)
 5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
 6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
+
+
 5. **Corrispondenza di tipi**: Assicurato che i tipi di ritorno dei metodi overridden corrispondano a quelli definiti nelle classi base.
 6. **Evitare ridefinizioni inutili**: Non ridefinire proprietà o metodi già gestiti dalla classe base, a meno che non sia necessario.
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
 
  0458200 (.)
->>>>>>> 410dbb3 (.)
+ a4b668e (.)
+
+
+ 0458200 (.)
+ 410dbb3 (.)
 
  0458200 (.)
 

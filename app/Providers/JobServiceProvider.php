@@ -37,6 +37,7 @@ class JobServiceProvider extends XotBaseServiceProvider
         parent::boot();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -48,6 +49,8 @@ class JobServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
         /*
             $this->app->resolving(Schedule::class, function ($schedule) {
                 dddx($schedule);
@@ -64,6 +67,7 @@ class JobServiceProvider extends XotBaseServiceProvider
         // });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
@@ -74,6 +78,8 @@ class JobServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
         $this->registerQueue();
@@ -81,6 +87,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerQueue(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,13 +119,13 @@ class JobServiceProvider extends XotBaseServiceProvider
 >>>>>>> origin/dev
 =======
 >>>>>>> a4b668e (.)
+=======
+>>>>>>> 8877b16 (.)
         Queue::before(function (JobProcessing $event) {
             $this->jobStarted($event->job);
-=======
         /*
         Queue::before(static function (JobProcessing $event) {
            self::jobStarted($event->job);
->>>>>>> 410dbb3 (.)
         });
 
         Queue::after(static function (JobProcessed $event) {
@@ -161,21 +168,18 @@ class JobServiceProvider extends XotBaseServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function registerSchedule(Schedule $schedule): void
     {
 =======
 =======
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
     public function registerSchedule(Schedule $schedule): void 
     {
-<<<<<<< HEAD
-=======
-=======
     public function registerSchedule(Schedule $schedule): void
     {
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
-=======
         /*
         Queue::before(static function (JobProcessing $event) {
            self::jobStarted($event->job);
@@ -198,6 +202,7 @@ class JobServiceProvider extends XotBaseServiceProvider
     /*
     public function registerSchedule(Schedule $schedule): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -212,6 +217,8 @@ class JobServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
         if (Schema::hasTable('tasks')) {
             $tasks = app(Task::class)
                 ->query()
@@ -222,6 +229,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -229,6 +237,8 @@ class JobServiceProvider extends XotBaseServiceProvider
 >>>>>>> origin/dev
 =======
 >>>>>>> a4b668e (.)
+=======
+>>>>>>> 8877b16 (.)
             $tasks->each(function ($task) use ($schedule) {
                 if (! $task instanceof Task) {
                     throw new \Exception('['.__LINE__.']['.class_basename($this).']');
@@ -240,11 +250,8 @@ class JobServiceProvider extends XotBaseServiceProvider
                 }
 
                 $event = $schedule->command($task->command, $parameters);
-<<<<<<< HEAD
                 
-=======
 
->>>>>>> a4b668e (.)
                 $event->{$task->expression}()
                     ->name($task->description)
                     ->timezone($task->timezone)
@@ -272,6 +279,7 @@ class JobServiceProvider extends XotBaseServiceProvider
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -285,6 +293,8 @@ class JobServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
             $tasks->each(
                 function ($task) use ($schedule) {
                     if (! $task instanceof Task) {
@@ -323,6 +333,7 @@ class JobServiceProvider extends XotBaseServiceProvider
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 86feb56 (fix: auto resolve conflict)
@@ -342,4 +353,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+    */
+>>>>>>> 8877b16 (.)
 }

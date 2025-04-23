@@ -5,15 +5,6 @@ declare(strict_types=1);
 namespace Modules\Job\Actions;
 
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\QueueableAction\QueueableAction;
@@ -48,17 +39,7 @@ class GetTaskCommandsAction
             static function (Command $command): string {
                 $name = $command->getName();
                 Assert::string($name);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                $name = $command->getName();
-                Assert::string($name);
-=======
-                $name = (string) $command->getName();
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
+
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }

@@ -17,29 +17,10 @@ class ExportResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
             'name' => \Filament\Forms\Components\TextInput::make('name')
                 ->required()
                 ->maxLength(255),
             'type' => \Filament\Forms\Components\Select::make('type')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-            \Filament\Forms\Components\TextInput::make('name')
-                ->required()
-                ->maxLength(255),
-            \Filament\Forms\Components\Select::make('type')
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
                 ->required()
                 ->options([
                     'csv' => 'CSV',
@@ -48,16 +29,6 @@ class ExportResource extends XotBaseResource
                 ])
                 ->default('csv'),
             'status' => \Filament\Forms\Components\Select::make('status')
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            'status' => \Filament\Forms\Components\Select::make('status')
-=======
-            \Filament\Forms\Components\Select::make('status')
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
                 ->required()
                 ->options([
                     'pending' => 'Pending',
@@ -66,33 +37,20 @@ class ExportResource extends XotBaseResource
                     'failed' => 'Failed',
                 ])
                 ->default('pending'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
             'error_message' => \Filament\Forms\Components\Textarea::make('error_message')
                 ->maxLength(65535)
                 ->columnSpanFull(),
+            'total_records' => \Filament\Forms\Components\TextInput::make('total_records')
+                ->numeric(),
+            'processed_records' => \Filament\Forms\Components\TextInput::make('processed_records')
+                ->numeric(),
+            'file_path' => \Filament\Forms\Components\TextInput::make('file_path')
+                ->maxLength(255),
+            'completed_at' => \Filament\Forms\Components\DateTimePicker::make('completed_at'),
             'created_at' => \Filament\Forms\Components\DateTimePicker::make('created_at')
                 ->disabled(),
             'updated_at' => \Filament\Forms\Components\DateTimePicker::make('updated_at')
                 ->disabled(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-            \Filament\Forms\Components\Textarea::make('error_message')
-                ->maxLength(65535),
-            \Filament\Forms\Components\TextInput::make('total_records')
-                ->numeric(),
-            \Filament\Forms\Components\TextInput::make('processed_records')
-                ->numeric(),
-            \Filament\Forms\Components\TextInput::make('file_path')
-                ->maxLength(255),
-            \Filament\Forms\Components\DateTimePicker::make('completed_at'),
         ];
     }
 
@@ -102,10 +60,6 @@ class ExportResource extends XotBaseResource
             'index' => Pages\ListExports::route('/'),
             'create' => Pages\CreateExport::route('/create'),
             'edit' => Pages\EditExport::route('/{record}/edit'),
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
         ];
     }
 }

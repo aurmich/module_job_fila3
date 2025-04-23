@@ -96,6 +96,7 @@ class ViewSchedule extends Page implements HasTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
@@ -108,10 +109,13 @@ class ViewSchedule extends Page implements HasTable
 <<<<<<< HEAD
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br($state))),
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 070c1ee (.)
 =======
@@ -120,10 +124,13 @@ class ViewSchedule extends Page implements HasTable
 =======
 =======
 >>>>>>> 410dbb3 (.)
+=======
+>>>>>>> 8877b16 (.)
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
@@ -133,6 +140,8 @@ class ViewSchedule extends Page implements HasTable
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
             ])->collapsible()
             // ->collapsed(config('job::history_collapsed'))
             ,

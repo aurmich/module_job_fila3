@@ -39,21 +39,22 @@ cache/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d3c6606 (fix: auto resolve conflict)
 =======
 >>>>>>> 86feb56 (fix: auto resolve conflict)
 <<<<<<< HEAD
-
-
-
 =======
+>>>>>>> 8877b16 (.)
+
+
+
+.php-cs-fixer.cache
+.php-cs-fixer.cache
+
 <<<<<<< HEAD
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-=======
-
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -70,3 +71,6 @@ cache/
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+.php-cs-fixer.cache
+>>>>>>> 8877b16 (.)

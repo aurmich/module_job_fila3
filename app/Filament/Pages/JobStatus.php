@@ -37,6 +37,7 @@ class JobStatus extends Page
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
@@ -48,11 +49,14 @@ class JobStatus extends Page
 <<<<<<< HEAD
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 8877b16 (.)
         $output = mb_convert_encoding($result->output(), 'UTF-8');
         Assert::string($output, '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         $errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8');
         Assert::string($errorOutput, '['.__LINE__.']['.class_basename($this).']');
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 070c1ee (.)
 =======
@@ -73,6 +77,14 @@ class JobStatus extends Page
         Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+        Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
+        $this->out .= $output;
+        Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
+        Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
+        $this->out .= $output;
+        Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> 8877b16 (.)
         $this->out .= $errorOutput;
         $this->out .= now();
     }
@@ -82,20 +94,12 @@ class JobStatus extends Page
         $this->out = '';
         Artisan::call($cmd);
         $this->out .= Artisan::output();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         Artisan::call($cmd);
         $this->out .= Artisan::output();
-=======
         // $this->out = '<hr/>';
         Artisan::call(''.$cmd);
         $this->out .= Artisan::output();
         // $this->out .= '<hr/>';
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
     }
 
     public function getViewData(): array

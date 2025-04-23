@@ -74,11 +74,8 @@ class Crud extends Component
                         if (fnmatch($filter, $command->getName())) {
                             return $whitelist;
                         }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
                         }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                         }
@@ -99,6 +96,10 @@ class Crud extends Component
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+                        }U/Notifications/VerifyEmail.php
+                        }U/Notifications/VerifyEmail.php
+>>>>>>> 8877b16 (.)
                     }
 
                     return ! $whitelist;
@@ -110,21 +111,14 @@ class Crud extends Component
         return $all_commands->sortBy(
             static function (Command $command): string {
                 $name = $command->getName();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                 $name = $command->getName();
->>>>>>> a4b668e (.)
+                if ($name === null) {
+                    return '';
+                }
                 if ($name === null) {
                     return '';
                 }
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                if ($name === null) {
-                    return '';
-                }
 =======
 <<<<<<< HEAD
                 if ($name === null) {
@@ -146,6 +140,9 @@ class Crud extends Component
 =======
 >>>>>>> 410dbb3 (.)
 >>>>>>> 86feb56 (fix: auto resolve conflict)
+=======
+                $name = (string) $command->getName();
+>>>>>>> 8877b16 (.)
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }
