@@ -49,11 +49,14 @@
                     --}}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <x-filament::button wire:click="executeTask('{{ $task->id }}')">
 =======
                         <x-filament::button wire:click="executeTask('{{ $task-> }}')">
 >>>>>>> 070c1ee (.)
 =======
+=======
+>>>>>>> 86feb56 (fix: auto resolve conflict)
                         <x-filament::button wire:click="executeTask('{{ $task-> }}')">
 =======
 <<<<<<< HEAD
@@ -62,7 +65,13 @@
                         <x-filament::button wire:click="executeTask('{{ $task->id }}')">
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
+<<<<<<< HEAD
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+=======
+                        <x-filament::button wire:click="executeTask('{{ $task->id }}')">
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
                             <i class="fa-solid fa-play"></i>
                         </x-filament::button>
                     </td>

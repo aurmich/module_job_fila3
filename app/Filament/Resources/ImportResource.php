@@ -14,6 +14,7 @@ class ImportResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
 =======
@@ -23,6 +24,15 @@ class ImportResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> a4b668e (.)
+=======
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
     public static function getFormSchema(): array
     {
         return [
@@ -34,6 +44,7 @@ class ImportResource extends XotBaseResource
                 ->acceptedFileTypes(['text/csv', 'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'])
                 ->maxSize(10240),
             'status' => \Filament\Forms\Components\Select::make('status')
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -52,6 +63,8 @@ class ImportResource extends XotBaseResource
             \Filament\Forms\Components\Select::make('status')
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
+=======
+>>>>>>> 410dbb3 (.)
                 ->required()
                 ->options([
                     'pending' => 'Pending',
@@ -61,14 +74,18 @@ class ImportResource extends XotBaseResource
                 ])
                 ->default('pending'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a4b668e (.)
+=======
+>>>>>>> 410dbb3 (.)
             'error_message' => \Filament\Forms\Components\Textarea::make('error_message')
                 ->maxLength(65535),
             'total_rows' => \Filament\Forms\Components\TextInput::make('total_rows')
                 ->numeric(),
             'processed_rows' => \Filament\Forms\Components\TextInput::make('processed_rows')
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -81,6 +98,10 @@ class ImportResource extends XotBaseResource
             \Filament\Forms\Components\TextInput::make('failed_rows')
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
+=======
+                ->numeric(),
+            'failed_rows' => \Filament\Forms\Components\TextInput::make('failed_rows')
+>>>>>>> 410dbb3 (.)
                 ->numeric(),
 <<<<<<< HEAD
             'failed_rows' => \Filament\Forms\Components\TextInput::make('failed_rows')
@@ -97,11 +118,19 @@ class ImportResource extends XotBaseResource
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 
     public static function getPages(): array
     {
@@ -112,10 +141,17 @@ class ImportResource extends XotBaseResource
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 070c1ee (.)
 =======
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 0458200 (.)
+>>>>>>> a4b668e (.)
+=======
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 }

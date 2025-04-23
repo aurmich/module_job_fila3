@@ -1,10 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
 =======
 <<<<<<< HEAD
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+[{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 [
     {
         "name": "broad",
@@ -35,6 +43,7 @@
         "ns": "Modules\\Job\\Http\\Livewire\\Schedule\\Status"
     }
 ]
+<<<<<<< HEAD
 =======
 [{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
 <<<<<<< HEAD
@@ -42,4 +51,9 @@
 =======
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
+<<<<<<< HEAD
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)

@@ -43,6 +43,7 @@ class CreateSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreate
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
@@ -51,16 +52,26 @@ class CreateSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreate
    
 >>>>>>> 070c1ee (.)
 =======
+=======
+>>>>>>> 86feb56 (fix: auto resolve conflict)
    
 =======
 <<<<<<< HEAD
    
 =======
+=======
+>>>>>>> 410dbb3 (.)
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
     }
+<<<<<<< HEAD
 >>>>>>> 0458200 (.)
 >>>>>>> a4b668e (.)
+<<<<<<< HEAD
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 410dbb3 (.)
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 }

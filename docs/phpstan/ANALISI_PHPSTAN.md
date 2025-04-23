@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi PHPStan e Correzioni al Modulo Job
 =======
 # Analisi PHPStan - Modulo Job
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+# Analisi PHPStan e Correzioni al Modulo Job
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 
 ## Panoramica
 Questo documento contiene l'analisi dettagliata dei problemi rilevati da PHPStan nel modulo Job. L'analisi è stata eseguita con il livello massimo di controllo.
@@ -68,6 +72,9 @@ Questo documento contiene l'analisi dettagliata dei problemi rilevati da PHPStan
 - Eseguire PHPStan dopo ogni modifica
 - Mantenere aggiornato questo documento
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 86feb56 (fix: auto resolve conflict)
 - Verificare l'impatto delle correzioni sugli altri moduli
 
 ## Conflitti di Merge Risolti
@@ -131,6 +138,9 @@ L'approccio attuale con `evaluateFunction()` è sicuro ma limitato. Considerare:
 - Implementazione di un pattern Strategy per gestire diverse funzioni
 - Creare una classe Evaluator dedicata
 - Considerare l'uso di callback con scope limitato 
+<<<<<<< HEAD
 =======
 - Verificare l'impatto delle correzioni sugli altri moduli 
 >>>>>>> d3c6606 (fix: auto resolve conflict)
+=======
+>>>>>>> 86feb56 (fix: auto resolve conflict)
