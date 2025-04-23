@@ -37,38 +37,8 @@ class ScheduleResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-=======
->>>>>>> 070c1ee (.)
-=======
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
-=======
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
->>>>>>> 8877b16 (.)
     /** @var DataCollection<CommandData> */
     protected static DataCollection $commands;
 
@@ -96,8 +66,6 @@ class ScheduleResource extends XotBaseResource
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
 
         return [
-            'main_section' => Section::make([
-            'main_section' => Section::make([
             Section::make([
                 Select::make('command')
                     ->options(fn () => $commands_opts)

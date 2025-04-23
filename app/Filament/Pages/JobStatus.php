@@ -34,57 +34,17 @@ class JobStatus extends Page
     {
         $result = Process::run('dir');
         $this->out = '';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
-        $this->out .= $output;
-        Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
-=======
-=======
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
         $output = mb_convert_encoding($result->output(), 'UTF-8');
         Assert::string($output, '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         $errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8');
         Assert::string($errorOutput, '['.__LINE__.']['.class_basename($this).']');
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-<<<<<<< HEAD
-=======
-=======
-        Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
-        $this->out .= $output;
-        Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
-        Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
-        $this->out .= $output;
-        Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
         Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($output = mb_convert_encoding($result->output(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
         $this->out .= $output;
         Assert::string($errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8'), '['.__LINE__.']['.class_basename($this).']');
->>>>>>> 8877b16 (.)
         $this->out .= $errorOutput;
         $this->out .= now();
     }

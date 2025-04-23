@@ -12,32 +12,8 @@ class ImportResource extends XotBaseResource
 {
     protected static ?string $model = Import::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-=======
->>>>>>> 070c1ee (.)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
-=======
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
->>>>>>> 8877b16 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -85,11 +61,6 @@ class ImportResource extends XotBaseResource
                 ->numeric(),
             'failed_rows' => \Filament\Forms\Components\TextInput::make('failed_rows')
                 ->numeric(),
-<<<<<<< HEAD
-            'failed_rows' => \Filament\Forms\Components\TextInput::make('failed_rows')
-                ->numeric(),
-=======
->>>>>>> 070c1ee (.)
         ];
     }
 
@@ -98,24 +69,6 @@ class ImportResource extends XotBaseResource
         return [
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
 
     public static function getPages(): array
     {
@@ -125,21 +78,4 @@ class ImportResource extends XotBaseResource
             'edit' => Pages\EditImport::route('/{record}/edit'),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 070c1ee (.)
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
 }

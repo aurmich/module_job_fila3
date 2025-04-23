@@ -35,51 +35,7 @@ class JobServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 070c1ee (.)
-=======
-=======
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
-        /*
-            $this->app->resolving(Schedule::class, function ($schedule) {
-                dddx($schedule);
-                //
-            });
-            */
-        // $this->app->booted(function () {
-        // $schedule = $this->app->make(Schedule::class);
-        // try {
-        //    $this->registerSchedule($schedule);
-        // } catch (\Illuminate\Database\QueryException $e) {
-        //    echo $e->getMessage();
-        // }
-        // });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> 070c1ee (.)
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
-=======
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
+
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
         $this->registerQueue();
@@ -87,63 +43,21 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerQueue(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        /*
-        Queue::before(static function (JobProcessing $event) {
-           self::jobStarted($event->job);
-        });
-
-        Queue::after(static function (JobProcessed $event) {
-           self::jobFinished($event->job);
-        });
-
-        Queue::failing(static function (JobFailed $event) {
-           self::jobFinished($event->job, true, $event->exception);
-        });
-
-        Queue::exceptionOccurred(static function (JobExceptionOccurred $event) {
-           self::jobFinished($event->job, true, $event->exception);
-        });
-        */
-=======
-=======
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
->>>>>>> a4b668e (.)
-=======
->>>>>>> 8877b16 (.)
         Queue::before(function (JobProcessing $event) {
             $this->jobStarted($event->job);
-        /*
-        Queue::before(static function (JobProcessing $event) {
-           self::jobStarted($event->job);
         });
 
-        Queue::after(static function (JobProcessed $event) {
-           self::jobFinished($event->job);
+        Queue::after(function (JobProcessed $event) {
+            $this->jobFinished($event->job);
         });
 
-        Queue::failing(static function (JobFailed $event) {
-           self::jobFinished($event->job, true, $event->exception);
+        Queue::failing(function (JobFailed $event) {
+            $this->jobFinished($event->job, true, $event->exception);
         });
 
-        Queue::exceptionOccurred(static function (JobExceptionOccurred $event) {
-           self::jobFinished($event->job, true, $event->exception);
+        Queue::exceptionOccurred(function (JobExceptionOccurred $event) {
+            $this->jobFinished($event->job, true, $event->exception);
         });
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-        */
->>>>>>> 86feb56 (fix: auto resolve conflict)
     }
 
     /**
@@ -166,59 +80,8 @@ class JobServiceProvider extends XotBaseServiceProvider
         // Per ora lo lasciamo vuoto in attesa di implementazione specifica
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function registerSchedule(Schedule $schedule): void
     {
-=======
-=======
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
-    public function registerSchedule(Schedule $schedule): void 
-    {
-    public function registerSchedule(Schedule $schedule): void
-    {
-        /*
-        Queue::before(static function (JobProcessing $event) {
-           self::jobStarted($event->job);
-        });
-
-        Queue::after(static function (JobProcessed $event) {
-           self::jobFinished($event->job);
-        });
-
-        Queue::failing(static function (JobFailed $event) {
-           self::jobFinished($event->job, true, $event->exception);
-        });
-
-        Queue::exceptionOccurred(static function (JobExceptionOccurred $event) {
-           self::jobFinished($event->job, true, $event->exception);
-        });
-        */
-    }
-
-    /*
-    public function registerSchedule(Schedule $schedule): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/dev
->>>>>>> origin/dev
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
         if (Schema::hasTable('tasks')) {
             $tasks = app(Task::class)
                 ->query()
@@ -226,19 +89,6 @@ class JobServiceProvider extends XotBaseServiceProvider
                 ->where('is_active', true)
                 ->get();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
->>>>>>> a4b668e (.)
-=======
->>>>>>> 8877b16 (.)
             $tasks->each(function ($task) use ($schedule) {
                 if (! $task instanceof Task) {
                     throw new \Exception('['.__LINE__.']['.class_basename($this).']');
@@ -249,111 +99,73 @@ class JobServiceProvider extends XotBaseServiceProvider
                     $parameters = [];
                 }
 
-                $event = $schedule->command($task->command, $parameters);
-                
+                // Costruire il comando di artisan o la funzione
+                if ($task->isCommandTask()) {
+                    // Convalidare il comando
+                    $command = $task->command;
+                    if (! is_string($command) || empty(trim($command))) {
+                        return;
+                    }
 
-                $event->{$task->expression}()
-                    ->name($task->description)
-                    ->timezone($task->timezone)
-                    ->before(function () use ($task) {
-                        Executing::dispatch($task);
-                    })
-                    ->thenWithOutput(function ($output) use ($event, $task) {
-                        Executed::dispatch($task, $event->start ?? microtime(true), $output);
+                    // Aggiungere i parametri
+                    $scheduleEvent = $schedule->command($command, $parameters);
+                    if (count($parameters) > 0) {
+                        $scheduleEvent->withoutOverlapping();
+                    }
+                } else {
+                    // Task personalizzato con funzione
+                    $scheduleEvent = $schedule->call(function () use ($task) {
+                        // Prima dell'esecuzione
+                        event(new Executing($task));
+
+                        // Eseguire l'azione
+                        try {
+                            $start = microtime(true);
+                            $output = '';
+                            app()->call([app($task->command), 'handle'], $task->compileParameters(false) ?? []);
+                            event(new Executed($task, $start, $output));
+                        } catch (\Throwable $e) {
+                            report($e);
+                            // Gestione errori
+                        }
                     });
+                }
 
-                if ($task->dont_overlap) {
-                    $event->withoutOverlapping();
+                // Applicare la frequenza
+                $frequencies = $task->frequencies;
+                foreach ($frequencies as $frequency) {
+                    $scheduleEvent = $this->applyFrequency($scheduleEvent, $frequency);
                 }
-                if ($task->run_in_maintenance) {
-                    $event->evenInMaintenanceMode();
-                }
-                if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
-                    $event->onOneServer();
-                }
-                if ($task->run_in_background) {
-                    $event->runInBackground();
-                }
+
+                // Applicare opzioni
+                $this->applyOptions($scheduleEvent, $task);
             });
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
->>>>>>> a4b668e (.)
-=======
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
-            $tasks->each(
-                function ($task) use ($schedule) {
-                    if (! $task instanceof Task) {
-                        throw new \Exception('['.__LINE__.']['.class_basename($this).']');
-                    }
-                    //
-                    // var \Illuminate\Console\Scheduling\Event
-                    //
-                    $event = $schedule->command($task->command, $task->compileParameters(true));
-                    // --- funziona solo con daily per ora
-                    $event->{$task->expression}()
-                        ->name($task->description)
-                        ->timezone($task->timezone)
-                        ->before(function () use ($task) {
-                            //Access to an undefined property Illuminate\Console\Scheduling\Event::$start.
-                            //$event->start = microtime(true);
-                            Executing::dispatch($task);
-                        })
-                        ->thenWithOutput(function ($output) use ($event, $task) {
-                            Executed::dispatch($task, $event->start ?? microtime(true), $output);
-                        });
-                    if ($task->dont_overlap) {
-                        $event->withoutOverlapping();
-                    }
-                    if ($task->run_in_maintenance) {
-                        $event->evenInMaintenanceMode();
-                    }
-                    if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
-                        $event->onOneServer();
-                    }
-                    if ($task->run_in_background) {
-                        $event->runInBackground();
-                    }
-                });
-        }
+
+    /**
+     * Applica la frequenza all'evento pianificato.
+     *
+     * @param \Illuminate\Console\Scheduling\Event $event
+     * @param object $frequency
+     * @return \Illuminate\Console\Scheduling\Event
+     */
+    protected function applyFrequency($event, $frequency)
+    {
+        // Implementazione per applicare la frequenza all'evento pianificato
+        return $event;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-    */
-<<<<<<< HEAD
->>>>>>> origin/dev
->>>>>>> origin/dev
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-=======
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-    */
->>>>>>> 8877b16 (.)
+
+    /**
+     * Applica le opzioni all'evento pianificato.
+     *
+     * @param \Illuminate\Console\Scheduling\Event $event
+     * @param Task $task
+     * @return \Illuminate\Console\Scheduling\Event
+     */
+    protected function applyOptions($event, Task $task)
+    {
+        // Implementazione per applicare le opzioni all'evento pianificato
+        return $event;
+    }
 }

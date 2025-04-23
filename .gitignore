@@ -6,71 +6,11 @@ package-lock.json
 /vendor
 *.cache
 .git-blame-ignore-revs
-.git-rewrite
-.git-blame-ignore-revs
-/vendor
-*.lock
-composer.lock
-package-lock.json
 .php-cs-fixer.cache
-*.cache
-.git-blame-ignore-revs
-.git-rewrite
-
-.git-blame-ignore-revs
-*.phar
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
 node_modules
-vendor
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-vendor/
 build/
-docs/cache/
 cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
 *:Zone.Identifier
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-<<<<<<< HEAD
-=======
->>>>>>> 8877b16 (.)
-
-
-
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-
-<<<<<<< HEAD
->>>>>>> origin/dev
->>>>>>> origin/dev
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-=======
-=======
-.php-cs-fixer.cache
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-.php-cs-fixer.cache
->>>>>>> 8877b16 (.)
+.git-rewrite/
+vendor/
+composer.lock

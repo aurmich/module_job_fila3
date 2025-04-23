@@ -93,55 +93,14 @@ class ViewSchedule extends Page implements HasTable
                         return $state->diffInSeconds($record->created_at).' seconds';
                     }),
                 Tables\Columns\TextColumn::make('output')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
-            ]), Tables\Columns\Layout\Panel::make([
-                Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
-                    ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
-=======
-=======
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
->>>>>>> a4b668e (.)
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br($state))),
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 070c1ee (.)
-=======
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 410dbb3 (.)
-=======
->>>>>>> 8877b16 (.)
                     ->formatStateUsing(static fn (string $state): string => (count(explode('<br />', nl2br((string) $state))) - 1).' rows of output'),
             ]), Tables\Columns\Layout\Panel::make([
                 Tables\Columns\TextColumn::make('output')->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br((string) $state))),
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
->>>>>>> 8877b16 (.)
             ])->collapsible()
             // ->collapsed(config('job::history_collapsed'))
             ,

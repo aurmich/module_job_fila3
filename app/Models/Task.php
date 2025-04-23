@@ -111,35 +111,9 @@ class Task extends BaseModel
 
         return $parameters;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    /** @var list<string> */
-=======
->>>>>>> 070c1ee (.)
-=======
-=======
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
-=======
-    /** @var list<string> */
->>>>>>> 0458200 (.)
->>>>>>> a4b668e (.)
-<<<<<<< HEAD
->>>>>>> d3c6606 (fix: auto resolve conflict)
-=======
-=======
-
-    /** @var list<string> */
->>>>>>> 410dbb3 (.)
->>>>>>> 86feb56 (fix: auto resolve conflict)
-=======
     /** @var list<string> */
 
     /** @var list<string> */
->>>>>>> 8877b16 (.)
     protected $fillable = [
         'id',
         'description',
