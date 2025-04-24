@@ -9,7 +9,11 @@ use Modules\Job\Filament\Resources\FailedImportRowResource\Pages;
 use Modules\Job\Models\FailedImportRow;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< HEAD
 class FailedImportRowResource extends XotBaseResource
+=======
+abstract class FailedImportRowResource extends XotBaseResource
+>>>>>>> 4ef1f78 (.)
 {
     protected static ?string $model = FailedImportRow::class;
 

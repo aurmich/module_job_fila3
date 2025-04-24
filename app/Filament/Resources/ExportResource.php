@@ -8,7 +8,11 @@ use Modules\Job\Filament\Resources\ExportResource\Pages;
 use Modules\Job\Models\Export;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< HEAD
 class ExportResource extends XotBaseResource
+=======
+abstract class ExportResource extends XotBaseResource
+>>>>>>> 4ef1f78 (.)
 {
     protected static ?string $model = Export::class;
 

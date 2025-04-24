@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
@@ -11,6 +12,8 @@
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 4ef1f78 (.)
 [
     {
         "name": "php-unit-test-job-command",
@@ -40,6 +43,7 @@
         "path": null,
         "ns": "Modules\\Job\\Console\\Commands\\WorkerCheck"
     }
+<<<<<<< HEAD
 ]
 <<<<<<< HEAD
 =======
@@ -56,3 +60,6 @@
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+]
+>>>>>>> 4ef1f78 (.)

@@ -8,7 +8,11 @@ use Modules\Job\Filament\Resources\ImportResource\Pages;
 use Modules\Job\Models\Import;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< HEAD
 class ImportResource extends XotBaseResource
+=======
+abstract class ImportResource extends XotBaseResource
+>>>>>>> 4ef1f78 (.)
 {
     protected static ?string $model = Import::class;
 
