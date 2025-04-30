@@ -8,7 +8,15 @@ use Filament\Tables;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
+<<<<<<< HEAD
 class ListSchedules extends XotBaseListRecords
+=======
+<<<<<<< HEAD
+class ListSchedules extends XotBaseListRecords
+=======
+abstract class ListSchedules extends XotBaseListRecords
+>>>>>>> 4ef1f78 (.)
+>>>>>>> aurmich/dev
 {
     protected static string $resource = ScheduleResource::class;
 

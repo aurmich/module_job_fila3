@@ -17,7 +17,15 @@ use Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 use Modules\Job\Models\JobManager;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< HEAD
 class JobManagerResource extends XotBaseResource
+=======
+<<<<<<< HEAD
+class JobManagerResource extends XotBaseResource
+=======
+abstract class JobManagerResource extends XotBaseResource
+>>>>>>> 4ef1f78 (.)
+>>>>>>> aurmich/dev
 {
     protected static ?string $model = JobManager::class;
 

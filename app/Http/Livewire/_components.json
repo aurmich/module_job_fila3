@@ -1,9 +1,24 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 4ef1f78 (.)
 >>>>>>> aurmich/dev
 [
     {
@@ -34,13 +49,33 @@
         "path": null,
         "ns": "Modules\\Job\\Http\\Livewire\\Schedule\\Status"
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ]
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 [{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
 >>>>>>> aurmich/dev
 =======
 >>>>>>> aurmich/dev
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+=======
+]
+>>>>>>> 4ef1f78 (.)
 >>>>>>> aurmich/dev

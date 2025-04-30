@@ -1,4 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 4ef1f78 (.)
+>>>>>>> aurmich/dev
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -40,7 +48,13 @@ Il `RouteServiceProvider` gestisce:
 - [Documentazione Generale dei Moduli](/docs/modules.md)
 - [Configurazione Job](/docs/module_job.md)
 - [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 # Modulo Job
 
 Data: 2025-04-23 19:09:55
@@ -491,4 +505,13 @@ tests_old
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
 
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 4ef1f78 (.)
 >>>>>>> aurmich/dev

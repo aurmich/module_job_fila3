@@ -12,7 +12,15 @@ use Modules\Job\Filament\Resources\JobBatchResource\Pages\ListJobBatches;
 use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< HEAD
 class JobBatchResource extends XotBaseResource
+=======
+<<<<<<< HEAD
+class JobBatchResource extends XotBaseResource
+=======
+abstract class JobBatchResource extends XotBaseResource
+>>>>>>> 4ef1f78 (.)
+>>>>>>> aurmich/dev
 {
     // //
 
