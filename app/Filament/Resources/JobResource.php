@@ -9,15 +9,7 @@ use Modules\Job\Filament\Resources\JobResource\Widgets;
 use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< HEAD
 class JobResource extends XotBaseResource
-=======
-<<<<<<< HEAD
-class JobResource extends XotBaseResource
-=======
-abstract class JobResource extends XotBaseResource
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev
 {
     protected static ?string $model = Job::class;
 

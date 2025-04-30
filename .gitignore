@@ -36,18 +36,6 @@ cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *:Zone.Identifier
-<<<<<<< HEAD
 
 # File di log
 *.log
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-# File di log
-*.log
->>>>>>> aurmich/dev
-=======
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev

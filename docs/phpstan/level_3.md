@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-<<<<<<< HEAD
-=======
 
->>>>>>> aurmich/dev
-=======
->>>>>>> aurmich/dev
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-=======
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev
 # Rapporto PHPStan Livello 3 per il modulo Job
 
 Data analisi: 2025-04-15 22:03:16
@@ -51,31 +24,4 @@ Trovati 1 errori al livello 3.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-<<<<<<< HEAD
-=======
 aurmich/dev
->>>>>>> aurmich/dev
-=======
->>>>>>> aurmich/dev
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-=======
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev

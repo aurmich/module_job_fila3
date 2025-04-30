@@ -13,15 +13,7 @@ use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOvervi
 use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< HEAD
 class JobsWaitingResource extends XotBaseResource
-=======
-<<<<<<< HEAD
-class JobsWaitingResource extends XotBaseResource
-=======
-abstract class JobsWaitingResource extends XotBaseResource
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev
 {
     protected static ?string $model = Job::class;
 

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 
 # Analisi PHPStan e Correzioni al Modulo Job
@@ -11,12 +7,6 @@
 
 # Analisi PHPStan e Correzioni al Modulo Job
  86feb56 (fix: auto resolve conflict)
-<<<<<<< HEAD
-=======
-=======
-# Analisi PHPStan - Modulo Job
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev
 
 ## Panoramica
 Questo documento contiene l'analisi dettagliata dei problemi rilevati da PHPStan nel modulo Job. L'analisi è stata eseguita con il livello massimo di controllo.
@@ -81,10 +71,6 @@ Questo documento contiene l'analisi dettagliata dei problemi rilevati da PHPStan
 ## Monitoraggio
 - Eseguire PHPStan dopo ogni modifica
 - Mantenere aggiornato questo documento
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 
 
@@ -158,9 +144,3 @@ L'approccio attuale con `evaluateFunction()` è sicuro ma limitato. Considerare:
  d3c6606 (fix: auto resolve conflict)
 
  86feb56 (fix: auto resolve conflict)
-<<<<<<< HEAD
-=======
-=======
-- Verificare l'impatto delle correzioni sugli altri moduli 
->>>>>>> 4ef1f78 (.)
->>>>>>> aurmich/dev
