@@ -81,8 +81,11 @@ Artisan::call('queue:forget', ['id' => 'all']);
 - [Performance](performance.md)
 - [Integrazioni](integrations.md)
 - [Panoramica](../packages.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di monitoring.md
 * [monitoring.md](laravel/Modules/Job/docs/packages/monitoring.md)
 * [monitoring.md](laravel/Themes/One/docs/monitoring.md)
 
+=======
+>>>>>>> aurmich/dev

@@ -77,6 +77,7 @@ public static function getFormSchema(): array
 
 Questo pattern è stato corretto nelle seguenti risorse:
 - `ExportResource`
+<<<<<<< HEAD
 - `FailedImportRowResource` 
 ## Collegamenti tra versioni di FILAMENT_BEST_PRACTICES.md
 * [FILAMENT_BEST_PRACTICES.md](laravel/Modules/Xot/docs/filament/FILAMENT_BEST_PRACTICES.md)
@@ -91,3 +92,6 @@ Questo pattern è stato corretto nelle seguenti risorse:
 * [filament_best_practices.md](../../Xot/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../User/docs/filament_best_practices.md)
 
+=======
+- `FailedImportRowResource` 
+>>>>>>> aurmich/dev

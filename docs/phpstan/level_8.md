@@ -29,6 +29,7 @@ Trovati 1 errori al livello 8.
 aurmich/dev
 aurmich/dev
 aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_8.md
 * [level_8.md](laravel/Modules/Chart/docs/phpstan/level_8.md)
@@ -47,3 +48,5 @@ aurmich/dev
 * [level_8.md](laravel/Modules/Patient/docs/phpstan/level_8.md)
 * [level_8.md](laravel/Modules/Cms/docs/phpstan/level_8.md)
 
+=======
+>>>>>>> aurmich/dev

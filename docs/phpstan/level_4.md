@@ -25,6 +25,7 @@ Trovati 1 errori al livello 4.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_4.md
 * [level_4.md](laravel/Modules/Chart/docs/phpstan/level_4.md)
@@ -43,3 +44,5 @@ aurmich/dev
 * [level_4.md](laravel/Modules/Patient/docs/phpstan/level_4.md)
 * [level_4.md](laravel/Modules/Cms/docs/phpstan/level_4.md)
 
+=======
+>>>>>>> aurmich/dev

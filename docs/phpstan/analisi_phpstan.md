@@ -144,6 +144,7 @@ L'approccio attuale con `evaluateFunction()` è sicuro ma limitato. Considerare:
  d3c6606 (fix: auto resolve conflict)
 
  86feb56 (fix: auto resolve conflict)
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di ANALISI_PHPSTAN.md
 * [ANALISI_PHPSTAN.md](laravel/Modules/Gdpr/docs/phpstan/ANALISI_PHPSTAN.md)
@@ -167,3 +168,5 @@ L'approccio attuale con `evaluateFunction()` è sicuro ma limitato. Considerare:
 * [analisi_phpstan.md](../../../Tenant/docs/phpstan/analisi_phpstan.md)
 * [analisi_phpstan.md](../../../Activity/docs/phpstan/analisi_phpstan.md)
 
+=======
+>>>>>>> aurmich/dev

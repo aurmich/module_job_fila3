@@ -7,6 +7,7 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 
 
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
@@ -19,3 +20,5 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 * [filament.md](laravel/Modules/Activity/docs/filament.md)
 * [filament.md](laravel/Modules/Cms/docs/filament.md)
 
+=======
+>>>>>>> aurmich/dev

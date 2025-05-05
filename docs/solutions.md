@@ -343,9 +343,13 @@ class RetryTest extends TestCase {
    - Pulizia job vecchi
    - Ottimizzazione indici
    - Review configurazioni
+<<<<<<< HEAD
    - Aggiornamento strategie retry 
 ## Collegamenti tra versioni di solutions.md
 * [solutions.md](laravel/Modules/Gdpr/docs/solutions.md)
 * [solutions.md](laravel/Modules/Xot/docs/solutions.md)
 * [solutions.md](laravel/Modules/Job/docs/solutions.md)
 
+=======
+   - Aggiornamento strategie retry 
+>>>>>>> aurmich/dev

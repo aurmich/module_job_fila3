@@ -18,6 +18,7 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 
 
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di links.md
 * [links.md](laravel/Modules/Gdpr/docs/links.md)
@@ -31,3 +32,5 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 * [links.md](laravel/Modules/Cms/docs/links.md)
 * [links.md](laravel/Themes/One/docs/links.md)
 
+=======
+>>>>>>> aurmich/dev

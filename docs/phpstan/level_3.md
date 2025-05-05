@@ -25,6 +25,7 @@ Trovati 1 errori al livello 3.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_3.md
 * [level_3.md](laravel/Modules/Chart/docs/phpstan/level_3.md)
@@ -43,3 +44,5 @@ aurmich/dev
 * [level_3.md](laravel/Modules/Patient/docs/phpstan/level_3.md)
 * [level_3.md](laravel/Modules/Cms/docs/phpstan/level_3.md)
 
+=======
+>>>>>>> aurmich/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 ## Collegamenti tra versioni di performance.md
 * [performance.md](laravel/vendor/spatie/laravel-data/docs/advanced-usage/performance.md)
@@ -9,3 +10,6 @@
 * [performance.md](laravel/Modules/Job/docs/packages/performance.md)
 * [performance.md](laravel/Modules/Cms/docs/frontoffice/performance.md)
 
+=======
+ 
+>>>>>>> aurmich/dev

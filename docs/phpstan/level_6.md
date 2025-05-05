@@ -29,6 +29,7 @@ Trovati 1 errori al livello 6.
 aurmich/dev
 aurmich/dev
 aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_6.md
 * [level_6.md](laravel/Modules/Chart/docs/phpstan/level_6.md)
@@ -47,3 +48,5 @@ aurmich/dev
 * [level_6.md](laravel/Modules/Patient/docs/phpstan/level_6.md)
 * [level_6.md](laravel/Modules/Cms/docs/phpstan/level_6.md)
 
+=======
+>>>>>>> aurmich/dev

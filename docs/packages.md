@@ -59,6 +59,7 @@
 - [Monitoraggio](packages/monitoring.md)
 - [Performance](packages/performance.md)
 - [Integrazioni](packages/integrations.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di packages.md
 * [packages.md](laravel/Modules/Gdpr/docs/packages.md)
@@ -71,3 +72,5 @@
 * [packages.md](laravel/Modules/Media/docs/packages.md)
 * [packages.md](laravel/Modules/Tenant/docs/packages.md)
 
+=======
+>>>>>>> aurmich/dev

@@ -63,6 +63,7 @@
 ## Collegamenti
 
 - Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_10.md
 * [level_10.md](laravel/Modules/Gdpr/docs/phpstan/level_10.md)
@@ -76,3 +77,5 @@
 * [level_10.md](laravel/Modules/Tenant/docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Activity/docs/phpstan/level_10.md)
 
+=======
+>>>>>>> aurmich/dev

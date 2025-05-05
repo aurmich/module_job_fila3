@@ -22,6 +22,7 @@
    - Documentare i flussi
    - Testare la gestione
 
+<<<<<<< HEAD
 ## Collegamenti correlati
 - [README.md documentazione generale SaluteOra](../../../../docs/README.md)
 - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
@@ -123,3 +124,9 @@
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
 
+=======
+## Collegamenti
+- [Modulo Xot](../../Xot/docs/README.md)
+- [Modulo Cms](../../Cms/docs/README.md)
+- [Modulo Lang](../../Lang/docs/README.md) 
+>>>>>>> aurmich/dev

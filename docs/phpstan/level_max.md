@@ -409,6 +409,7 @@ Trovati 45 errori al livello max.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_max.md
 * [level_max.md](laravel/Modules/Chart/docs/phpstan/level_max.md)
@@ -427,3 +428,5 @@ Trovati 45 errori al livello max.
 * [level_max.md](laravel/Modules/Patient/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Cms/docs/phpstan/level_max.md)
 
+=======
+>>>>>>> aurmich/dev

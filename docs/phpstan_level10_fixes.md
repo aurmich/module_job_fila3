@@ -117,6 +117,7 @@ private function evaluateFunction(string $functionString): mixed
 
 1. Applicare principi simili agli altri file identificati nel modulo.
 2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+<<<<<<< HEAD
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
 ## Collegamenti tra versioni di PHPSTAN_LEVEL10_FIXES.md
 * [PHPSTAN_LEVEL10_FIXES.md](docs/PHPSTAN_LEVEL10_FIXES.md)
@@ -133,3 +134,6 @@ private function evaluateFunction(string $functionString): mixed
 * [phpstan_level10_fixes.md](../../Lang/docs/phpstan_level10_fixes.md)
 * [phpstan_level10_fixes.md](../../Media/docs/phpstan_level10_fixes.md)
 
+=======
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
+>>>>>>> aurmich/dev

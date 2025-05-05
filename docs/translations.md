@@ -51,6 +51,7 @@ return [
         'tooltip' => 'Visualizza gli errori dei job'
     ]
 ];
+<<<<<<< HEAD
 ``` 
 ## Collegamenti tra versioni di translations.md
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
@@ -71,3 +72,6 @@ return [
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
 
+=======
+``` 
+>>>>>>> aurmich/dev

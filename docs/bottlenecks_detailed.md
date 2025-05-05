@@ -314,9 +314,13 @@ abstract class BaseJob
         }
     }
 }
+<<<<<<< HEAD
 ``` 
 ## Collegamenti tra versioni di bottlenecks_detailed.md
 * [bottlenecks_detailed.md](laravel/Modules/Xot/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](laravel/Modules/Job/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](laravel/Modules/Media/docs/bottlenecks_detailed.md)
 
+=======
+``` 
+>>>>>>> aurmich/dev
