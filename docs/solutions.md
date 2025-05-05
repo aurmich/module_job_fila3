@@ -344,3 +344,8 @@ class RetryTest extends TestCase {
    - Ottimizzazione indici
    - Review configurazioni
    - Aggiornamento strategie retry 
+## Collegamenti tra versioni di solutions.md
+* [solutions.md](laravel/Modules/Gdpr/docs/solutions.md)
+* [solutions.md](laravel/Modules/Xot/docs/solutions.md)
+* [solutions.md](laravel/Modules/Job/docs/solutions.md)
+

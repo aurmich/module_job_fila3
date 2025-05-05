@@ -83,3 +83,8 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 - [Monitoraggio](monitoring.md)
 - [Performance](performance.md)
 - [Panoramica](../packages.md) 
+
+## Collegamenti tra versioni di integrations.md
+* [integrations.md](docs/tecnico/filament/integrations.md)
+* [integrations.md](laravel/Modules/Job/docs/packages/integrations.md)
+
