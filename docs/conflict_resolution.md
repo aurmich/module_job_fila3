@@ -4,21 +4,8 @@
 
 Questo documento descrive i conflitti git identificati nel modulo Job e la strategia adottata per risolverli. I conflitti sono stati analizzati in base al loro impatto sul funzionamento dell'applicazione.
 
-<<<<<<< HEAD
 ## Conflitti Principali
-=======
 
-
-## Conflitti Principali
-=======
-=======
-=======
-
-## Conflitti Principali
-=======
-
-
->>>>>>> 28e01c8 (.)
 ## Aggiornamento (2023-11-17)
 
 Sono stati risolti ulteriori conflitti nei seguenti file:
@@ -84,16 +71,6 @@ I file `docs/phpstan/level_*.md` e `docs/phpstan/level_8.json` contenevano anch'
 - File JSON validi per future analisi
 
 ## Conflitti Principali (Precedenti)
-<<<<<<< HEAD
-=======
-
-=======
-
-=======
-
-
-
->>>>>>> 28e01c8 (.)
 
 ### 1. .gitignore
 
@@ -240,24 +217,5 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
-=======
-
-
-=======
-- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
-=======
-
-
->>>>>>> 28e01c8 (.)
-- [Documentazione Generale Risoluzione Conflitti](../../docs/risoluzione_conflitti_git.md) 
-- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
-<<<<<<< HEAD
-=======
-
-
-=======
-
-
->>>>>>> 28e01c8 (.)
+- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md)
+- [Documentazione Specifica del Modulo](../../docs/risoluzione_conflitti_git.md)
