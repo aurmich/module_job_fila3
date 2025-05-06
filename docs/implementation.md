@@ -297,9 +297,9 @@ class JobPageTest extends TestCase
 
 
 ## Collegamenti tra versioni di implementation.md
-* [implementation.md](laravel/Modules/Gdpr/docs/implementation.md)
-* [implementation.md](laravel/Modules/Xot/docs/implementation.md)
-* [implementation.md](laravel/Modules/Job/docs/implementation.md)
+* [implementation.md](../../../Gdpr/docs/implementation.md)
+* [implementation.md](../../../Xot/docs/implementation.md)
+* [implementation.md](../../../Job/docs/implementation.md)
 
 
 ### Versione Incoming

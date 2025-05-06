@@ -87,8 +87,8 @@ Artisan::call('queue:forget', ['id' => 'all']);
 
 
 ## Collegamenti tra versioni di monitoring.md
-* [monitoring.md](laravel/Modules/Job/docs/packages/monitoring.md)
-* [monitoring.md](laravel/Themes/One/docs/monitoring.md)
+* [monitoring.md](../../../Job/docs/packages/monitoring.md)
+* [monitoring.md](../../../../Themes/One/docs/monitoring.md)
 
 
 ### Versione Incoming

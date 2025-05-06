@@ -4,9 +4,9 @@ https://filamentphp.com/community/danharrin-fast-table-pagination
 
 
 ## Collegamenti tra versioni di optimization.md
-* [optimization.md](laravel/Modules/Xot/docs/roadmap/performance/optimization.md)
-* [optimization.md](laravel/Modules/Job/docs/optimization.md)
-* [optimization.md](laravel/Modules/Cms/docs/roadmap/performance/optimization.md)
+* [optimization.md](../../../Xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](../../../Job/docs/optimization.md)
+* [optimization.md](../../../Cms/docs/roadmap/performance/optimization.md)
 
 
 ### Versione Incoming

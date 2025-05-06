@@ -81,10 +81,10 @@ Questo pattern è stato corretto nelle seguenti risorse:
 
 - `FailedImportRowResource` 
 ## Collegamenti tra versioni di FILAMENT_BEST_PRACTICES.md
-* [FILAMENT_BEST_PRACTICES.md](laravel/Modules/Xot/docs/filament/FILAMENT_BEST_PRACTICES.md)
-* [FILAMENT_BEST_PRACTICES.md](laravel/Modules/Xot/docs/FILAMENT_BEST_PRACTICES.md)
-* [FILAMENT_BEST_PRACTICES.md](laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
-* [FILAMENT_BEST_PRACTICES.md](laravel/Modules/Job/docs/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../Xot/docs/filament/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../Xot/docs/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../User/docs/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../Job/docs/FILAMENT_BEST_PRACTICES.md)
 
 
 ## Collegamenti tra versioni di filament_best_practices.md
