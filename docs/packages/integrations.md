@@ -84,6 +84,7 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 - [Performance](performance.md)
 - [Panoramica](../packages.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
@@ -91,3 +92,5 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)

@@ -315,6 +315,7 @@ abstract class BaseJob
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 ## Collegamenti tra versioni di bottlenecks_detailed.md
 * [bottlenecks_detailed.md](laravel/Modules/Xot/docs/bottlenecks_detailed.md)
@@ -324,3 +325,6 @@ abstract class BaseJob
 =======
 ``` 
 >>>>>>> aurmich/dev
+=======
+``` 
+>>>>>>> b291b24 (.)

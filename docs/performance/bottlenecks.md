@@ -185,6 +185,7 @@ Implementare:
    }
    ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](laravel/Modules/Gdpr/docs/performance/bottlenecks.md)
@@ -200,3 +201,5 @@ Implementare:
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)

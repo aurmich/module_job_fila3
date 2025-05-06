@@ -292,6 +292,7 @@ class JobPageTest extends TestCase
 }
 ``` 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di implementation.md
 * [implementation.md](laravel/Modules/Gdpr/docs/implementation.md)
@@ -300,3 +301,5 @@ class JobPageTest extends TestCase
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)

@@ -59,6 +59,7 @@ Modules/Job/
 - Security testing
 - Performance testing
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di analysis.md
 * [analysis.md](laravel/Modules/Notify/docs/analysis.md)
@@ -77,3 +78,5 @@ Modules/Job/
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)

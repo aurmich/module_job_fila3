@@ -344,6 +344,7 @@ class RetryTest extends TestCase {
    - Ottimizzazione indici
    - Review configurazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Aggiornamento strategie retry 
 ## Collegamenti tra versioni di solutions.md
 * [solutions.md](laravel/Modules/Gdpr/docs/solutions.md)
@@ -353,3 +354,6 @@ class RetryTest extends TestCase {
 =======
    - Aggiornamento strategie retry 
 >>>>>>> aurmich/dev
+=======
+   - Aggiornamento strategie retry 
+>>>>>>> b291b24 (.)

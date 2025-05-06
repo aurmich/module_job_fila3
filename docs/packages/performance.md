@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 ## Collegamenti tra versioni di performance.md
 * [performance.md](laravel/vendor/spatie/laravel-data/docs/advanced-usage/performance.md)
@@ -13,3 +14,6 @@
 =======
  
 >>>>>>> aurmich/dev
+=======
+ 
+>>>>>>> b291b24 (.)

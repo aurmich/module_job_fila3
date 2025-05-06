@@ -76,6 +76,7 @@ Overall Module Completion: 60%
    - Cache implementation
    - Priority: High
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
@@ -97,3 +98,5 @@ Overall Module Completion: 60%
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)

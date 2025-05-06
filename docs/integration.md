@@ -65,6 +65,7 @@
 - Testare le modifiche
 - Documentare i cambiamenti 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di integration.md
 * [integration.md](laravel/Modules/Gdpr/docs/integration.md)
@@ -73,3 +74,5 @@
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b291b24 (.)
