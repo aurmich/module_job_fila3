@@ -36,9 +36,3 @@ cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *:Zone.Identifier
-<<<<<<< HEAD
-
-# File di log
-*.log
-=======
->>>>>>> b291b24 (.)

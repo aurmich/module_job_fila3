@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-null
-=======
 <?php
 
 return array (
@@ -194,4 +191,3 @@ return array (
     'icon' => 'job-failed-job',
   ),
 );
->>>>>>> b291b24 (.)

@@ -1,2 +1,2 @@
-Note: Using configuration file /var/www/html/ptvx/laravel/phpstan.neon.
+Note: Using configuration file /var/www/html/<nome progetto>/laravel/phpstan.neon.
    0/199 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%
