@@ -32,6 +32,11 @@
 =======
 📆 2025-05-05 10:46:59 - ✅ Configurazione git completata
 >>>>>>> aurmich/dev
+<<<<<<< HEAD
 📆 2025-05-06 14:44:35 - 🔧 Configurazione git di base...
 📆 2025-05-06 14:44:35 - ✅ Configurazione git completata
 >>>>>>> 3357854 (.)
+=======
+[0;34mℹ️ [2025-05-06 16:43:50] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 16:43:50] Configurazione git completata con successo[0m
+>>>>>>> 28e01c8 (.)

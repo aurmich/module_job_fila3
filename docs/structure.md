@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+=======
+
+>>>>>>> 28e01c8 (.)
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -489,6 +495,7 @@ tests_old
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
 
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -516,3 +523,9 @@ tests_old
 
 ---
 
+=======
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 28e01c8 (.)
