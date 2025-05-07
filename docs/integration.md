@@ -65,6 +65,12 @@
 - Testare le modifiche
 - Documentare i cambiamenti 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 10aecc0 (.)
 ### Versione HEAD
 
 ### Versione HEAD
@@ -87,5 +93,14 @@
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8862046 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 10aecc0 (.)

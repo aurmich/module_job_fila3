@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 10aecc0 (.)
 <?php
 
 return array (
@@ -192,6 +195,9 @@ return array (
     'icon' => 'job-failed-job',
   ),
 );
+<<<<<<< HEAD
 =======
 null
 >>>>>>> 8862046 (.)
+=======
+>>>>>>> 10aecc0 (.)

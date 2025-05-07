@@ -14,12 +14,16 @@ use Filament\Actions\Exports\Models\Export;
 use Filament\Actions\Imports\Models\Import;
 use Illuminate\Console\Scheduling\Schedule;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 use Illuminate\Contracts\Queue\Job;
 =======
 >>>>>>> origin/dev
 >>>>>>> 8862046 (.)
+=======
+use Illuminate\Contracts\Queue\Job;
+>>>>>>> 10aecc0 (.)
 use Illuminate\Queue\Events\JobExceptionOccurred;
 use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\Events\JobProcessed;
@@ -31,20 +35,28 @@ use Modules\Job\Events\Executing;
 use Modules\Job\Models\Task;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 use Throwable;
 
+=======
+use Throwable;
+
+>>>>>>> 10aecc0 (.)
 /**
  * Class JobServiceProvider
  * 
  * Service Provider principale del modulo Job
  */
+<<<<<<< HEAD
 =======
 
 >>>>>>> origin/dev
 >>>>>>> 8862046 (.)
+=======
+>>>>>>> 10aecc0 (.)
 class JobServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Job';
@@ -53,6 +65,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -89,30 +102,27 @@ class JobServiceProvider extends XotBaseServiceProvider
         Queue::exceptionOccurred(function (JobExceptionOccurred $event): void {
 =======
 >>>>>>> 8862046 (.)
+=======
+    /**
+     * Inizializza il provider
+     */
+>>>>>>> 10aecc0 (.)
     public function boot(): void
     {
         parent::boot();
-        /*
-            $this->app->resolving(Schedule::class, function ($schedule) {
-                dddx($schedule);
-                //
-            });
-            */
-        // $this->app->booted(function () {
-        // $schedule = $this->app->make(Schedule::class);
-        // try {
-        //    $this->registerSchedule($schedule);
-        // } catch (\Illuminate\Database\QueryException $e) {
-        //    echo $e->getMessage();
-        // }
-        // });
+
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
+        
         $this->registerQueue();
     }
 
+    /**
+     * Registra gli handler per gli eventi della coda
+     */
     public function registerQueue(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         /*
         Queue::before(static function (JobProcessing $event) {
@@ -137,24 +147,32 @@ class JobServiceProvider extends XotBaseServiceProvider
     public function registerSchedule(Schedule $schedule): void {
 =======
         Queue::before(function (JobProcessing $event) {
+=======
+        Queue::before(function (JobProcessing $event): void {
+>>>>>>> 10aecc0 (.)
             $this->jobStarted($event->job);
         });
 
-        Queue::after(function (JobProcessed $event) {
+        Queue::after(function (JobProcessed $event): void {
             $this->jobFinished($event->job);
         });
 
-        Queue::failing(function (JobFailed $event) {
+        Queue::failing(function (JobFailed $event): void {
             $this->jobFinished($event->job, true, $event->exception);
         });
 
+<<<<<<< HEAD
         Queue::exceptionOccurred(function (JobExceptionOccurred $event) {
 >>>>>>> origin/dev
+=======
+        Queue::exceptionOccurred(function (JobExceptionOccurred $event): void {
+>>>>>>> 10aecc0 (.)
             $this->jobFinished($event->job, true, $event->exception);
         });
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Gestisce l'inizio dell'esecuzione di un job
      */
@@ -205,9 +223,13 @@ class JobServiceProvider extends XotBaseServiceProvider
         });
 =======
      * @param \Illuminate\Contracts\Queue\Job $job
+=======
+     * Gestisce l'inizio dell'esecuzione di un job
+>>>>>>> 10aecc0 (.)
      */
-    protected function jobStarted($job): void
+    protected function jobStarted(Job $job): void
     {
+<<<<<<< HEAD
         // Implementazione del metodo jobStarted
         // Per ora lo lasciamo vuoto in attesa di implementazione specifica
     }
@@ -307,8 +329,55 @@ class JobServiceProvider extends XotBaseServiceProvider
                     $event->runInBackground();
                 }
             });
+=======
+        if ($job instanceof Task) {
+            event(new Executing($job));
+>>>>>>> 10aecc0 (.)
         }
 >>>>>>> origin/dev
     }
+<<<<<<< HEAD
 >>>>>>> 8862046 (.)
+=======
+
+    /**
+     * Gestisce la fine dell'esecuzione di un job
+     */
+    protected function jobFinished(Job $job, bool $failed = false, ?Throwable $exception = null): void
+    {
+        if ($job instanceof Task) {
+            $start = microtime(true);
+            $output = $exception ? $exception->getMessage() : '';
+            event(new Executed($job, $start, $output));
+        }
+    }
+
+    /**
+     * Registra i task schedulati
+     */
+    public function registerSchedule(Schedule $schedule): void 
+    {
+        if (!Schema::hasTable('tasks')) {
+            return;
+        }
+
+        $tasks = app(Task::class)
+            ->query()
+            ->with('frequencies')
+            ->where('is_active', true)
+            ->get();
+
+        $tasks->each(function ($task) use ($schedule): void {
+            if (!$task instanceof Task) {
+                return;
+            }
+
+            $event = $schedule->command($task->command, $task->parameters ?? []);
+            
+            foreach ($task->frequencies as $frequency) {
+                $event->{$frequency->interval}();
+            }
+        });
+    }
+>>>>>>> 10aecc0 (.)
 }

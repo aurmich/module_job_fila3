@@ -315,6 +315,12 @@ abstract class BaseJob
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 10aecc0 (.)
 ### Versione HEAD
 
 ### Versione HEAD
@@ -339,6 +345,16 @@ abstract class BaseJob
 
 ---
 
+<<<<<<< HEAD
 =======
 ``` 
 >>>>>>> 8862046 (.)
+=======
+
+### Versione Alternativa
+
+``` 
+
+---
+
+>>>>>>> 10aecc0 (.)
