@@ -1,5 +1,4 @@
 
-=======
 
 # Struttura del Modulo Job
 
@@ -520,6 +519,3 @@ tests_old
 ---
 
 
-=======
->>>>>>> aurmich/dev
->>>>>>> 28e01c8 (.)
