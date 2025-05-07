@@ -36,6 +36,7 @@ cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *:Zone.Identifier
+<<<<<<< HEAD
 
 # Backup files
 *.bak
@@ -44,3 +45,11 @@ cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
+=======
+<<<<<<< HEAD
+=======
+
+# File di log
+*.log
+>>>>>>> origin/dev
+>>>>>>> 8862046 (.)

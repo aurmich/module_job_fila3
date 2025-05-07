@@ -81,6 +81,7 @@ Artisan::call('queue:forget', ['id' => 'all']);
 - [Performance](performance.md)
 - [Integrazioni](integrations.md)
 - [Panoramica](../packages.md) 
+<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -102,3 +103,5 @@ Artisan::call('queue:forget', ['id' => 'all']);
 
 ---
 
+=======
+>>>>>>> 8862046 (.)
