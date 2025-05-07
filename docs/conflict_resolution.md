@@ -4,57 +4,13 @@
 
 Questo documento descrive i conflitti git identificati nel modulo Job e la strategia adottata per risolverli. I conflitti sono stati analizzati in base al loro impatto sul funzionamento dell'applicazione.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Conflitti Principali
-=======
-
-
-## Conflitti Principali
-=======
-=======
-=======
-
-## Conflitti Principali
-=======
-
->>>>>>> 8862046 (.)
 
 ## Aggiornamento (2023-11-17)
-=======
-## Conflitti Principali
->>>>>>> 10aecc0 (.)
 
-### 1. JobServiceProvider.php
+Sono stati risolti ulteriori conflitti nei seguenti file:
 
-**Criticità: ALTA**
-
-Questo è un file centrale per il funzionamento del modulo Job, poiché gestisce:
-- Registrazione dei servizi
-- Gestione delle code
-- Registrazione degli eventi delle code
-- Schedulazione dei task
-
-**Problema:**
-- Conflitti nella gestione degli eventi della coda (`Queue::before`, `Queue::after`, etc.)
-- Conflitti nel metodo `registerSchedule`
-- Implementazioni divergenti per `jobStarted` e `jobFinished`
-
-**Risoluzione:**
-- Implementate le funzioni di callback per tutti gli eventi della coda (`Queue::before`, `Queue::after`, `Queue::failing`, `Queue::exceptionOccurred`)
-- Riscritto il metodo `registerSchedule` per supportare sia task basati su comandi Artisan che task basati su funzioni personalizzate
-- Aggiunti metodi helper `applyFrequency` e `applyOptions` per una migliore organizzazione del codice
-- Mantenuta la documentazione PHPDoc completa per tutti i metodi
-- Rimossi i commenti di debug e codice commentato non necessario
-- Integrate le funzionalità di entrambe le versioni mantenendo la versione più robusta e documentata
-
-**Impatto:**
-- Miglioramento della gestione degli eventi della coda
-- Codice più pulito e meglio documentato
-- Mantenimento di tutte le funzionalità esistenti
-- Migliore gestione degli errori e delle eccezioni
-
-### 2. File di Configurazione dei Componenti
+### 1. File di Configurazione dei Componenti
 
 **Criticità: MEDIA**
 
@@ -83,7 +39,7 @@ I file `app/Http/Livewire/_components.json` e `app/Console/Commands/_components.
 - Miglioramento della leggibilità e manutenibilità
 - Nessun impatto funzionale sulla registrazione dei componenti
 
-### 3. File di Documentazione PHPStan
+### 2. File di Documentazione PHPStan
 
 **Criticità: BASSA**
 
@@ -114,19 +70,8 @@ I file `docs/phpstan/level_*.md` e `docs/phpstan/level_8.json` contenevano anch'
 - Nessun impatto funzionale sull'applicazione
 - File JSON validi per future analisi
 
-<<<<<<< HEAD
 ## Conflitti Principali (Precedenti)
 
-<<<<<<< HEAD
-=======
-=======
-
-=======
-
-
-
-
->>>>>>> 8862046 (.)
 ### 1. .gitignore
 
 **Criticità: BASSA**
@@ -225,35 +170,30 @@ Modelli principali per i task e gli schedule.
 - Uniformata la logica nei metodi che gestiscono gli argomenti
 - Aggiunto il metodo `isCommandTask()` al modello Schedule per determinare il tipo di task
 
-=======
->>>>>>> 10aecc0 (.)
 ## Migliorie Implementate
 
 Oltre alla risoluzione dei conflitti, sono state implementate le seguenti migliorie:
 
-1. **Documentazione Migliorata**
-   - Aggiunta di PHPDoc completo per tutti i metodi
-   - Documentazione chiara delle dipendenze e delle responsabilità
-   - Esempi di utilizzo per i metodi principali
+1. **Classe ExecuteTaskAction**
+   - Creata una nuova classe per centralizzare la logica di esecuzione dei task
+   - Implementati controlli di validità e gestione degli errori
+   - Supporto sia per i comandi Artisan che per le funzioni personalizzate
 
-2. **Gestione degli Errori**
-   - Implementazione di controlli di tipo più rigorosi
-   - Migliore gestione delle eccezioni
-   - Logging più dettagliato degli errori
+2. **Migliore gestione dei parametri**
+   - Aggiunto supporto per parametri tipizzati
+   - Validazione dei parametri prima dell'esecuzione
 
-3. **Ottimizzazioni di Performance**
-   - Rimozione di codice commentato non necessario
-   - Ottimizzazione delle query al database
-   - Migliore gestione della memoria
+3. **Valutazione sicura delle funzioni**
+   - Implementato un meccanismo sicuro per l'esecuzione di funzioni anziché usare eval()
+   - Limitazione alle sole funzioni consentite per migliorare la sicurezza
 
-4. **Manutenibilità**
-   - Codice più pulito e meglio organizzato
-   - Separazione delle responsabilità
-   - Test unitari per le funzionalità principali
+4. **Correzione integrazione eventi**
+   - Corretta l'invocazione dell'evento `Executed` nel metodo `registerSchedule` del `JobServiceProvider`
+   - Aggiunta la creazione delle variabili `$start` e `$output` necessarie per tracciare correttamente l'esecuzione
+   - Questa correzione garantisce la corretta registrazione dei risultati dei task e la notifica agli utenti
 
-## Collegamenti alla Documentazione
+## Impatto e Compatibilità
 
-<<<<<<< HEAD
 Le modifiche apportate mantengono la compatibilità con il codice esistente e migliorano la robustezza del modulo Job. In particolare:
 
 - Tutti i task esistenti continueranno a funzionare senza necessità di modifiche
@@ -277,29 +217,5 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md)
 - [Documentazione Specifica del Modulo](../../docs/risoluzione_conflitti_git.md)
-=======
-
-
-=======
-- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
-=======
-
-
-- [Documentazione Generale Risoluzione Conflitti](../../docs/risoluzione_conflitti_git.md) 
-=======
-- [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md) 
-
-
-=======
-
-
->>>>>>> 8862046 (.)
-=======
-- [README.md](./README.md) - Panoramica generale del modulo
-- [implementation.md](./implementation.md) - Dettagli implementativi
-- [structure.md](./structure.md) - Struttura del modulo
-- [roadmap.md](./roadmap.md) - Piano di sviluppo futuro
->>>>>>> 10aecc0 (.)

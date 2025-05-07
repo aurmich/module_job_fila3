@@ -291,13 +291,6 @@ class JobPageTest extends TestCase
     }
 }
 ``` 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 10aecc0 (.)
 ### Versione HEAD
 
 ### Versione HEAD
@@ -320,14 +313,3 @@ class JobPageTest extends TestCase
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 8862046 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 10aecc0 (.)

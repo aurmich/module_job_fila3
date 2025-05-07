@@ -11,13 +11,6 @@ Data: Wed Apr 23 10:43:12 CEST 2025
 ## Collegamenti
 
 - [Report Generale](/docs/phpstan/README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 10aecc0 (.)
 ### Versione HEAD
 
 
@@ -105,14 +98,3 @@ Data: Wed Apr 23 10:43:12 CEST 2025
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 8862046 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 10aecc0 (.)
