@@ -74,9 +74,14 @@
 >>>>>>> 00370bf (.)
 [0;34mℹ️ [2025-05-07 21:05:05] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-07 21:05:05] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-05-08 09:21:21] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-08 09:21:21] Configurazione git completata con successo[0m
 >>>>>>> 0955572 (.)
 [0;34mℹ️ [2025-05-08 09:25:35] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-08 09:25:35] Configurazione git completata con successo[0m
+=======
+[0;34mℹ️ [2025-05-08 21:19:47] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-08 21:19:47] Configurazione git completata con successo[0m
+>>>>>>> 554b3df (.)
