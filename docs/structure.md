@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f5d8f55 (.)
-
-=======
->>>>>>> cb9105c (.)
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -161,22 +152,10 @@ namespace Modules\Job\App\Filament\Resources;
 * [structure.md](../../../Activity/docs/structure.md)
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
-<<<<<<< HEAD
 * [structure.md](../../../Cms/docs/components/structure.md)
 
 
 ### Versione Incoming
 
 
----
-
-
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
->>>>>>> 28e01c8 (.)
-=======
->>>>>>> f5d8f55 (.)
-=======
 * [structure.md](../../../Cms/docs/components/structure.md)
->>>>>>> cb9105c (.)
