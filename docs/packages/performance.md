@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -28,6 +27,3 @@
 
 ---
 
-=======
- 
->>>>>>> e7266cc (.)

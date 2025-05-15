@@ -291,7 +291,6 @@ class JobPageTest extends TestCase
     }
 }
 ``` 
-<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -314,5 +313,3 @@ class JobPageTest extends TestCase
 
 ---
 
-=======
->>>>>>> e7266cc (.)

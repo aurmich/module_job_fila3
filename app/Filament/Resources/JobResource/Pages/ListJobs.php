@@ -21,6 +21,7 @@ class ListJobs extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
@@ -38,6 +39,9 @@ class ListJobs extends XotBaseListRecords
     public function getListTableColumns(): array
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'id' => TextColumn::make('id')

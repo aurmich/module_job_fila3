@@ -58,7 +58,6 @@ Modules/Job/
 - Integration tests with dependent modules
 - Security testing
 - Performance testing
-<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -91,5 +90,3 @@ Modules/Job/
 
 ---
 
-=======
->>>>>>> e7266cc (.)

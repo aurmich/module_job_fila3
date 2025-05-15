@@ -16,6 +16,7 @@ class ListExports extends XotBaseListRecords
     /**
      * @return array<string, Column>
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
@@ -33,6 +34,9 @@ class ListExports extends XotBaseListRecords
     public function getListTableColumns(): array
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'id' => TextColumn::make('id')

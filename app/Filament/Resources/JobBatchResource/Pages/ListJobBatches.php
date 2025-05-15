@@ -25,6 +25,7 @@ class ListJobBatches extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
@@ -42,6 +43,9 @@ class ListJobBatches extends XotBaseListRecords
     public function getListTableColumns(): array
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         Assert::string($date_format = config('app.date_format'), '['.__LINE__.']['.class_basename(__CLASS__).']');
 

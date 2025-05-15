@@ -36,7 +36,6 @@ cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *:Zone.Identifier
-<<<<<<< HEAD
 
 # Backup files
 *.bak
@@ -45,5 +44,3 @@ cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
-=======
->>>>>>> e7266cc (.)

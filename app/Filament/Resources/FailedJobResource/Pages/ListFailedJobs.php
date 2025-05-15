@@ -20,6 +20,7 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
@@ -37,6 +38,9 @@ class ListFailedJobs extends XotBaseListRecords
     public function getListTableColumns(): array
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'id' => TextColumn::make('id')

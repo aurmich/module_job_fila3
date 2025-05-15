@@ -64,7 +64,6 @@
 - Verificare la compatibilità
 - Testare le modifiche
 - Documentare i cambiamenti 
-<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -87,5 +86,3 @@
 
 ---
 
-=======
->>>>>>> e7266cc (.)

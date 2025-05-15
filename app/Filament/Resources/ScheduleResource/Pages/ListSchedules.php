@@ -12,6 +12,7 @@ class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
@@ -29,6 +30,9 @@ class ListSchedules extends XotBaseListRecords
     public function getListTableColumns(): array
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'id' => Tables\Columns\TextColumn::make('id')

@@ -59,7 +59,6 @@
 - [Monitoraggio](packages/monitoring.md)
 - [Performance](packages/performance.md)
 - [Integrazioni](packages/integrations.md) 
-<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -88,5 +87,3 @@
 
 ---
 
-=======
->>>>>>> e7266cc (.)

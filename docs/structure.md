@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -13,6 +14,8 @@
 =======
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+>>>>>>> Stashed changes
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -54,12 +57,15 @@ Il `RouteServiceProvider` gestisce:
 - [Documentazione Generale dei Moduli](/docs/modules.md)
 - [Configurazione Job](/docs/module_job.md)
 - [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> a75c7d9 (.)
+=======
+>>>>>>> Stashed changes
 
 # Analisi Dettagliata del Modulo Job
 
@@ -179,6 +185,7 @@ namespace Modules\Job\App\Filament\Resources;
 ### Versione Incoming
 
 
+<<<<<<< Updated upstream
 * [structure.md](../../../Cms/docs/components/structure.md)
 <<<<<<< HEAD
 =======
@@ -196,3 +203,6 @@ namespace Modules\Job\App\Filament\Resources;
 =======
 >>>>>>> e7266cc (.)
 >>>>>>> a75c7d9 (.)
+=======
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> Stashed changes

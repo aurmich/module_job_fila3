@@ -6,7 +6,6 @@ Questo documento descrive i conflitti git identificati nel modulo Job e la strat
 
 ## Conflitti Principali
 
-<<<<<<< HEAD
 ## Aggiornamento (2023-11-17)
 
 Sono stati risolti ulteriori conflitti nei seguenti file:
@@ -73,8 +72,6 @@ I file `docs/phpstan/level_*.md` e `docs/phpstan/level_8.json` contenevano anch'
 
 ## Conflitti Principali (Precedenti)
 
-=======
->>>>>>> e7266cc (.)
 ### 1. .gitignore
 
 **Criticità: BASSA**
@@ -220,9 +217,5 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md)
 - [Documentazione Specifica del Modulo](../../docs/risoluzione_conflitti_git.md)
-=======
-- [Documentazione Generale Risoluzione Conflitti](../../docs/risoluzione_conflitti_git.md) 
->>>>>>> e7266cc (.)
