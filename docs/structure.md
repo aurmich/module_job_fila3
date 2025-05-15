@@ -1,9 +1,12 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 
 =======
 
 >>>>>>> b93d3e9 (.)
+=======
+>>>>>>> Stashed changes
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -45,18 +48,24 @@ Il `RouteServiceProvider` gestisce:
 - [Documentazione Generale dei Moduli](/docs/modules.md)
 - [Configurazione Job](/docs/module_job.md)
 - [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 # Analisi Dettagliata del Modulo Job
 =======
 # Modulo Job
 >>>>>>> b93d3e9 (.)
+=======
+
+# Analisi Dettagliata del Modulo Job
+>>>>>>> Stashed changes
 
 Data: 2025-04-23 19:09:55
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Job
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - **Namespaces secondari**:
   - Modules\\Job\\Database\\Factories
@@ -79,13 +88,32 @@ Modules\\Job\\Database\\Seeders
 Marco Sottana
 - **Dipendenze**: repositories_comment type path url ../User type path url ../Tenant type path url ../Xot autoload psr-4 Modules\\Job\\ app/ Modules\\Job\\Database\\Factories\\ database/factories/ Modules\\Job\\Database\\Seeders\\ database/seeders/ 
 >>>>>>> b93d3e9 (.)
+=======
+- **Namespaces secondari**:
+  - Modules\\Job\\Database\\Factories
+  - Modules\\Job\\Database\\Seeders
+- **Pacchetto Composer**: laraxot/module_job_fila3
+- **Autore**: Marco Sottana
+- **Dipendenze**: 
+  - repositories_comment 
+  - type path url ../User 
+  - type path url ../Tenant 
+  - type path url ../Xot 
+- **Autoload**: 
+  - psr-4 Modules\\Job\\ app/ 
+  - Modules\\Job\\Database\\Factories\\ database/factories/ 
+  - Modules\\Job\\Database\\Seeders\\ database/seeders/ 
+>>>>>>> Stashed changes
 - **Totale file PHP**: 199
 - **Totale classi/interfacce**: 115
 
 ## Struttura delle directory
 
 ```
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 Job/
 ├── app/                   # Directory principale del codice
 │   ├── Actions/           # Azioni eseguibili
@@ -114,6 +142,7 @@ Job/
 │   └── views/             # Viste Blade
 ├── routes/                # Definizione route
 └── tests/                 # Test automatizzati
+<<<<<<< Updated upstream
 =======
 
 .git
@@ -528,11 +557,16 @@ tests_old
     },
     "extra": {
 >>>>>>> b93d3e9 (.)
+=======
+>>>>>>> Stashed changes
 ```
 
 ## Dipendenze da altri moduli
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 -      13 Modules\\Xot\\Database\\Migrations\\XotBaseMigration;
 -      10 Modules\\Xot\\Filament\\Resources\\Pages\\XotBaseListRecords;
 -       9 Modules\\Xot\\Filament\\Resources\\XotBaseResource;
@@ -561,6 +595,7 @@ namespace Modules\Job\App\Models;
 namespace Modules\Job\App\Http\Controllers;
 namespace Modules\Job\App\Filament\Resources;
 ```
+<<<<<<< Updated upstream
 =======
 -      13 Modules\Xot\Database\Migrations\XotBaseMigration;
 -      10 Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -573,11 +608,14 @@ namespace Modules\Job\App\Filament\Resources;
 -       2 Modules\Xot\Traits\Updater;
 -       2 Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 >>>>>>> b93d3e9 (.)
+=======
+>>>>>>> Stashed changes
 
 ## Collegamenti alla documentazione generale
 
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - [Documentazione Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/README.md)
 - [Documentazione UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/README.md)
@@ -587,6 +625,11 @@ namespace Modules\Job\App\Filament\Resources;
 ### Versione HEAD
 
 >>>>>>> b93d3e9 (.)
+=======
+- [Documentazione Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/README.md)
+- [Documentazione UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/README.md)
+- [Convenzioni dei Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs/MODULE_NAMESPACE_RULES.md)
+>>>>>>> Stashed changes
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -610,6 +653,7 @@ namespace Modules\Job\App\Filament\Resources;
 ### Versione Incoming
 
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 * [structure.md](../../../Cms/docs/components/structure.md)
 =======
@@ -620,3 +664,6 @@ namespace Modules\Job\App\Filament\Resources;
 >>>>>>> aurmich/dev
 >>>>>>> 28e01c8 (.)
 >>>>>>> b93d3e9 (.)
+=======
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> Stashed changes
