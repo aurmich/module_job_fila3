@@ -12,7 +12,11 @@ class ListFailedImportRows extends XotBaseListRecords
 {
     protected static string $resource = FailedImportRowResource::class;
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> b93d3e9 (.)
     {
         return [
             'id' => TextColumn::make('id')

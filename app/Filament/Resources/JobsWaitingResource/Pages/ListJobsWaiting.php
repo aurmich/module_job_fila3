@@ -55,7 +55,11 @@ class ListJobsWaiting extends XotBaseListRecords
         return [];
     }
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> b93d3e9 (.)
     {
         return [
             TextColumn::make('id')

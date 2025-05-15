@@ -18,7 +18,11 @@ class ListImports extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> b93d3e9 (.)
     {
         return [
             'id' => TextColumn::make('id')

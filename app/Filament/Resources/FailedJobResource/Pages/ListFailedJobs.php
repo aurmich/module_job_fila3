@@ -20,7 +20,11 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> b93d3e9 (.)
     {
         return [
             'id' => TextColumn::make('id')
