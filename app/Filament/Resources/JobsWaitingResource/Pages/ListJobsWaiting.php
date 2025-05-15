@@ -55,15 +55,7 @@ class ListJobsWaiting extends XotBaseListRecords
         return [];
     }
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
     public function getTableColumns(): array
-=======
-    public function getListTableColumns(): array
->>>>>>> b93d3e9 (.)
-=======
-    public function getTableColumns(): array
->>>>>>> Stashed changes
     {
         return [
             TextColumn::make('id')
