@@ -1,6 +1,4 @@
-<?php
-declare(strict_types=1);
-return array (
+<?php return array (
   'actions' => 
   array (
     'prune_batches' => 
