@@ -314,6 +314,7 @@ abstract class BaseJob
         }
     }
 }
+<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -338,3 +339,6 @@ abstract class BaseJob
 
 ---
 
+=======
+``` 
+>>>>>>> 61130fb (.)
