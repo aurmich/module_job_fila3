@@ -117,6 +117,7 @@ private function evaluateFunction(string $functionString): mixed
 
 1. Applicare principi simili agli altri file identificati nel modulo.
 2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+<<<<<<< HEAD
 ### Versione HEAD
 
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
@@ -142,3 +143,6 @@ private function evaluateFunction(string $functionString): mixed
 
 ---
 
+=======
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
+>>>>>>> dc3de22 (.)
