@@ -80,3 +80,35 @@ return [
 
 ---
 
+## Novità 2025: Best practice obbligatorie
+
+- Ogni file di traduzione deve avere la sezione `validation` con messaggi specifici per i campi principali.
+- Ogni azione (`actions`) deve avere almeno `label`, `success`, `error`, `tooltip` dove serve.
+- Tutti i campi in `fields` devono avere almeno `label`, `placeholder`, `help` o `tooltip`.
+- Non rimuovere mai chiavi esistenti: solo aggiunte o miglioramenti.
+- Uniformare la struttura tra i file (navigation, fields, actions, messages, validation, statuses, priorities, types, ecc.).
+
+## Esempio aggiornato
+
+```php
+return [
+    'fields' => [
+        'job_id' => [
+            'label' => 'Job ID',
+            'placeholder' => 'Enter job ID',
+            'help' => 'Unique identifier for the job',
+        ],
+    ],
+    'actions' => [
+        'import' => [
+            'label' => 'Import',
+            'success' => 'Import completed successfully',
+            'error' => 'Import failed',
+            'tooltip' => 'Import jobs from file',
+        ],
+    ],
+    'validation' => [
+        'job_id_required' => 'Job ID is required.',
+    ],
+];
+

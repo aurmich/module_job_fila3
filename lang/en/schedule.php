@@ -1,19 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'navigation' => [
-        'name' => 'Schedulatore',
-        'plural' => 'Schedulatori',
-        'group' => [
-            'name' => 'Jobs',
-            'description' => 'Gestione dei job schedulati',
-        ],
-        'label' => 'Schedulatore',
-=======
-=======
->>>>>>> d1512fa (.)
 declare(strict_types=1);
 
 return [
@@ -25,12 +11,7 @@ return [
             'description' => 'Scheduled jobs management',
         ],
         'label' => 'Scheduler',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-        'sort' => '55',
-=======
         'sort' => 55,
->>>>>>> d1512fa (.)
         'icon' => 'job-schedule-animated',
     ],
     'resource' => [
@@ -40,59 +21,17 @@ return [
         'history' => 'Show run history',
     ],
     'fields' => [
-        'name' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'label' => 'Nome',
-            'tooltip' => 'Inserisci il nome del job programmato',
-            'placeholder' => 'Nome del job',
+        'schedule_id' => [
+            'label' => 'Schedule ID',
+            'placeholder' => 'Enter schedule ID',
+            'help' => 'Unique identifier for the schedule',
         ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Seleziona il guardiano per il job',
-            'placeholder' => 'Nome del guardiano',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
-            'tooltip' => 'Assegna i permessi necessari al job',
-            'placeholder' => 'Permessi',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Nome del responsabile',
-            'placeholder' => 'Nome responsabile',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => 'Cognome del responsabile',
-            'placeholder' => 'Cognome responsabile',
-        ],
-        'command' => [
-            'label' => 'Command',
-            'tooltip' => 'Inserisci il comando da eseguire',
-            'placeholder' => 'Comando',
-        ],
-        'arguments' => [
-            'label' => 'Arguments',
-            'tooltip' => 'Specificare eventuali argomenti per il comando',
-            'placeholder' => 'Argomenti',
-        ],
-        'options' => [
-            'label' => 'Options',
-            'tooltip' => 'Inserisci eventuali opzioni per il comando',
-            'placeholder' => 'Opzioni',
-        ],
-        'expression' => [
+        'cron_expression' => [
             'label' => 'Cron Expression',
-            'tooltip' => 'Imposta l\'espressione cron per la pianificazione',
-            'placeholder' => 'Espressione Cron',
+            'placeholder' => 'Enter cron expression',
+            'help' => 'Cron expression for the schedule',
         ],
-        'log_filename' => [
-            'label' => 'Log Filename',
-            'tooltip' => 'Nome del file di log',
-=======
-=======
->>>>>>> d1512fa (.)
+        'name' => [
             'label' => 'Name',
             'tooltip' => 'Enter the scheduled job name',
             'placeholder' => 'Job name',
@@ -140,70 +79,26 @@ return [
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Log file name',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
             'placeholder' => 'Log filename',
         ],
         'status' => [
             'label' => 'Status',
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'tooltip' => 'Stato corrente del job',
-            'placeholder' => 'Stato',
-        ],
-        'actions' => [
-            'label' => 'Actions',
-            'tooltip' => 'Azioni disponibili per il job',
-=======
-=======
->>>>>>> d1512fa (.)
             'tooltip' => 'Current job status',
             'placeholder' => 'Status',
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Available actions for the job',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
             'icon' => 'action-icon',
             'color' => 'blue',
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'tooltip' => 'Esegui il job in background',
-=======
             'tooltip' => 'Run the job in background',
->>>>>>> dd0eeda (.)
-=======
-            'tooltip' => 'Run the job in background',
->>>>>>> d1512fa (.)
             'placeholder' => 'Run in background',
         ],
         'created_at' => [
             'label' => 'Created At',
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'tooltip' => 'Data di creazione del job',
-            'placeholder' => 'Data creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Updated At',
-            'tooltip' => 'Ultima data di aggiornamento',
-            'placeholder' => 'Data aggiornamento',
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-            'tooltip' => 'Imposta il fuso orario per il job',
-            'placeholder' => 'Fuso orario',
-=======
-=======
->>>>>>> d1512fa (.)
             'tooltip' => 'Job creation date',
             'placeholder' => 'Creation date',
         ],
@@ -216,18 +111,6 @@ return [
             'label' => 'Timezone',
             'tooltip' => 'Set the timezone for the job',
             'placeholder' => 'Timezone',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-=======
         ],
         'toggleColumns' => [
             'label' => 'Toggle Columns',
@@ -243,7 +126,6 @@ return [
             'label' => 'Reset Filters',
             'tooltip' => 'Reset all filters',
             'placeholder' => '',
->>>>>>> d1512fa (.)
         ],
     ],
     'messages' => [
@@ -254,23 +136,15 @@ return [
         'select' => 'Select a command',
         'custom' => 'Custom Command',
         'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`)',
+        'scheduled' => 'Job scheduled',
+        'executed' => 'Schedule executed',
     ],
     'status' => [
         'active' => 'Active',
         'inactive' => 'Inactive',
         'trashed' => 'Trashed',
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'running' => 'In Esecuzione',
-        'failed' => 'Fallito',
-=======
         'running' => 'Running',
         'failed' => 'Failed',
->>>>>>> dd0eeda (.)
-=======
-        'running' => 'Running',
-        'failed' => 'Failed',
->>>>>>> d1512fa (.)
     ],
     'buttons' => [
         'inactivate' => [
@@ -289,18 +163,6 @@ return [
             'color' => 'purple',
         ],
         'run' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'label' => 'Esegui Ora',
-            'modal' => [
-                'heading' => 'Esegui Schedule',
-                'description' => 'Vuoi eseguire questo schedule ora?',
-            ],
-            'messages' => [
-                'success' => 'Schedule eseguito con successo',
-=======
-=======
->>>>>>> d1512fa (.)
             'label' => 'Run Now',
             'modal' => [
                 'heading' => 'Run Schedule',
@@ -308,27 +170,12 @@ return [
             ],
             'messages' => [
                 'success' => 'Schedule executed successfully',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
+                'error' => 'Error executing schedule',
             ],
             'icon' => 'icon-run',
             'color' => 'blue',
         ],
         'toggle' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'label' => 'Attiva/Disattiva',
-            'modal' => [
-                'heading' => 'Modifica Stato',
-                'description' => 'Vuoi modificare lo stato di questo schedule?',
-            ],
-            'messages' => [
-                'success' => 'Stato modificato con successo',
-=======
-=======
->>>>>>> d1512fa (.)
             'label' => 'Activate/Deactivate',
             'modal' => [
                 'heading' => 'Modify Status',
@@ -336,27 +183,11 @@ return [
             ],
             'messages' => [
                 'success' => 'Status modified successfully',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
             ],
             'icon' => 'icon-toggle',
             'color' => 'orange',
         ],
         'delete' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'label' => 'Elimina',
-            'modal' => [
-                'heading' => 'Elimina Schedule',
-                'description' => 'Sei sicuro di voler eliminare questo schedule?',
-            ],
-            'messages' => [
-                'success' => 'Schedule eliminato con successo',
-=======
-=======
->>>>>>> d1512fa (.)
             'label' => 'Delete',
             'modal' => [
                 'heading' => 'Delete Schedule',
@@ -364,59 +195,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Schedule deleted successfully',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
             ],
             'icon' => 'icon-delete',
             'color' => 'red',
         ],
     ],
     'validation' => [
+        'schedule_id_required' => 'Schedule ID is required.',
+        'cron_expression_required' => 'Cron Expression is required.',
+        'name_required' => 'Name is required.',
+        'command_required' => 'Command is required.',
+        'timezone_required' => 'Timezone is required.',
         'cron' => 'The field must be filled in the cron expression format.',
         'regex' => 'The :attribute field must only contain letters, numbers, dashes, and underscores. Comma is also allowed.',
     ],
     'frequencies' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'everyMinute' => 'Ogni Minuto',
-        'everyFiveMinutes' => 'Ogni 5 Minuti',
-        'everyTenMinutes' => 'Ogni 10 Minuti',
-        'everyFifteenMinutes' => 'Ogni 15 Minuti',
-        'everyThirtyMinutes' => 'Ogni 30 Minuti',
-        'hourly' => 'Ogni Ora',
-        'daily' => 'Ogni Giorno',
-        'weekly' => 'Ogni Settimana',
-        'monthly' => 'Ogni Mese',
-        'quarterly' => 'Ogni Trimestre',
-        'yearly' => 'Ogni Anno',
-    ],
-    'days' => [
-        'sunday' => 'Domenica',
-        'monday' => 'Lunedì',
-        'tuesday' => 'Martedì',
-        'wednesday' => 'Mercoledì',
-        'thursday' => 'Giovedì',
-        'friday' => 'Venerdì',
-        'saturday' => 'Sabato',
-    ],
-    'cron' => [
-        'help' => [
-            'title' => 'Aiuto Espressioni Cron',
-            'minute' => 'Minuto (0-59)',
-            'hour' => 'Ora (0-23)',
-            'day_of_month' => 'Giorno del Mese (1-31)',
-            'month' => 'Mese (1-12)',
-            'day_of_week' => 'Giorno della Settimana (0-6)',
-            'examples' => [
-                'every_minute' => '* * * * * - Ogni minuto',
-                'every_hour' => '0 * * * * - Ogni ora',
-                'every_day' => '0 0 * * * - Ogni giorno a mezzanotte',
-                'every_monday' => '0 0 * * 1 - Ogni lunedì a mezzanotte',
-=======
-=======
->>>>>>> d1512fa (.)
         'everyMinute' => 'Every Minute',
         'everyFiveMinutes' => 'Every 5 Minutes',
         'everyTenMinutes' => 'Every 10 Minutes',
@@ -451,10 +244,6 @@ return [
                 'every_hour' => '0 * * * * - Every hour',
                 'every_day' => '0 0 * * * - Every day at midnight',
                 'every_monday' => '0 0 * * 1 - Every Monday at midnight',
-<<<<<<< HEAD
->>>>>>> dd0eeda (.)
-=======
->>>>>>> d1512fa (.)
             ],
         ],
     ],
