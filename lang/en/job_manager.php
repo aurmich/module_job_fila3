@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'navigation' => [
 <<<<<<< HEAD
@@ -9,20 +10,33 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione centralizzata di tutti i jobs',
 =======
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+>>>>>>> d1512fa (.)
         'name' => 'Job Management',
         'plural' => 'Job Management',
         'group' => [
             'name' => 'System',
             'description' => 'Centralized management of all jobs',
+<<<<<<< HEAD
 >>>>>>> dd0eeda (.)
         ],
         'label' => 'Job Manager',
         'sort' => '1',
+=======
+        ],
+        'label' => 'Job Manager',
+        'sort' => 1,
+>>>>>>> d1512fa (.)
         'icon' => 'job-manager-animated',
     ],
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => 'Identificativo unico del Job Manager',
             'placeholder' => 'ID del Manager',
         ],
@@ -107,13 +121,23 @@ return [
             'tooltip' => 'Permessi associati al Job Manager',
             'placeholder' => 'Seleziona permessi',
 =======
+=======
+            'tooltip' => 'Unique identifier of the Job Manager',
+            'placeholder' => 'Manager ID',
+        ],
+        'name' => [
+>>>>>>> d1512fa (.)
             'label' => 'Name',
             'tooltip' => 'Name of the Job Manager',
             'placeholder' => 'Enter name',
         ],
         'description' => [
             'label' => 'Description',
+<<<<<<< HEAD
             'tooltip' => 'Brief description of the job manager',
+=======
+            'tooltip' => 'Brief description of the Job Manager',
+>>>>>>> d1512fa (.)
             'placeholder' => 'Job Manager description',
         ],
         'status' => [
@@ -128,17 +152,29 @@ return [
         ],
         'priority' => [
             'label' => 'Priority',
+<<<<<<< HEAD
             'tooltip' => 'Execution priority of the job manager',
+=======
+            'tooltip' => 'Execution priority of the Job Manager',
+>>>>>>> d1512fa (.)
             'placeholder' => 'Select priority',
         ],
         'max_attempts' => [
             'label' => 'Max Attempts',
+<<<<<<< HEAD
             'tooltip' => 'Maximum number of attempts to run the job manager',
+=======
+            'tooltip' => 'Maximum number of attempts to run the Job Manager',
+>>>>>>> d1512fa (.)
             'placeholder' => 'Max attempts',
         ],
         'timeout' => [
             'label' => 'Timeout',
+<<<<<<< HEAD
             'tooltip' => 'Maximum execution time for the job manager',
+=======
+            'tooltip' => 'Maximum execution time for the Job Manager',
+>>>>>>> d1512fa (.)
             'placeholder' => 'Timeout',
         ],
         'created_at' => [
@@ -185,6 +221,7 @@ return [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the Job Manager',
             'placeholder' => 'Select permissions',
+<<<<<<< HEAD
 >>>>>>> dd0eeda (.)
         ],
         'first_name' => [
@@ -208,10 +245,43 @@ return [
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+=======
+        ],
+        'first_name' => [
+            'label' => 'First Name',
+            'tooltip' => 'First name of the associated user',
+            'placeholder' => 'Enter first name',
+        ],
+        'last_name' => [
+            'label' => 'Last Name',
+            'tooltip' => 'Last name of the associated user',
+            'placeholder' => 'Enter last name',
+        ],
+        'toggleColumns' => [
+            'label' => 'Toggle Columns',
+            'tooltip' => 'Show or hide table columns',
+            'placeholder' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'Reorder Records',
+            'tooltip' => 'Change the order of records',
+            'placeholder' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'Reset Filters',
+            'tooltip' => 'Reset all filters',
+            'placeholder' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'Apply Filters',
+            'tooltip' => 'Apply selected filters',
+            'placeholder' => '',
+>>>>>>> d1512fa (.)
         ],
     ],
     'actions' => [
         'import' => [
+<<<<<<< HEAD
             'label' => 'Importa',
             'modal' => [
                 'heading' => 'Importa Job Manager',
@@ -219,11 +289,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Importazione del Job Manager avviata con successo',
+=======
+            'label' => 'Import',
+            'modal' => [
+                'heading' => 'Import Job Manager',
+                'description' => 'Select an XLS or CSV file to import the Job Manager',
+            ],
+            'messages' => [
+                'success' => 'Job Manager import started successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'upload',
             'color' => 'primary',
         ],
         'export' => [
+<<<<<<< HEAD
             'label' => 'Esporta',
             'modal' => [
                 'heading' => 'Esporta Job Manager',
@@ -231,11 +311,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Job Manager esportato con successo',
+=======
+            'label' => 'Export',
+            'modal' => [
+                'heading' => 'Export Job Manager',
+                'description' => 'Export Job Manager data to a file',
+            ],
+            'messages' => [
+                'success' => 'Job Manager exported successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'download',
             'color' => 'success',
         ],
         'run' => [
+<<<<<<< HEAD
             'label' => 'Esegui',
             'modal' => [
                 'heading' => 'Esegui Job Manager',
@@ -243,11 +333,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Job Manager avviato con successo',
+=======
+            'label' => 'Run',
+            'modal' => [
+                'heading' => 'Run Job Manager',
+                'description' => 'Do you want to run this Job Manager?',
+            ],
+            'messages' => [
+                'success' => 'Job Manager started successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'play',
             'color' => 'primary',
         ],
         'pause' => [
+<<<<<<< HEAD
             'label' => 'Pausa',
             'modal' => [
                 'heading' => 'Metti in Pausa',
@@ -255,11 +355,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Job Manager messo in pausa con successo',
+=======
+            'label' => 'Pause',
+            'modal' => [
+                'heading' => 'Pause Job Manager',
+                'description' => 'Do you want to pause this Job Manager?',
+            ],
+            'messages' => [
+                'success' => 'Job Manager paused successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'pause',
             'color' => 'warning',
         ],
         'resume' => [
+<<<<<<< HEAD
             'label' => 'Riprendi',
             'modal' => [
                 'heading' => 'Riprendi Esecuzione',
@@ -267,11 +377,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Job Manager ripreso con successo',
+=======
+            'label' => 'Resume',
+            'modal' => [
+                'heading' => 'Resume Execution',
+                'description' => 'Do you want to resume this Job Manager?',
+            ],
+            'messages' => [
+                'success' => 'Job Manager resumed successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'redo',
             'color' => 'success',
         ],
         'delete' => [
+<<<<<<< HEAD
             'label' => 'Elimina',
             'modal' => [
                 'heading' => 'Elimina Job Manager',
@@ -279,12 +399,22 @@ return [
             ],
             'messages' => [
                 'success' => 'Job Manager eliminato con successo',
+=======
+            'label' => 'Delete',
+            'modal' => [
+                'heading' => 'Delete Job Manager',
+                'description' => 'Are you sure you want to delete this Job Manager?',
+            ],
+            'messages' => [
+                'success' => 'Job Manager deleted successfully',
+>>>>>>> d1512fa (.)
             ],
             'icon' => 'trash',
             'color' => 'danger',
         ],
     ],
     'messages' => [
+<<<<<<< HEAD
         'no_jobs' => 'Nessun Job Manager presente',
         'manager_started' => 'Job Manager avviato',
         'manager_paused' => 'Job Manager in pausa',
@@ -301,13 +431,38 @@ return [
     'types' => [
         'scheduler' => 'Schedulatore',
         'queue' => 'Coda',
+=======
+        'no_jobs' => 'No Job Manager found',
+        'manager_started' => 'Job Manager started',
+        'manager_paused' => 'Job Manager paused',
+        'manager_resumed' => 'Job Manager resumed',
+        'manager_completed' => 'Job Manager completed',
+        'manager_failed' => 'Job Manager failed',
+    ],
+    'statuses' => [
+        'active' => 'Active',
+        'paused' => 'Paused',
+        'completed' => 'Completed',
+        'failed' => 'Failed',
+    ],
+    'types' => [
+        'scheduler' => 'Scheduler',
+        'queue' => 'Queue',
+>>>>>>> d1512fa (.)
         'worker' => 'Worker',
         'monitor' => 'Monitor',
     ],
     'priorities' => [
+<<<<<<< HEAD
         'low' => 'Bassa',
         'normal' => 'Normale',
         'high' => 'Alta',
         'urgent' => 'Urgente',
+=======
+        'low' => 'Low',
+        'normal' => 'Normal',
+        'high' => 'High',
+        'urgent' => 'Urgent',
+>>>>>>> d1512fa (.)
     ],
 ];

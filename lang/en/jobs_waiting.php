@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'navigation' => [
 <<<<<<< HEAD
@@ -11,6 +12,12 @@ return [
         ],
         'label' => 'Jobs in Attesa',
 =======
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+>>>>>>> d1512fa (.)
         'name' => 'Waiting Jobs',
         'plural' => 'Waiting Jobs',
         'group' => [
@@ -18,13 +25,19 @@ return [
             'description' => 'Queue job monitoring',
         ],
         'label' => 'Waiting Jobs',
+<<<<<<< HEAD
 >>>>>>> dd0eeda (.)
         'sort' => '15',
         'icon' => 'jobs waiting.navigation',
+=======
+        'sort' => 15,
+        'icon' => 'jobs-waiting-navigation',
+>>>>>>> d1512fa (.)
     ],
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => 'Identificativo univoco del job',
             'placeholder' => 'ID del job',
         ],
@@ -109,6 +122,12 @@ return [
             'tooltip' => 'Cognome dell\'utente',
             'placeholder' => 'Inserisci il cognome',
 =======
+=======
+            'tooltip' => 'Unique identifier of the job',
+            'placeholder' => 'Job ID',
+        ],
+        'queue' => [
+>>>>>>> d1512fa (.)
             'label' => 'Queue',
             'tooltip' => 'Name of the job queue',
             'placeholder' => 'Select queue',
@@ -180,11 +199,16 @@ return [
         ],
         'first_name' => [
             'label' => 'First Name',
+<<<<<<< HEAD
             'tooltip' => 'User\'s first name',
+=======
+            'tooltip' => "User's first name",
+>>>>>>> d1512fa (.)
             'placeholder' => 'Enter first name',
         ],
         'last_name' => [
             'label' => 'Last Name',
+<<<<<<< HEAD
             'tooltip' => 'User\'s last name',
             'placeholder' => 'Enter last name',
 >>>>>>> dd0eeda (.)
@@ -199,23 +223,54 @@ return [
         ],
         'reorderRecords' => [
             'label' => 'reorderRecords',
+=======
+            'tooltip' => "User's last name",
+            'placeholder' => 'Enter last name',
+        ],
+        'select_all' => [
+            'label' => 'Select All',
+            'tooltip' => 'Select all available items',
+            'placeholder' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'Toggle Columns',
+            'tooltip' => 'Show or hide table columns',
+            'placeholder' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'Reorder Records',
+            'tooltip' => 'Change the order of records',
+            'placeholder' => '',
+>>>>>>> d1512fa (.)
         ],
     ],
     'actions' => [
         'import' => [
+<<<<<<< HEAD
             'label' => 'Importa',
             'tooltip' => 'Importa dati da un file XLS o CSV',
+=======
+            'label' => 'Import',
+            'tooltip' => 'Import data from an XLS or CSV file',
+>>>>>>> d1512fa (.)
             'icon' => 'import-icon',
             'color' => 'blue',
             'fields' => [
                 'import_file' => [
+<<<<<<< HEAD
                     'label' => 'Seleziona un file XLS o CSV da caricare',
                     'tooltip' => 'Seleziona un file da caricare per l\'importazione',
                     'placeholder' => 'Scegli un file',
+=======
+                    'label' => 'Select an XLS or CSV file to upload',
+                    'tooltip' => 'Select a file to upload for import',
+                    'placeholder' => 'Choose a file',
+>>>>>>> d1512fa (.)
                 ],
             ],
         ],
         'export' => [
+<<<<<<< HEAD
             'label' => 'Esporta',
             'tooltip' => 'Esporta i dati in un file',
             'icon' => 'export-icon',
@@ -229,10 +284,26 @@ return [
                 'parent_name' => [
                     'label' => 'Nome area livello superiore',
                     'tooltip' => 'Nome dell\'area di livello superiore',
+=======
+            'label' => 'Export',
+            'tooltip' => 'Export data to a file',
+            'icon' => 'export-icon',
+            'color' => 'green',
+            'filename_prefix' => 'Areas as of',
+            'columns' => [
+                'name' => [
+                    'label' => 'Area name',
+                    'tooltip' => 'Name of the area to export',
+                ],
+                'parent_name' => [
+                    'label' => 'Parent area name',
+                    'tooltip' => 'Name of the parent area',
+>>>>>>> d1512fa (.)
                 ],
             ],
         ],
         'process' => [
+<<<<<<< HEAD
             'label' => 'Processa',
             'tooltip' => 'Processa il job in attesa',
             'icon' => 'play-circle',
@@ -269,10 +340,49 @@ return [
             ],
             'messages' => [
                 'success' => 'Job riprovato con successo',
+=======
+            'label' => 'Process',
+            'tooltip' => 'Process the waiting job',
+            'icon' => 'play-circle',
+            'color' => 'green',
+            'modal' => [
+                'heading' => 'Process Job',
+                'description' => 'Do you want to process this waiting job?',
+            ],
+            'messages' => [
+                'success' => 'Job processed successfully',
+            ],
+        ],
+        'cancel' => [
+            'label' => 'Cancel',
+            'tooltip' => 'Cancel the waiting job',
+            'icon' => 'delete-icon',
+            'color' => 'red',
+            'modal' => [
+                'heading' => 'Cancel Job',
+                'description' => 'Do you want to cancel this waiting job?',
+            ],
+            'messages' => [
+                'success' => 'Job cancelled successfully',
+            ],
+        ],
+        'retry' => [
+            'label' => 'Retry',
+            'tooltip' => 'Retry the failed job',
+            'icon' => 'redo',
+            'color' => 'yellow',
+            'modal' => [
+                'heading' => 'Retry Job',
+                'description' => 'Do you want to retry this job?',
+            ],
+            'messages' => [
+                'success' => 'Job retried successfully',
+>>>>>>> d1512fa (.)
             ],
         ],
     ],
     'messages' => [
+<<<<<<< HEAD
         'no_jobs' => 'Nessun job in attesa',
         'job_processed' => 'Job processato',
         'job_cancelled' => 'Job cancellato',
@@ -294,6 +404,29 @@ return [
         'default' => 'Default',
         'scheduled' => 'Schedulato',
         'recurring' => 'Ricorrente',
+=======
+        'no_jobs' => 'No waiting jobs',
+        'job_processed' => 'Job processed',
+        'job_cancelled' => 'Job cancelled',
+        'job_retried' => 'Job retried',
+    ],
+    'statuses' => [
+        'waiting' => 'Waiting',
+        'reserved' => 'Reserved',
+        'delayed' => 'Delayed',
+        'ready' => 'Ready',
+    ],
+    'priorities' => [
+        'low' => 'Low',
+        'normal' => 'Normal',
+        'high' => 'High',
+        'urgent' => 'Urgent',
+    ],
+    'types' => [
+        'default' => 'Default',
+        'scheduled' => 'Scheduled',
+        'recurring' => 'Recurring',
+>>>>>>> d1512fa (.)
         'batch' => 'Batch',
     ],
 ];
