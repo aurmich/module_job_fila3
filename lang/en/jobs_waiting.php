@@ -2,6 +2,7 @@
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'Jobs in Attesa',
         'plural' => 'Jobs in Attesa',
         'group' => [
@@ -9,6 +10,15 @@ return [
             'description' => 'Monitoraggio dei jobs in coda',
         ],
         'label' => 'Jobs in Attesa',
+=======
+        'name' => 'Waiting Jobs',
+        'plural' => 'Waiting Jobs',
+        'group' => [
+            'name' => 'System',
+            'description' => 'Queue job monitoring',
+        ],
+        'label' => 'Waiting Jobs',
+>>>>>>> dd0eeda (.)
         'sort' => '15',
         'icon' => 'jobs waiting.navigation',
     ],
@@ -19,6 +29,7 @@ return [
             'placeholder' => 'ID del job',
         ],
         'queue' => [
+<<<<<<< HEAD
             'label' => 'Coda',
             'tooltip' => 'Nome della coda del job',
             'placeholder' => 'Seleziona la coda',
@@ -97,6 +108,86 @@ return [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente',
             'placeholder' => 'Inserisci il cognome',
+=======
+            'label' => 'Queue',
+            'tooltip' => 'Name of the job queue',
+            'placeholder' => 'Select queue',
+        ],
+        'payload' => [
+            'label' => 'Payload',
+            'tooltip' => 'Data associated with the job',
+            'placeholder' => 'Load job data',
+        ],
+        'attempts' => [
+            'label' => 'Attempts',
+            'tooltip' => 'Number of execution attempts',
+            'placeholder' => 'Attempts made',
+        ],
+        'reserved_at' => [
+            'label' => 'Reserved At',
+            'tooltip' => 'Date and time when the job was reserved',
+            'placeholder' => 'Select date',
+        ],
+        'available_at' => [
+            'label' => 'Available At',
+            'tooltip' => 'Date and time when the job becomes available',
+            'placeholder' => 'Select date',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => 'Job creation date',
+            'placeholder' => 'Creation date',
+        ],
+        'status' => [
+            'label' => 'Status',
+            'tooltip' => 'Current job status',
+            'placeholder' => 'Select status',
+        ],
+        'priority' => [
+            'label' => 'Priority',
+            'tooltip' => 'Job priority',
+            'placeholder' => 'Select priority',
+        ],
+        'type' => [
+            'label' => 'Type',
+            'tooltip' => 'Job type (Import, Export, etc.)',
+            'placeholder' => 'Select type',
+        ],
+        'name' => [
+            'label' => 'Name',
+            'tooltip' => 'Job name',
+            'placeholder' => 'Enter job name',
+        ],
+        'description' => [
+            'label' => 'Description',
+            'tooltip' => 'Job description',
+            'placeholder' => 'Enter description',
+        ],
+        'delay' => [
+            'label' => 'Delay',
+            'tooltip' => 'Delay time before the job is executed',
+            'placeholder' => 'Enter delay',
+        ],
+        'timeout' => [
+            'label' => 'Timeout',
+            'tooltip' => 'Maximum job execution time',
+            'placeholder' => 'Enter timeout',
+        ],
+        'tags' => [
+            'label' => 'Tags',
+            'tooltip' => 'Tags associated with the job',
+            'placeholder' => 'Enter tags',
+        ],
+        'first_name' => [
+            'label' => 'First Name',
+            'tooltip' => 'User\'s first name',
+            'placeholder' => 'Enter first name',
+        ],
+        'last_name' => [
+            'label' => 'Last Name',
+            'tooltip' => 'User\'s last name',
+            'placeholder' => 'Enter last name',
+>>>>>>> dd0eeda (.)
         ],
         'select_all' => [
             'label' => 'Seleziona Tutti',

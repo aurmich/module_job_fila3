@@ -2,11 +2,19 @@
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'Gestione Jobs',
         'plural' => 'Gestione Jobs',
         'group' => [
             'name' => 'Sistema',
             'description' => 'Gestione centralizzata di tutti i jobs',
+=======
+        'name' => 'Job Management',
+        'plural' => 'Job Management',
+        'group' => [
+            'name' => 'System',
+            'description' => 'Centralized management of all jobs',
+>>>>>>> dd0eeda (.)
         ],
         'label' => 'Job Manager',
         'sort' => '1',
@@ -19,6 +27,7 @@ return [
             'placeholder' => 'ID del Manager',
         ],
         'name' => [
+<<<<<<< HEAD
             'label' => 'Nome',
             'tooltip' => 'Nome del Job Manager',
             'placeholder' => 'Inserisci nome',
@@ -97,6 +106,86 @@ return [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al Job Manager',
             'placeholder' => 'Seleziona permessi',
+=======
+            'label' => 'Name',
+            'tooltip' => 'Name of the Job Manager',
+            'placeholder' => 'Enter name',
+        ],
+        'description' => [
+            'label' => 'Description',
+            'tooltip' => 'Brief description of the job manager',
+            'placeholder' => 'Job Manager description',
+        ],
+        'status' => [
+            'label' => 'Status',
+            'tooltip' => 'Current status of the Job Manager',
+            'placeholder' => 'Select status',
+        ],
+        'type' => [
+            'label' => 'Type',
+            'tooltip' => 'Type of Job Manager',
+            'placeholder' => 'Select type',
+        ],
+        'priority' => [
+            'label' => 'Priority',
+            'tooltip' => 'Execution priority of the job manager',
+            'placeholder' => 'Select priority',
+        ],
+        'max_attempts' => [
+            'label' => 'Max Attempts',
+            'tooltip' => 'Maximum number of attempts to run the job manager',
+            'placeholder' => 'Max attempts',
+        ],
+        'timeout' => [
+            'label' => 'Timeout',
+            'tooltip' => 'Maximum execution time for the job manager',
+            'placeholder' => 'Timeout',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => 'Creation date of the Job Manager',
+            'placeholder' => 'Creation date',
+        ],
+        'updated_at' => [
+            'label' => 'Updated At',
+            'tooltip' => 'Date of last update',
+            'placeholder' => 'Update date',
+        ],
+        'last_run' => [
+            'label' => 'Last Run',
+            'tooltip' => 'Date and time of last execution',
+            'placeholder' => 'Last run',
+        ],
+        'next_run' => [
+            'label' => 'Next Run',
+            'tooltip' => 'Date and time of next execution',
+            'placeholder' => 'Next run',
+        ],
+        'cron_expression' => [
+            'label' => 'Cron Expression',
+            'tooltip' => 'Cron expression for job scheduling',
+            'placeholder' => 'Enter cron expression',
+        ],
+        'output' => [
+            'label' => 'Output',
+            'tooltip' => 'Job execution output',
+            'placeholder' => 'Output',
+        ],
+        'error' => [
+            'label' => 'Error',
+            'tooltip' => 'Error message if the job fails',
+            'placeholder' => 'Error',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+            'tooltip' => 'Guard associated with the Job Manager',
+            'placeholder' => 'Select Guard',
+        ],
+        'permissions' => [
+            'label' => 'Permissions',
+            'tooltip' => 'Permissions associated with the Job Manager',
+            'placeholder' => 'Select permissions',
+>>>>>>> dd0eeda (.)
         ],
         'first_name' => [
             'label' => 'Nome',

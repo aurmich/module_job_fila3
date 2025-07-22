@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'name' => 'Schedulatore',
@@ -9,6 +10,19 @@ return [
             'description' => 'Gestione dei job schedulati',
         ],
         'label' => 'Schedulatore',
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'name' => 'Scheduler',
+        'plural' => 'Schedulers',
+        'group' => [
+            'name' => 'Jobs',
+            'description' => 'Scheduled jobs management',
+        ],
+        'label' => 'Scheduler',
+>>>>>>> dd0eeda (.)
         'sort' => '55',
         'icon' => 'job-schedule-animated',
     ],
@@ -20,6 +34,7 @@ return [
     ],
     'fields' => [
         'name' => [
+<<<<<<< HEAD
             'label' => 'Nome',
             'tooltip' => 'Inserisci il nome del job programmato',
             'placeholder' => 'Nome del job',
@@ -67,26 +82,89 @@ return [
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Nome del file di log',
+=======
+            'label' => 'Name',
+            'tooltip' => 'Enter the scheduled job name',
+            'placeholder' => 'Job name',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+            'tooltip' => 'Select the guard for the job',
+            'placeholder' => 'Guard name',
+        ],
+        'permissions' => [
+            'label' => 'Permissions',
+            'tooltip' => 'Assign necessary permissions to the job',
+            'placeholder' => 'Permissions',
+        ],
+        'first_name' => [
+            'label' => 'First Name',
+            'tooltip' => 'Responsible person first name',
+            'placeholder' => 'Responsible first name',
+        ],
+        'last_name' => [
+            'label' => 'Last Name',
+            'tooltip' => 'Responsible person last name',
+            'placeholder' => 'Responsible last name',
+        ],
+        'command' => [
+            'label' => 'Command',
+            'tooltip' => 'Enter the command to execute',
+            'placeholder' => 'Command',
+        ],
+        'arguments' => [
+            'label' => 'Arguments',
+            'tooltip' => 'Specify any arguments for the command',
+            'placeholder' => 'Arguments',
+        ],
+        'options' => [
+            'label' => 'Options',
+            'tooltip' => 'Enter any options for the command',
+            'placeholder' => 'Options',
+        ],
+        'expression' => [
+            'label' => 'Cron Expression',
+            'tooltip' => 'Set the cron expression for scheduling',
+            'placeholder' => 'Cron Expression',
+        ],
+        'log_filename' => [
+            'label' => 'Log Filename',
+            'tooltip' => 'Log file name',
+>>>>>>> dd0eeda (.)
             'placeholder' => 'Log filename',
         ],
         'status' => [
             'label' => 'Status',
+<<<<<<< HEAD
             'tooltip' => 'Stato corrente del job',
             'placeholder' => 'Stato',
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Azioni disponibili per il job',
+=======
+            'tooltip' => 'Current job status',
+            'placeholder' => 'Status',
+        ],
+        'actions' => [
+            'label' => 'Actions',
+            'tooltip' => 'Available actions for the job',
+>>>>>>> dd0eeda (.)
             'icon' => 'action-icon',
             'color' => 'blue',
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
+<<<<<<< HEAD
             'tooltip' => 'Esegui il job in background',
+=======
+            'tooltip' => 'Run the job in background',
+>>>>>>> dd0eeda (.)
             'placeholder' => 'Run in background',
         ],
         'created_at' => [
             'label' => 'Created At',
+<<<<<<< HEAD
             'tooltip' => 'Data di creazione del job',
             'placeholder' => 'Data creazione',
         ],
@@ -99,6 +177,20 @@ return [
             'label' => 'Fuso Orario',
             'tooltip' => 'Imposta il fuso orario per il job',
             'placeholder' => 'Fuso orario',
+=======
+            'tooltip' => 'Job creation date',
+            'placeholder' => 'Creation date',
+        ],
+        'updated_at' => [
+            'label' => 'Updated At',
+            'tooltip' => 'Last update date',
+            'placeholder' => 'Update date',
+        ],
+        'timezone' => [
+            'label' => 'Timezone',
+            'tooltip' => 'Set the timezone for the job',
+            'placeholder' => 'Timezone',
+>>>>>>> dd0eeda (.)
         ],
         'toggleColumns' => [
             'label' => 'toggleColumns',
@@ -123,8 +215,13 @@ return [
         'active' => 'Active',
         'inactive' => 'Inactive',
         'trashed' => 'Trashed',
+<<<<<<< HEAD
         'running' => 'In Esecuzione',
         'failed' => 'Fallito',
+=======
+        'running' => 'Running',
+        'failed' => 'Failed',
+>>>>>>> dd0eeda (.)
     ],
     'buttons' => [
         'inactivate' => [
@@ -143,6 +240,7 @@ return [
             'color' => 'purple',
         ],
         'run' => [
+<<<<<<< HEAD
             'label' => 'Esegui Ora',
             'modal' => [
                 'heading' => 'Esegui Schedule',
@@ -150,11 +248,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Schedule eseguito con successo',
+=======
+            'label' => 'Run Now',
+            'modal' => [
+                'heading' => 'Run Schedule',
+                'description' => 'Do you want to run this schedule now?',
+            ],
+            'messages' => [
+                'success' => 'Schedule executed successfully',
+>>>>>>> dd0eeda (.)
             ],
             'icon' => 'icon-run',
             'color' => 'blue',
         ],
         'toggle' => [
+<<<<<<< HEAD
             'label' => 'Attiva/Disattiva',
             'modal' => [
                 'heading' => 'Modifica Stato',
@@ -162,11 +270,21 @@ return [
             ],
             'messages' => [
                 'success' => 'Stato modificato con successo',
+=======
+            'label' => 'Activate/Deactivate',
+            'modal' => [
+                'heading' => 'Modify Status',
+                'description' => 'Do you want to modify the status of this schedule?',
+            ],
+            'messages' => [
+                'success' => 'Status modified successfully',
+>>>>>>> dd0eeda (.)
             ],
             'icon' => 'icon-toggle',
             'color' => 'orange',
         ],
         'delete' => [
+<<<<<<< HEAD
             'label' => 'Elimina',
             'modal' => [
                 'heading' => 'Elimina Schedule',
@@ -174,6 +292,15 @@ return [
             ],
             'messages' => [
                 'success' => 'Schedule eliminato con successo',
+=======
+            'label' => 'Delete',
+            'modal' => [
+                'heading' => 'Delete Schedule',
+                'description' => 'Are you sure you want to delete this schedule?',
+            ],
+            'messages' => [
+                'success' => 'Schedule deleted successfully',
+>>>>>>> dd0eeda (.)
             ],
             'icon' => 'icon-delete',
             'color' => 'red',
@@ -184,6 +311,7 @@ return [
         'regex' => 'The :attribute field must only contain letters, numbers, dashes, and underscores. Comma is also allowed.',
     ],
     'frequencies' => [
+<<<<<<< HEAD
         'everyMinute' => 'Ogni Minuto',
         'everyFiveMinutes' => 'Ogni 5 Minuti',
         'everyTenMinutes' => 'Ogni 10 Minuti',
@@ -218,6 +346,42 @@ return [
                 'every_hour' => '0 * * * * - Ogni ora',
                 'every_day' => '0 0 * * * - Ogni giorno a mezzanotte',
                 'every_monday' => '0 0 * * 1 - Ogni lunedì a mezzanotte',
+=======
+        'everyMinute' => 'Every Minute',
+        'everyFiveMinutes' => 'Every 5 Minutes',
+        'everyTenMinutes' => 'Every 10 Minutes',
+        'everyFifteenMinutes' => 'Every 15 Minutes',
+        'everyThirtyMinutes' => 'Every 30 Minutes',
+        'hourly' => 'Every Hour',
+        'daily' => 'Every Day',
+        'weekly' => 'Every Week',
+        'monthly' => 'Every Month',
+        'quarterly' => 'Every Quarter',
+        'yearly' => 'Every Year',
+    ],
+    'days' => [
+        'sunday' => 'Sunday',
+        'monday' => 'Monday',
+        'tuesday' => 'Tuesday',
+        'wednesday' => 'Wednesday',
+        'thursday' => 'Thursday',
+        'friday' => 'Friday',
+        'saturday' => 'Saturday',
+    ],
+    'cron' => [
+        'help' => [
+            'title' => 'Cron Expressions Help',
+            'minute' => 'Minute (0-59)',
+            'hour' => 'Hour (0-23)',
+            'day_of_month' => 'Day of Month (1-31)',
+            'month' => 'Month (1-12)',
+            'day_of_week' => 'Day of Week (0-6)',
+            'examples' => [
+                'every_minute' => '* * * * * - Every minute',
+                'every_hour' => '0 * * * * - Every hour',
+                'every_day' => '0 0 * * * - Every day at midnight',
+                'every_monday' => '0 0 * * 1 - Every Monday at midnight',
+>>>>>>> dd0eeda (.)
             ],
         ],
     ],
