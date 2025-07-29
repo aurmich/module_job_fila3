@@ -80,6 +80,7 @@ return [
 
 ---
 
+<<<<<<< HEAD
 ## Novità 2025: Best practice obbligatorie
 
 - Ogni file di traduzione deve avere la sezione `validation` con messaggi specifici per i campi principali.
@@ -112,3 +113,5 @@ return [
     ],
 ];
 
+=======
+>>>>>>> 92584ee (.)
