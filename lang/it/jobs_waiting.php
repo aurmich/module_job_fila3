@@ -132,6 +132,26 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'display_name' => 
+    array (
+      'label' => 'display_name',
+    ),
+    'updated_at' => 
+    array (
+      'label' => 'updated_at',
+    ),
   ),
   'actions' => 
   array (
@@ -248,5 +268,9 @@ return array (
     'scheduled' => 'Schedulato',
     'recurring' => 'Ricorrente',
     'batch' => 'Batch',
+  ),
+  'model' => 
+  array (
+    'label' => 'jobs waiting.model',
   ),
 );
