@@ -750,4 +750,4 @@ return array (
     'cleanup' => 'Pulizia',
   ),
 );
->>>>>>> de705af (.)
+>>>>>>> aurmich/dev
