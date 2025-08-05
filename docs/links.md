@@ -131,7 +131,10 @@ class ProcessDataAction
 
 ### Comandi Artisan
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aaac513 (.)
 # Creare un nuovo job
 php artisan make:job ProcessData
 
