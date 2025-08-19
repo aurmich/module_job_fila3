@@ -22,6 +22,9 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property string|null $description
  * @property string $status
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 565568c (.)
  * @property int|null $assigned_to
  * @property int|null $created_by
  * @property \Carbon\Carbon|null $due_date
@@ -33,6 +36,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property-read \Modules\User\Models\User|null $createdByUser
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\TaskComment> $comments
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Spatie\Activitylog\Models\Activity> $activities
+<<<<<<< HEAD
 =======
  * @property string $priority_id
  *                               property-read \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -79,6 +83,8 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @mixin \Eloquent
 >>>>>>> beb2bc32 (.)
+=======
+>>>>>>> 565568c (.)
  */
 class Task extends Model
 {
