@@ -21,6 +21,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property string $title
  * @property string|null $description
  * @property string $status
+<<<<<<< HEAD
  * @property int|null $assigned_to
  * @property int|null $created_by
  * @property \Carbon\Carbon|null $due_date
@@ -32,6 +33,52 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property-read \Modules\User\Models\User|null $createdByUser
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\TaskComment> $comments
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Spatie\Activitylog\Models\Activity> $activities
+=======
+ * @property string $priority_id
+ *                               property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Frequency> $frequencies
+ * @property int|null $frequencies_count
+ * @property bool $activated
+ * @property float $average_runtime
+ * @property Result|null $last_result
+ * @property string $upcoming
+ * @property \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
+ * @property int|null $notifications_count
+ * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result> $results
+ * @property int|null $results_count
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereAutoCleanupNum($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereAutoCleanupType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereCommand($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereDontOverlap($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereExpression($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereIsActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereNotificationEmailAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereNotificationPhoneNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereNotificationSlackWebhook($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereOrderColumn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereParameters($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task wherePriorityId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereRunInBackground($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereRunInMaintenance($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereRunOnOneServer($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @mixin \Eloquent
+>>>>>>> beb2bc32 (.)
  */
 class Task extends Model
 {
