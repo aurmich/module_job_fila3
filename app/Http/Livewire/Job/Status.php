@@ -20,10 +20,18 @@ use Webmozart\Assert\Assert;
 use function Safe\putenv;
 
 /**
+<<<<<<< HEAD
  * Class RolePermission.
  */
 class Status extends Component
 {
+=======
+ * Class Status.
+ */
+class Status extends Component
+{
+    /** @var array<string, mixed> */
+>>>>>>> b81fb91 (.)
     public array $form_data = [];
 
     public string $out = '';
@@ -37,9 +45,15 @@ class Status extends Component
         Artisan::call('worker:check');
         $this->out .= Artisan::output();
 
+<<<<<<< HEAD
         $this->out .= '<br/>['.JobModel::count().'] Jobs';
         $this->out .= '<br/>['.FailedJobModel::count().'] Failed Jobs';
         $this->out .= '<br/>['.JobBatchModel::count().'] Job Batch';
+=======
+        $this->out .= '<br/>['.JobModel::query()->count().'] Jobs';
+        $this->out .= '<br/>['.FailedJobModel::query()->count().'] Failed Jobs';
+        $this->out .= '<br/>['.JobBatchModel::query()->count().'] Job Batch';
+>>>>>>> b81fb91 (.)
         $queue_conn = getenv('QUEUE_CONNECTION');
         if ($queue_conn === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
@@ -47,11 +61,14 @@ class Status extends Component
 
         $this->old_value = $queue_conn;
         $this->form_data['conn'] = $queue_conn;
+<<<<<<< HEAD
 
         // $env_file=base_path('.env');
         // dddx(getenv(base_path('')));
         // $env_file = getenv('LARAVEL_DIR').'/.env';
         // dddx();
+=======
+>>>>>>> b81fb91 (.)
     }
 
     public function render(): Renderable
@@ -59,6 +76,7 @@ class Status extends Component
         $view = app(GetViewAction::class)->execute();
 
         $acts = [
+<<<<<<< HEAD
             /*
             (object) [
                 'name' => 'batches-table',
@@ -73,6 +91,8 @@ class Status extends Component
                 'label' => 'Create a migration for the queue jobs database table',
             ],
             */
+=======
+>>>>>>> b81fb91 (.)
             (object) [
                 'name' => 'clear',
                 'label' => 'Delete all of the jobs from the specified queue',
@@ -81,11 +101,15 @@ class Status extends Component
                 'name' => 'failed',
                 'label' => 'List all of the failed queue jobs',
             ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> b81fb91 (.)
             (object) [
                 'name' => 'flush',
                 'label' => 'Flush all of the failed queue jobs',
             ],
+<<<<<<< HEAD
             /* -- VUOLE ID
             (object) [
                 'name' => 'forget',
@@ -104,6 +128,8 @@ class Status extends Component
                 'label' => 'Monitor the size of the specified queues',
             ],
             */
+=======
+>>>>>>> b81fb91 (.)
             (object) [
                 'name' => 'prune-batches',
                 'label' => 'Prune stale entries from the batches database',
@@ -120,6 +146,7 @@ class Status extends Component
                 'name' => 'retry',
                 'label' => 'Retry a failed queue job',
             ],
+<<<<<<< HEAD
             /*-- vuole parametro
             (object) [
                 'name' => 'retry-batch',
@@ -132,6 +159,8 @@ class Status extends Component
                 'label' => 'Start processing jobs on the queue as a daemon',
             ],
             */
+=======
+>>>>>>> b81fb91 (.)
         ];
 
         $view_params = [
@@ -144,9 +173,13 @@ class Status extends Component
 
     public function updatedFormData(string $value, string $key): void
     {
+<<<<<<< HEAD
         // dddx([$value,$key,$this->form_data]);
         if ($key === 'conn') {
             // putenv ("QUEUE_CONNECTION=".$value);
+=======
+        if ($key === 'conn') {
+>>>>>>> b81fb91 (.)
             $this->saveEnv();
         }
     }
