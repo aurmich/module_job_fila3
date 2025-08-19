@@ -21,23 +21,6 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property string $title
  * @property string|null $description
  * @property string $status
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 565568c (.)
- * @property int|null $assigned_to
- * @property int|null $created_by
- * @property \Carbon\Carbon|null $due_date
- * @property \Carbon\Carbon|null $completed_at
- * @property \Carbon\Carbon|null $created_at
- * @property \Carbon\Carbon|null $updated_at
- * @property \Carbon\Carbon|null $deleted_at
- * @property-read \Modules\User\Models\User|null $assignedUser
- * @property-read \Modules\User\Models\User|null $createdByUser
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\TaskComment> $comments
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Spatie\Activitylog\Models\Activity> $activities
-<<<<<<< HEAD
-=======
  * @property string $priority_id
  *                               property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Frequency> $frequencies
@@ -82,9 +65,6 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @mixin \Eloquent
->>>>>>> beb2bc32 (.)
-=======
->>>>>>> 565568c (.)
  */
 class Task extends Model
 {
