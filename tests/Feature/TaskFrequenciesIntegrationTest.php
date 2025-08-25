@@ -2,12 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
 
 describe('Task Frequencies Integration', function () {
+=======
+use Modules\Job\Models\TaskFrequency;
+use Modules\Job\Actions\CreateTaskFrequencyAction;
+use Modules\Job\Actions\GetTaskFrequenciesAction;
+
+describe('TaskFrequencies Integration', function () {
+>>>>>>> 4ab16aa (.)
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction();
     });

@@ -3,9 +3,13 @@
 declare(strict_types=1);
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
+=======
+use Modules\Job\Models\TaskFrequency;
+>>>>>>> 4ab16aa (.)
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
