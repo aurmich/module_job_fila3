@@ -2,29 +2,16 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Modules\Job\Actions\GetTaskFrequenciesAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-uses(RefreshDatabase::class);
+use Modules\Job\Models\TaskFrequency;
 =======
 use Modules\Job\Models\TaskFrequency;
->>>>>>> 4ab16aa (.)
 =======
 use Modules\Job\Models\TaskFrequency;
->>>>>>> ae734db (.)
-=======
-use Modules\Job\Models\TaskFrequency;
->>>>>>> 79ff6bd (.)
 =======
 use Modules\Job\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
->>>>>>> 523f2dd (.)
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {

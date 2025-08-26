@@ -2,35 +2,18 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
->>>>>>> 79ff6bd (.)
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
-<<<<<<< HEAD
-uses(RefreshDatabase::class);
-
-describe('Task Frequencies Integration', function () {
 =======
-=======
->>>>>>> ae734db (.)
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('TaskFrequencies Integration', function () {
-<<<<<<< HEAD
->>>>>>> 4ab16aa (.)
-=======
->>>>>>> ae734db (.)
 =======
 describe('TaskFrequencies Integration', function () {
->>>>>>> 79ff6bd (.)
 =======
 use Modules\Job\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -38,7 +21,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 uses(RefreshDatabase::class);
 
 describe('Task Frequencies Integration', function () {
->>>>>>> 523f2dd (.)
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction();
     });
