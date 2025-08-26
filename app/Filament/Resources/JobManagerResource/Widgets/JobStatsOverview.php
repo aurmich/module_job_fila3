@@ -35,6 +35,7 @@ class JobStatsOverview extends BaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $averageTime = isset($aggregatedInfo->average_time_elapsed) ? ceil((float) $aggregatedInfo->average_time_elapsed).'s' : '0';
             $totalTime = isset($aggregatedInfo->total_time_elapsed) ? $this->formatSeconds($aggregatedInfo->total_time_elapsed).'s' : '0';
 =======
@@ -63,6 +64,10 @@ class JobStatsOverview extends BaseWidget
 >>>>>>> 79ff6bd (.)
 =======
 >>>>>>> 523f2dd (.)
+=======
+            $averageTime = ($aggregatedInfo->average_time_elapsed ?? null) !== null ? ceil((float) $aggregatedInfo->average_time_elapsed).'s' : '0';
+            $totalTime = ($aggregatedInfo->total_time_elapsed ?? null) !== null ? $this->formatSeconds($aggregatedInfo->total_time_elapsed).'s' : '0';
+>>>>>>> 070ee86 (.)
         } else {
             $averageTime = '0';
             $totalTime = '0';
