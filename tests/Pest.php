@@ -16,7 +16,13 @@ use Modules\Job\Tests\TestCase;
 */
 
 pest()->extend(TestCase::class)
+<<<<<<< HEAD
+<<<<<<< HEAD
     ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+=======
+>>>>>>> 4ab16aa (.)
+=======
+>>>>>>> ae734db (.)
     ->in('Feature', 'Unit');
 
 /*
