@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
@@ -30,6 +31,14 @@ describe('TaskFrequencies Integration', function () {
 =======
 describe('TaskFrequencies Integration', function () {
 >>>>>>> 79ff6bd (.)
+=======
+use Modules\Job\Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+uses(RefreshDatabase::class);
+
+describe('Task Frequencies Integration', function () {
+>>>>>>> 523f2dd (.)
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction();
     });

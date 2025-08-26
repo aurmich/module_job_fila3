@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18,6 +19,12 @@ use Modules\Job\Models\TaskFrequency;
 =======
 use Modules\Job\Models\TaskFrequency;
 >>>>>>> 79ff6bd (.)
+=======
+use Modules\Job\Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+uses(RefreshDatabase::class);
+>>>>>>> 523f2dd (.)
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {

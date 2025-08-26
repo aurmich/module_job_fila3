@@ -34,6 +34,7 @@ class JobStatsOverview extends BaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $averageTime = isset($aggregatedInfo->average_time_elapsed) ? ceil((float) $aggregatedInfo->average_time_elapsed).'s' : '0';
             $totalTime = isset($aggregatedInfo->total_time_elapsed) ? $this->formatSeconds($aggregatedInfo->total_time_elapsed).'s' : '0';
 =======
@@ -41,6 +42,8 @@ class JobStatsOverview extends BaseWidget
 >>>>>>> ae734db (.)
 =======
 >>>>>>> 79ff6bd (.)
+=======
+>>>>>>> 523f2dd (.)
             $averageTime = app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
                 ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0') ? 
                 ceil((float) app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
@@ -52,11 +55,14 @@ class JobStatsOverview extends BaseWidget
                     ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0')).'s' : '0';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4ab16aa (.)
 =======
 >>>>>>> ae734db (.)
 =======
 >>>>>>> 79ff6bd (.)
+=======
+>>>>>>> 523f2dd (.)
         } else {
             $averageTime = '0';
             $totalTime = '0';
