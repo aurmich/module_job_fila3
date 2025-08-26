@@ -5,16 +5,6 @@ declare(strict_types=1);
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
 use Modules\Job\Actions\GetTaskFrequenciesAction;
-
-=======
-use Modules\Job\Models\TaskFrequency;
-use Modules\Job\Actions\CreateTaskFrequencyAction;
-use Modules\Job\Actions\GetTaskFrequenciesAction;
-
-describe('TaskFrequencies Integration', function () {
-=======
-describe('TaskFrequencies Integration', function () {
-=======
 use Modules\Job\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

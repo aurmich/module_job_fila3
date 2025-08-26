@@ -3,11 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Job\Models\TaskFrequency;
-=======
-use Modules\Job\Models\TaskFrequency;
-=======
-use Modules\Job\Models\TaskFrequency;
-=======
 use Modules\Job\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

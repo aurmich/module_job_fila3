@@ -36,3 +36,34 @@ Job module for Laraxot PTVX providing specialized functionality and business log
 // Basic usage example
 $result = app(JobService::class)->process($data);
 ```
+
+## Risoluzione Conflitti Git
+
+### Problemi Identificati
+
+Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti file:
+
+- `app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php` - Widget statistiche job manager
+- `app/Filament/Resources/JobsWaitingResource/Widgets/JobsWaitingOverview.php` - Widget statistiche job in attesa
+
+### Soluzioni Implementate
+
+1. **Rimozione duplicazioni**: Eliminati blocchi di codice duplicato causati da merge
+2. **Consolidamento logica**: Mantenuta la logica di calcolo più recente e completa
+3. **Verifica coerenza**: Controllata la coerenza tra tutti i widget statistiche
+4. **Aggiornamento documentazione**: Documentate le modifiche e le best practices
+
+### Dettagli Tecniche
+
+I conflitti riguardavano principalmente:
+- Calcolo del tempo medio di esecuzione dei job
+- Calcolo del tempo totale di esecuzione
+- Gestione dei valori null per i campi temporali
+- Formattazione dei secondi per la visualizzazione
+
+### Prevenzione Futura
+
+- Utilizzare sempre `git pull --rebase` per evitare merge commits
+- Verificare i conflitti prima di ogni commit
+- Mantenere la struttura dei widget coerente e documentata
+- Testare i widget dopo ogni modifica per verificare la correttezza dei calcoli
