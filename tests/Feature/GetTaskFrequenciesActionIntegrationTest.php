@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Tests\TestCase;
 =======
@@ -19,6 +20,10 @@ use Modules\Job\Models\TaskFrequency;
 =======
 use Modules\Job\Models\TaskFrequency;
 >>>>>>> ae734db (.)
+=======
+use Modules\Job\Actions\GetTaskFrequenciesAction;
+use Modules\Job\Models\TaskFrequency;
+>>>>>>> c2cfa33 (.)
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
 =======
@@ -19,15 +20,20 @@ describe('Task Frequencies Integration', function () {
 =======
 =======
 >>>>>>> ae734db (.)
+=======
+>>>>>>> c2cfa33 (.)
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('TaskFrequencies Integration', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4ab16aa (.)
 =======
 >>>>>>> ae734db (.)
+=======
+>>>>>>> c2cfa33 (.)
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction();
     });
