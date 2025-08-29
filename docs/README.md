@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -259,6 +260,8 @@ php artisan test --filter=ResultBusinessLogicTest
 **Stato**: Test business logic implementati (85% copertura)
 
 =======
+=======
+>>>>>>> ae4cd76 (.)
 # Modulo Job
 
 ## Struttura
@@ -396,4 +399,7 @@ php artisan test --filter=ResultBusinessLogicTest
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> e5461b8 (.)
+=======
+>>>>>>> ae4cd76 (.)

@@ -61,10 +61,14 @@ class QueueListenWidget extends Widget
             public function __construct()
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 parent::__construct(fopen('php://output', 'w'));
 =======
                 parent::__construct(\Safe\fopen('php://output', 'w'));
 >>>>>>> e5461b8 (.)
+=======
+                parent::__construct(fopen('php://output', 'w'));
+>>>>>>> ae4cd76 (.)
             }
 
             protected function doWrite(string $message, bool $newline): void
@@ -84,10 +88,14 @@ class QueueListenWidget extends Widget
         };
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $resource = fopen('php://stdout', 'w');
 =======
         $resource = \Safe\fopen('php://stdout', 'w');
 >>>>>>> e5461b8 (.)
+=======
+        $resource = fopen('php://stdout', 'w');
+>>>>>>> ae4cd76 (.)
         if ($resource === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }
