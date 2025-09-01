@@ -61,10 +61,17 @@ class ClockWidget extends Widget
             public function __construct()
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 parent::__construct(\Safe\fopen('php://output', 'w'));
 =======
                 parent::__construct(fopen('php://output', 'w'));
 >>>>>>> bbe7a8fa (.)
+=======
+                parent::__construct(fopen('php://output', 'w'));
+=======
+                parent::__construct(\Safe\fopen('php://output', 'w'));
+>>>>>>> e5461b8 (.)
+>>>>>>> 0c25c045 (.)
             }
 
             protected function doWrite(string $message, bool $newline): void
@@ -84,10 +91,17 @@ class ClockWidget extends Widget
         };
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $resource = \Safe\fopen('php://stdout', 'w');
 =======
         $resource = fopen('php://stdout', 'w');
 >>>>>>> bbe7a8fa (.)
+=======
+        $resource = fopen('php://stdout', 'w');
+=======
+        $resource = \Safe\fopen('php://stdout', 'w');
+>>>>>>> e5461b8 (.)
+>>>>>>> 0c25c045 (.)
         if ($resource === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }
