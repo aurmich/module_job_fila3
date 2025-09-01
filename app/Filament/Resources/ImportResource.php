@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+use Modules\Job\Filament\Resources\ImportResource\Pages;
+>>>>>>> 0c25c04 (.)
 use Modules\Job\Models\Import;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

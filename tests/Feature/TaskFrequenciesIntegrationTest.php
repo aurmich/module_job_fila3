@@ -2,11 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Job\Models\TaskFrequency;
+use Modules\Job\Actions\CreateTaskFrequencyAction;
+>>>>>>> 0c25c04 (.)
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction;
+=======
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> 0c25c04 (.)
     });
 
     it('integrates with Laravel config system', function () {
@@ -48,7 +57,11 @@ describe('TaskFrequencies Integration', function () {
                 'weekly',
                 'monthly',
                 'quarterly',
+<<<<<<< HEAD
                 'yearly',
+=======
+                'yearly'
+>>>>>>> 0c25c04 (.)
             ]);
     });
 
@@ -145,7 +158,11 @@ describe('TaskFrequencies Integration', function () {
     it('integrates with Laravel service container', function () {
         // Test that the action can be resolved from container
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 0c25c04 (.)
         expect($actionFromContainer)->toBeInstanceOf(GetTaskFrequenciesAction::class);
     });
 
@@ -170,12 +187,20 @@ describe('TaskFrequencies Integration', function () {
             true,
             false,
             null,
+<<<<<<< HEAD
             new stdClass,
+=======
+            new stdClass(),
+>>>>>>> 0c25c04 (.)
         ];
 
         foreach ($invalidConfigs as $invalidConfig) {
             config(['totem.frequencies' => $invalidConfig]);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 0c25c04 (.)
             expect(fn () => $this->action->execute())
                 ->toThrow(Exception::class);
         }

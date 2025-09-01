@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Feature;
 
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Job\Models\Frequency;
 use Modules\Job\Models\Result;
@@ -13,6 +14,18 @@ use Tests\TestCase;
 class TaskBusinessLogicTest extends TestCase
 {
 
+=======
+use Modules\Job\Models\Task;
+use Modules\Job\Models\Frequency;
+use Modules\Job\Models\Result;
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Carbon;
+
+class TaskBusinessLogicTest extends TestCase
+{
+    use RefreshDatabase;
+>>>>>>> 0c25c04 (.)
 
     /** @test */
     public function it_can_create_task_with_basic_information(): void
@@ -46,10 +59,17 @@ class TaskBusinessLogicTest extends TestCase
             'is_active' => 1,
         ]);
 
+<<<<<<< HEAD
         expect('Pulizia database giornaliera', $task->description);
         expect('db:cleanup', $task->command);
         expect('0 2 * * *', $task->expression);
         expect($task->is_active);
+=======
+        $this->assertEquals('Pulizia database giornaliera', $task->description);
+        $this->assertEquals('db:cleanup', $task->command);
+        $this->assertEquals('0 2 * * *', $task->expression);
+        $this->assertTrue($task->is_active);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -64,8 +84,13 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< HEAD
         expect($task->is_active);
         expect('active', $task->status);
+=======
+        $this->assertTrue($task->is_active);
+        $this->assertEquals('active', $task->status);
+>>>>>>> 0c25c04 (.)
 
         // Disattiva il task
         $task->update([
@@ -73,8 +98,13 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'inactive',
         ]);
 
+<<<<<<< HEAD
         expect($task->is_active);
         expect('inactive', $task->status);
+=======
+        $this->assertFalse($task->is_active);
+        $this->assertEquals('inactive', $task->status);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -92,11 +122,19 @@ class TaskBusinessLogicTest extends TestCase
 
         // Compila parametri per lo scheduler
         $schedulerParams = $task->compileParameters(true);
+<<<<<<< HEAD
         expect('--user-id={{user_id}} --action={{action}}', $schedulerParams);
 
         // Compila parametri per l'esecuzione
         $executionParams = $task->compileParameters(false);
         expect('--user-id={{user_id}} --action={{action}}', $executionParams);
+=======
+        $this->assertEquals('--user-id={{user_id}} --action={{action}}', $schedulerParams);
+
+        // Compila parametri per l'esecuzione
+        $executionParams = $task->compileParameters(false);
+        $this->assertEquals('--user-id={{user_id}} --action={{action}}', $executionParams);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -124,9 +162,15 @@ class TaskBusinessLogicTest extends TestCase
             'parameters' => json_encode(['day' => 'monday', 'time' => '09:00']),
         ]);
 
+<<<<<<< HEAD
         expect(2, $task->frequencies);
         expect($task->frequencies->contains($frequency1));
         expect($task->frequencies->contains($frequency2));
+=======
+        $this->assertCount(2, $task->frequencies);
+        $this->assertTrue($task->frequencies->contains($frequency1));
+        $this->assertTrue($task->frequencies->contains($frequency2));
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -144,9 +188,15 @@ class TaskBusinessLogicTest extends TestCase
             'notification_slack_webhook' => 'https://hooks.slack.com/services/...',
         ]);
 
+<<<<<<< HEAD
         expect('admin@example.com', $task->notification_email_address);
         expect('+1234567890', $task->notification_phone_number);
         expect('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
+=======
+        $this->assertEquals('admin@example.com', $task->notification_email_address);
+        $this->assertEquals('+1234567890', $task->notification_phone_number);
+        $this->assertEquals('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -165,10 +215,17 @@ class TaskBusinessLogicTest extends TestCase
             'run_in_background' => 1,
         ]);
 
+<<<<<<< HEAD
         expect($task->dont_overlap);
         expect($task->run_in_maintenance);
         expect($task->run_on_one_server);
         expect($task->run_in_background);
+=======
+        $this->assertTrue($task->dont_overlap);
+        $this->assertTrue($task->run_in_maintenance);
+        $this->assertTrue($task->run_on_one_server);
+        $this->assertTrue($task->run_in_background);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -185,8 +242,13 @@ class TaskBusinessLogicTest extends TestCase
             'auto_cleanup_type' => 'days',
         ]);
 
+<<<<<<< HEAD
         expect(30, $task->auto_cleanup_num);
         expect('days', $task->auto_cleanup_type);
+=======
+        $this->assertEquals(30, $task->auto_cleanup_num);
+        $this->assertEquals('days', $task->auto_cleanup_type);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -218,9 +280,15 @@ class TaskBusinessLogicTest extends TestCase
             'output' => 'Task in esecuzione',
         ]);
 
+<<<<<<< HEAD
         expect(2, $task->results);
         expect($task->results->contains($result1));
         expect($task->results->contains($result2));
+=======
+        $this->assertCount(2, $task->results);
+        $this->assertTrue($task->results->contains($result1));
+        $this->assertTrue($task->results->contains($result2));
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -246,8 +314,13 @@ class TaskBusinessLogicTest extends TestCase
             'priority_id' => 'low',
         ]);
 
+<<<<<<< HEAD
         expect('high', $highPriorityTask->priority_id);
         expect('low', $lowPriorityTask->priority_id);
+=======
+        $this->assertEquals('high', $highPriorityTask->priority_id);
+        $this->assertEquals('low', $lowPriorityTask->priority_id);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -271,8 +344,13 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< HEAD
         expect('Europe/Rome', $romeTask->timezone);
         expect('UTC', $utcTask->timezone);
+=======
+        $this->assertEquals('Europe/Rome', $romeTask->timezone);
+        $this->assertEquals('UTC', $utcTask->timezone);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -287,6 +365,7 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< HEAD
         expect('active', $task->status);
 
         // Cambia stato a pausa
@@ -300,6 +379,21 @@ class TaskBusinessLogicTest extends TestCase
         // Ripristina stato attivo
         $task->update(['status' => 'active']);
         expect('active', $task->status);
+=======
+        $this->assertEquals('active', $task->status);
+
+        // Cambia stato a pausa
+        $task->update(['status' => 'paused']);
+        $this->assertEquals('paused', $task->status);
+
+        // Cambia stato a errore
+        $task->update(['status' => 'error']);
+        $this->assertEquals('error', $task->status);
+
+        // Ripristina stato attivo
+        $task->update(['status' => 'active']);
+        $this->assertEquals('active', $task->status);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -325,8 +419,13 @@ class TaskBusinessLogicTest extends TestCase
             'order_column' => 2,
         ]);
 
+<<<<<<< HEAD
         expect(1, $task1->order_column);
         expect(2, $task2->order_column);
+=======
+        $this->assertEquals(1, $task1->order_column);
+        $this->assertEquals(2, $task2->order_column);
+>>>>>>> 0c25c04 (.)
     }
 
     /** @test */
@@ -352,7 +451,12 @@ class TaskBusinessLogicTest extends TestCase
             'run_in_maintenance' => 0,
         ]);
 
+<<<<<<< HEAD
         expect($maintenanceTask->run_in_maintenance);
         expect($normalTask->run_in_maintenance);
+=======
+        $this->assertTrue($maintenanceTask->run_in_maintenance);
+        $this->assertFalse($normalTask->run_in_maintenance);
+>>>>>>> 0c25c04 (.)
     }
 }

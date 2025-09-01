@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources;
 
 use Filament\Forms;
+<<<<<<< HEAD
+=======
+use Modules\Job\Filament\Resources\FailedImportRowResource\Pages;
+>>>>>>> 0c25c04 (.)
 use Modules\Job\Models\FailedImportRow;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

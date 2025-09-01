@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Http\Livewire\Schedule;
 
 use Exception;
+<<<<<<< HEAD
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
@@ -14,6 +15,17 @@ use Modules\Job\Models\Task;
 use Modules\Xot\Actions\GetViewAction;
 use Symfony\Component\Console\Command\Command;
 use Webmozart\Assert\Assert;
+=======
+use Livewire\Component;
+use Modules\Job\Models\Task;
+use Webmozart\Assert\Assert;
+use Illuminate\Support\Collection;
+use Modules\Xot\Actions\GetViewAction;
+use Illuminate\Support\Facades\Artisan;
+use Modules\Job\Actions\ExecuteTaskAction;
+use Illuminate\Contracts\Support\Renderable;
+use Symfony\Component\Console\Command\Command;
+>>>>>>> 0c25c04 (.)
 
 /**
  * Class Schedule\Crud.
