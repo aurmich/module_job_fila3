@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Job\Tests\TestCase;
+namespace Modules\Job\Tests;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +15,8 @@ use Modules\Job\Tests\TestCase;
 |
 */
 
-pest()->extend(TestCase::class)
+uses(\Modules\Job\Tests\TestCase::class)
+    ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
     ->in('Feature', 'Unit');
 
 /*

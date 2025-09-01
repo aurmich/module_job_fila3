@@ -379,7 +379,6 @@ describe('Job Performance', function () {
         expect($memoryIncrease)->toBeLessThan(50 * 1024 * 1024); // 50MB max increase
     });
 });
-```
 
 ## Quality Standards
 
