@@ -22,10 +22,13 @@ namespace Modules\Job\Models;
  * @property string|null $updated_by
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property mixed $display_name
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Modules\Job\Database\Factories\JobsWaitingFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|JobsWaiting newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|JobsWaiting newQuery()
@@ -40,6 +43,7 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|JobsWaiting whereReservedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobsWaiting whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobsWaiting whereUpdatedBy($value)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
  * @property mixed $status
@@ -51,6 +55,11 @@ namespace Modules\Job\Models;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 >>>>>>> 0c25c04 (.)
+=======
+ * @property mixed $status
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> Stashed changes
  * @mixin IdeHelperJobsWaiting
  * @mixin \Eloquent
  */

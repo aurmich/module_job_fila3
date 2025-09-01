@@ -4,15 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Feature;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+=======
+use Modules\Job\Models\Task;
+>>>>>>> Stashed changes
 use Modules\Job\Models\Frequency;
 use Modules\Job\Models\Result;
-use Modules\Job\Models\Task;
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Carbon;
 
 class TaskBusinessLogicTest extends TestCase
 {
+<<<<<<< Updated upstream
 
 =======
 use Modules\Job\Models\Task;
@@ -26,6 +32,9 @@ class TaskBusinessLogicTest extends TestCase
 {
     use RefreshDatabase;
 >>>>>>> 0c25c04 (.)
+=======
+    use RefreshDatabase;
+>>>>>>> Stashed changes
 
     /** @test */
     public function it_can_create_task_with_basic_information(): void
@@ -59,17 +68,23 @@ class TaskBusinessLogicTest extends TestCase
             'is_active' => 1,
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('Pulizia database giornaliera', $task->description);
         expect('db:cleanup', $task->command);
         expect('0 2 * * *', $task->expression);
         expect($task->is_active);
 =======
+=======
+>>>>>>> Stashed changes
         $this->assertEquals('Pulizia database giornaliera', $task->description);
         $this->assertEquals('db:cleanup', $task->command);
         $this->assertEquals('0 2 * * *', $task->expression);
         $this->assertTrue($task->is_active);
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -84,6 +99,7 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect($task->is_active);
         expect('active', $task->status);
@@ -91,6 +107,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertTrue($task->is_active);
         $this->assertEquals('active', $task->status);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertTrue($task->is_active);
+        $this->assertEquals('active', $task->status);
+>>>>>>> Stashed changes
 
         // Disattiva il task
         $task->update([
@@ -98,6 +118,7 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'inactive',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect($task->is_active);
         expect('inactive', $task->status);
@@ -105,6 +126,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertFalse($task->is_active);
         $this->assertEquals('inactive', $task->status);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertFalse($task->is_active);
+        $this->assertEquals('inactive', $task->status);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -122,6 +147,7 @@ class TaskBusinessLogicTest extends TestCase
 
         // Compila parametri per lo scheduler
         $schedulerParams = $task->compileParameters(true);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('--user-id={{user_id}} --action={{action}}', $schedulerParams);
 
@@ -135,6 +161,13 @@ class TaskBusinessLogicTest extends TestCase
         $executionParams = $task->compileParameters(false);
         $this->assertEquals('--user-id={{user_id}} --action={{action}}', $executionParams);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals('--user-id={{user_id}} --action={{action}}', $schedulerParams);
+
+        // Compila parametri per l'esecuzione
+        $executionParams = $task->compileParameters(false);
+        $this->assertEquals('--user-id={{user_id}} --action={{action}}', $executionParams);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -162,6 +195,7 @@ class TaskBusinessLogicTest extends TestCase
             'parameters' => json_encode(['day' => 'monday', 'time' => '09:00']),
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect(2, $task->frequencies);
         expect($task->frequencies->contains($frequency1));
@@ -171,6 +205,11 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertTrue($task->frequencies->contains($frequency1));
         $this->assertTrue($task->frequencies->contains($frequency2));
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertCount(2, $task->frequencies);
+        $this->assertTrue($task->frequencies->contains($frequency1));
+        $this->assertTrue($task->frequencies->contains($frequency2));
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -188,6 +227,7 @@ class TaskBusinessLogicTest extends TestCase
             'notification_slack_webhook' => 'https://hooks.slack.com/services/...',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('admin@example.com', $task->notification_email_address);
         expect('+1234567890', $task->notification_phone_number);
@@ -197,6 +237,11 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertEquals('+1234567890', $task->notification_phone_number);
         $this->assertEquals('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals('admin@example.com', $task->notification_email_address);
+        $this->assertEquals('+1234567890', $task->notification_phone_number);
+        $this->assertEquals('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -215,17 +260,23 @@ class TaskBusinessLogicTest extends TestCase
             'run_in_background' => 1,
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect($task->dont_overlap);
         expect($task->run_in_maintenance);
         expect($task->run_on_one_server);
         expect($task->run_in_background);
 =======
+=======
+>>>>>>> Stashed changes
         $this->assertTrue($task->dont_overlap);
         $this->assertTrue($task->run_in_maintenance);
         $this->assertTrue($task->run_on_one_server);
         $this->assertTrue($task->run_in_background);
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -242,6 +293,7 @@ class TaskBusinessLogicTest extends TestCase
             'auto_cleanup_type' => 'days',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect(30, $task->auto_cleanup_num);
         expect('days', $task->auto_cleanup_type);
@@ -249,6 +301,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertEquals(30, $task->auto_cleanup_num);
         $this->assertEquals('days', $task->auto_cleanup_type);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals(30, $task->auto_cleanup_num);
+        $this->assertEquals('days', $task->auto_cleanup_type);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -280,6 +336,7 @@ class TaskBusinessLogicTest extends TestCase
             'output' => 'Task in esecuzione',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect(2, $task->results);
         expect($task->results->contains($result1));
@@ -289,6 +346,11 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertTrue($task->results->contains($result1));
         $this->assertTrue($task->results->contains($result2));
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertCount(2, $task->results);
+        $this->assertTrue($task->results->contains($result1));
+        $this->assertTrue($task->results->contains($result2));
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -314,6 +376,7 @@ class TaskBusinessLogicTest extends TestCase
             'priority_id' => 'low',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('high', $highPriorityTask->priority_id);
         expect('low', $lowPriorityTask->priority_id);
@@ -321,6 +384,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertEquals('high', $highPriorityTask->priority_id);
         $this->assertEquals('low', $lowPriorityTask->priority_id);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals('high', $highPriorityTask->priority_id);
+        $this->assertEquals('low', $lowPriorityTask->priority_id);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -344,6 +411,7 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('Europe/Rome', $romeTask->timezone);
         expect('UTC', $utcTask->timezone);
@@ -351,6 +419,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertEquals('Europe/Rome', $romeTask->timezone);
         $this->assertEquals('UTC', $utcTask->timezone);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals('Europe/Rome', $romeTask->timezone);
+        $this->assertEquals('UTC', $utcTask->timezone);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -365,19 +437,24 @@ class TaskBusinessLogicTest extends TestCase
             'status' => 'active',
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect('active', $task->status);
+=======
+        $this->assertEquals('active', $task->status);
+>>>>>>> Stashed changes
 
         // Cambia stato a pausa
         $task->update(['status' => 'paused']);
-        expect('paused', $task->status);
+        $this->assertEquals('paused', $task->status);
 
         // Cambia stato a errore
         $task->update(['status' => 'error']);
-        expect('error', $task->status);
+        $this->assertEquals('error', $task->status);
 
         // Ripristina stato attivo
         $task->update(['status' => 'active']);
+<<<<<<< Updated upstream
         expect('active', $task->status);
 =======
         $this->assertEquals('active', $task->status);
@@ -394,6 +471,9 @@ class TaskBusinessLogicTest extends TestCase
         $task->update(['status' => 'active']);
         $this->assertEquals('active', $task->status);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals('active', $task->status);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -419,6 +499,7 @@ class TaskBusinessLogicTest extends TestCase
             'order_column' => 2,
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect(1, $task1->order_column);
         expect(2, $task2->order_column);
@@ -426,6 +507,10 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertEquals(1, $task1->order_column);
         $this->assertEquals(2, $task2->order_column);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertEquals(1, $task1->order_column);
+        $this->assertEquals(2, $task2->order_column);
+>>>>>>> Stashed changes
     }
 
     /** @test */
@@ -451,6 +536,7 @@ class TaskBusinessLogicTest extends TestCase
             'run_in_maintenance' => 0,
         ]);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         expect($maintenanceTask->run_in_maintenance);
         expect($normalTask->run_in_maintenance);
@@ -458,5 +544,9 @@ class TaskBusinessLogicTest extends TestCase
         $this->assertTrue($maintenanceTask->run_in_maintenance);
         $this->assertFalse($normalTask->run_in_maintenance);
 >>>>>>> 0c25c04 (.)
+=======
+        $this->assertTrue($maintenanceTask->run_in_maintenance);
+        $this->assertFalse($normalTask->run_in_maintenance);
+>>>>>>> Stashed changes
     }
 }

@@ -46,10 +46,13 @@ use Webmozart\Assert\Assert;
  * @property string|null $deleted_by
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule active()
  * @method static \Modules\Job\Database\Factories\ScheduleFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule inactive()
@@ -86,10 +89,13 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule whereWithoutOverlapping($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withoutTrashed()
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @mixin IdeHelperSchedule
  * @mixin \Eloquent
  */
@@ -236,6 +242,7 @@ class Schedule extends BaseModel
     /**
      * Safely evaluate function strings (avoiding eval).
      *
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      * @param  string  $functionString  Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
@@ -245,6 +252,11 @@ class Schedule extends BaseModel
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
      * 
 >>>>>>> 0c25c04 (.)
+=======
+     * @param string $functionString Il nome della funzione da valutare
+     * @return string|null Il risultato della funzione o null se la funzione non è consentita
+     * 
+>>>>>>> Stashed changes
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -269,11 +281,15 @@ class Schedule extends BaseModel
                 return null;
             }
         }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 0c25c04 (.)
+=======
+        
+>>>>>>> Stashed changes
         // Funzione non consentita
         return null;
     }

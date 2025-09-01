@@ -14,18 +14,24 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * Modules\Job\Models\ScheduleHistory.
  *
  * @property Schedule|null $command
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Modules\Job\Database\Factories\ScheduleHistoryFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory query()
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @property int $id
  * @property array|null $params
  * @property string $output
@@ -37,10 +43,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereCommand($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereCreatedBy($value)
@@ -53,6 +62,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereScheduleId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduleHistory whereUpdatedBy($value)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -62,6 +72,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 >>>>>>> 0c25c04 (.)
+=======
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> Stashed changes
  * @mixin IdeHelperScheduleHistory
  * @mixin \Eloquent
  */

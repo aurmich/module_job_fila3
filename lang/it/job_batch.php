@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 return [
     'navigation' => [
@@ -170,6 +171,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> Stashed changes
 return array (
   'navigation' => 
   array (
@@ -375,4 +378,7 @@ return array (
     'label' => 'job batch.model',
   ),
 );
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes

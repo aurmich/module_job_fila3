@@ -27,10 +27,13 @@ use function Safe\json_decode;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $updated_at
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Modules\Job\Database\Factories\JobFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Job newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Job newQuery()
@@ -45,18 +48,24 @@ use function Safe\json_decode;
  * @method static \Illuminate\Database\Eloquent\Builder|Job whereReservedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Job whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Job whereUpdatedBy($value)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @property mixed $display_name
  * @property mixed $status
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @mixin IdeHelperJob
  * @mixin \Eloquent
  */

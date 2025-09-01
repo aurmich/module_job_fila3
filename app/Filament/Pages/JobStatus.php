@@ -6,6 +6,7 @@ namespace Modules\Job\Filament\Pages;
 
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Artisan;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 use Modules\Job\Filament\Widgets\ClockWidget;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -17,6 +18,14 @@ use Webmozart\Assert\Assert;
 
 use function Safe\mb_convert_encoding;
 >>>>>>> 0c25c04 (.)
+=======
+use Illuminate\Support\Facades\Process;
+use Modules\Job\Filament\Widgets\ClockWidget;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
+
+use function Safe\mb_convert_encoding;
+>>>>>>> Stashed changes
 
 class JobStatus extends Page
 {
@@ -35,11 +44,16 @@ class JobStatus extends Page
         ];
     }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
     
 
 >>>>>>> 0c25c04 (.)
+=======
+    
+
+>>>>>>> Stashed changes
     public function artisan(string $cmd): void
     {
         $this->out = '';

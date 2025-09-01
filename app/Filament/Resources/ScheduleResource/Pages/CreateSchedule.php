@@ -40,9 +40,14 @@ class CreateSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreate
             ->danger()
             ->send();
     }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 
    
 >>>>>>> 0c25c04 (.)
+=======
+
+   
+>>>>>>> Stashed changes
 }

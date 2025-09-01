@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 use Modules\Job\Filament\Resources\ImportResource\Pages;
 >>>>>>> 0c25c04 (.)
+=======
+use Modules\Job\Filament\Resources\ImportResource\Pages;
+>>>>>>> Stashed changes
 use Modules\Job\Models\Import;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

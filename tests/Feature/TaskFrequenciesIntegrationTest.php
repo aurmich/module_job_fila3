@@ -2,20 +2,29 @@
 
 declare(strict_types=1);
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 use Modules\Job\Models\TaskFrequency;
 use Modules\Job\Actions\CreateTaskFrequencyAction;
 >>>>>>> 0c25c04 (.)
+=======
+use Modules\Job\Models\TaskFrequency;
+use Modules\Job\Actions\CreateTaskFrequencyAction;
+>>>>>>> Stashed changes
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction;
 =======
         $this->action = new GetTaskFrequenciesAction();
 >>>>>>> 0c25c04 (.)
+=======
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> Stashed changes
     });
 
     it('integrates with Laravel config system', function () {
@@ -57,11 +66,15 @@ describe('TaskFrequencies Integration', function () {
                 'weekly',
                 'monthly',
                 'quarterly',
+<<<<<<< Updated upstream
 <<<<<<< HEAD
                 'yearly',
 =======
                 'yearly'
 >>>>>>> 0c25c04 (.)
+=======
+                'yearly'
+>>>>>>> Stashed changes
             ]);
     });
 
@@ -158,11 +171,15 @@ describe('TaskFrequencies Integration', function () {
     it('integrates with Laravel service container', function () {
         // Test that the action can be resolved from container
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 0c25c04 (.)
+=======
+        
+>>>>>>> Stashed changes
         expect($actionFromContainer)->toBeInstanceOf(GetTaskFrequenciesAction::class);
     });
 
@@ -187,20 +204,28 @@ describe('TaskFrequencies Integration', function () {
             true,
             false,
             null,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             new stdClass,
 =======
             new stdClass(),
 >>>>>>> 0c25c04 (.)
+=======
+            new stdClass(),
+>>>>>>> Stashed changes
         ];
 
         foreach ($invalidConfigs as $invalidConfig) {
             config(['totem.frequencies' => $invalidConfig]);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
             
 >>>>>>> 0c25c04 (.)
+=======
+            
+>>>>>>> Stashed changes
             expect(fn () => $this->action->execute())
                 ->toThrow(Exception::class);
         }

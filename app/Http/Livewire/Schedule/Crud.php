@@ -5,27 +5,33 @@ declare(strict_types=1);
 namespace Modules\Job\Http\Livewire\Schedule;
 
 use Exception;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
+=======
+>>>>>>> Stashed changes
 use Livewire\Component;
-use Modules\Job\Actions\ExecuteTaskAction;
 use Modules\Job\Models\Task;
-use Modules\Xot\Actions\GetViewAction;
-use Symfony\Component\Console\Command\Command;
 use Webmozart\Assert\Assert;
+<<<<<<< Updated upstream
 =======
 use Livewire\Component;
 use Modules\Job\Models\Task;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> Stashed changes
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\GetViewAction;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Actions\ExecuteTaskAction;
 use Illuminate\Contracts\Support\Renderable;
 use Symfony\Component\Console\Command\Command;
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
 
 /**
  * Class Schedule\Crud.

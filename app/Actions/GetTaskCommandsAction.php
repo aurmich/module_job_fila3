@@ -4,18 +4,25 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> 0c25c04 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> Stashed changes
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
 
 class GetTaskCommandsAction
 {

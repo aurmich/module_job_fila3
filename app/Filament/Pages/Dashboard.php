@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Pages;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 use Filament\Pages\Page;
 >>>>>>> 0c25c04 (.)
+=======
+use Filament\Pages\Page;
+>>>>>>> Stashed changes
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard

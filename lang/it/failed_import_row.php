@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 return [
     'pages' => 'Pagine',
@@ -153,6 +154,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> Stashed changes
 return array (
   'pages' => 'Pagine',
   'widgets' => 'Widgets',
@@ -344,4 +347,7 @@ return array (
     'icon' => 'job-failed-job',
   ),
 );
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes

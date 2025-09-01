@@ -13,10 +13,13 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import query()
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @property int $id
  * @property \Illuminate\Support\Carbon|null $completed_at
  * @property string $file_name
@@ -32,10 +35,13 @@ namespace Modules\Job\Models;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCompletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedBy($value)
@@ -51,14 +57,16 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserId($value)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
+=======
+>>>>>>> Stashed changes
  * @property string|null $user_type
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserType($value)
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< Updated upstream
  *
 =======
  * @property string|null $user_type
@@ -66,6 +74,8 @@ namespace Modules\Job\Models;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @mixin IdeHelperImport
  * @mixin \Eloquent
  */

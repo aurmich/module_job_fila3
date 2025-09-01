@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 use Modules\Job\Models\Job;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 use Illuminate\Support\Carbon;
 >>>>>>> 0c25c04 (.)
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> Stashed changes
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
@@ -141,11 +145,15 @@ describe('Job Business Logic', function () {
 
     it('can handle job scheduling and delays', function () {
         $futureTime = now()->addHours(2);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 0c25c04 (.)
+=======
+        
+>>>>>>> Stashed changes
         $job = Job::create([
             'queue' => 'scheduled',
             'payload' => json_encode(['displayName' => 'ScheduledJob']),
@@ -276,11 +284,15 @@ describe('Job Business Logic', function () {
         }
 
         expect($batchJobs)->toHaveCount(5);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 0c25c04 (.)
+=======
+        
+>>>>>>> Stashed changes
         foreach ($batchJobs as $job) {
             expect($job->queue)->toBe('batch')
                 ->and($job->display_name)->toBe('BatchJob')

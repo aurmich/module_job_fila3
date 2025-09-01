@@ -59,11 +59,16 @@ class ScheduleObserver
 
     /**
      * Undocumented function.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
      *
      * @return void
 >>>>>>> 0c25c04 (.)
+=======
+     *
+     * @return void
+>>>>>>> Stashed changes
      */
     protected function clearCache(): void
     {

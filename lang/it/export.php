@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 return [
     'navigation' => [
@@ -144,6 +145,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> Stashed changes
 return array (
   'navigation' => 
   array (
@@ -312,4 +315,7 @@ return array (
     'pdf' => 'PDF',
   ),
 );
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes

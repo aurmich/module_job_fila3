@@ -60,6 +60,7 @@ class ClockWidget extends Widget
         $output = new class() extends StreamOutput {
             public function __construct()
             {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,6 +96,9 @@ class ClockWidget extends Widget
 =======
                 parent::__construct(fopen('php://output', 'w'));
 >>>>>>> 02c50a8 (.)
+=======
+                parent::__construct(fopen('php://output', 'w'));
+>>>>>>> Stashed changes
             }
 
             protected function doWrite(string $message, bool $newline): void
@@ -113,6 +117,7 @@ class ClockWidget extends Widget
             }
         };
         */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,6 +153,9 @@ class ClockWidget extends Widget
 =======
         $resource = fopen('php://stdout', 'w');
 >>>>>>> 02c50a8 (.)
+=======
+        $resource = fopen('php://stdout', 'w');
+>>>>>>> Stashed changes
         if ($resource === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }

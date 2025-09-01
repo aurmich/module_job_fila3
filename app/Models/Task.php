@@ -51,10 +51,13 @@ use Webmozart\Assert\Assert;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result> $results
  * @property int|null $results_count
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task query()
@@ -84,6 +87,7 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -91,6 +95,9 @@ use Webmozart\Assert\Assert;
 =======
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
 >>>>>>> 0c25c04 (.)
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+>>>>>>> Stashed changes
  * @mixin IdeHelperTask
  * @mixin \Eloquent
  */
@@ -104,20 +111,28 @@ class Task extends BaseModel
     /**
      * Compila i parametri del task per l'esecuzione.
      *
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      * @param  bool  $forScheduler  Se true, i parametri vengono formattati per lo scheduler
 =======
      * @param bool $forScheduler Se true, i parametri vengono formattati per lo scheduler
 >>>>>>> 0c25c04 (.)
+=======
+     * @param bool $forScheduler Se true, i parametri vengono formattati per lo scheduler
+>>>>>>> Stashed changes
      * @return array<int, string>|string
      */
     public function compileParameters(bool $forScheduler = false): array|string
     {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         if ($this->parameters === null) {
 =======
         if (null === $this->parameters) {
 >>>>>>> 0c25c04 (.)
+=======
+        if (null === $this->parameters) {
+>>>>>>> Stashed changes
             return [];
         }
 
@@ -130,10 +145,13 @@ class Task extends BaseModel
 
         return $parameters;
     }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
     protected $fillable = [
         'id',
         'description',

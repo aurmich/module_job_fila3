@@ -11,6 +11,7 @@ use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  *
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -21,6 +22,12 @@ use Modules\Xot\Traits\Updater;
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * 
 >>>>>>> 0c25c04 (.)
+=======
+ * 
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * 
+>>>>>>> Stashed changes
  */
 abstract class BaseModel extends Model
 {

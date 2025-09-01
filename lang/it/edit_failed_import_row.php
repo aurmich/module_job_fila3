@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <?php
 
@@ -9,6 +10,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> Stashed changes
 <?php return array (
   'actions' => 
   array (
@@ -17,5 +20,9 @@ return [
       'label' => 'delete',
     ),
   ),
+<<<<<<< Updated upstream
 );
 >>>>>>> 0c25c04 (.)
+=======
+);
+>>>>>>> Stashed changes

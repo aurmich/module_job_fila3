@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 return [
     'navigation' => [
@@ -121,6 +122,8 @@ return [
     'title' => 'job status',
 ];
 =======
+=======
+>>>>>>> Stashed changes
 return array (
   'navigation' => 
   array (
@@ -266,4 +269,7 @@ return array (
   ),
   'title' => 'job status',
 );
+<<<<<<< Updated upstream
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> Stashed changes
