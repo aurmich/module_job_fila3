@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -149,6 +150,8 @@
 >>>>>>> 0c25c04 (.)
 =======
 >>>>>>> c1a71a4 (.)
+=======
+>>>>>>> 02c50a8 (.)
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -411,6 +414,7 @@ php artisan test --filter=ResultBusinessLogicTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bbe7a8fa (.)
 =======
 =======
@@ -568,3 +572,5 @@ php artisan test --filter=ResultBusinessLogicTest
 =======
 >>>>>>> ae4cd76 (.)
 >>>>>>> c1a71a4 (.)
+=======
+>>>>>>> 02c50a8 (.)
