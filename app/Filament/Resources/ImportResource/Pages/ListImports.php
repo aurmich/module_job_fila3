@@ -72,17 +72,8 @@ class ListImports extends XotBaseListRecords
     public function getTableActions(): array
     {
         return [
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-            'edit' => EditAction::make(),
-=======
             'edit' => EditAction::make()
                 ,
->>>>>>> 0c25c04 (.)
-=======
-            'edit' => EditAction::make()
-                ,
->>>>>>> Stashed changes
         ];
     }
 

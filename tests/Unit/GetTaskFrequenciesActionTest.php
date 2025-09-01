@@ -6,15 +6,7 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('GetTaskFrequenciesAction', function () {
     beforeEach(function () {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        $this->action = new GetTaskFrequenciesAction;
-=======
         $this->action = new GetTaskFrequenciesAction();
->>>>>>> 0c25c04 (.)
-=======
-        $this->action = new GetTaskFrequenciesAction();
->>>>>>> Stashed changes
     });
 
     it('can be instantiated', function () {
@@ -23,30 +15,14 @@ describe('GetTaskFrequenciesAction', function () {
 
     it('has queueable action trait', function () {
         $traits = class_uses($this->action);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         expect($traits)->toContain('Spatie\QueueableAction\QueueableAction');
     });
 
     it('has correct method signature', function () {
         $reflection = new ReflectionClass($this->action);
         $method = $reflection->getMethod('execute');
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         expect($method->isPublic())->toBeTrue()
             ->and($method->getReturnType()?->getName())->toBe('array')
             ->and($method->getNumberOfParameters())->toBe(0);
@@ -55,15 +31,7 @@ describe('GetTaskFrequenciesAction', function () {
     it('has proper return type annotation', function () {
         $reflection = new ReflectionClass($this->action);
         $method = $reflection->getMethod('execute');
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         $docComment = $method->getDocComment();
         expect($docComment)->toContain('@return array<string, mixed>');
     });
@@ -71,30 +39,14 @@ describe('GetTaskFrequenciesAction', function () {
     it('uses correct exception handling', function () {
         $reflection = new ReflectionClass($this->action);
         $method = $reflection->getMethod('execute');
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         // Check that the method can throw exceptions
         expect($method)->not->toBeNull();
     });
 
     it('has proper class structure', function () {
         $reflection = new ReflectionClass($this->action);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         expect($reflection->isInstantiable())->toBeTrue()
             ->and($reflection->isFinal())->toBeFalse()
             ->and($reflection->isAbstract())->toBeFalse();
@@ -107,30 +59,14 @@ describe('GetTaskFrequenciesAction', function () {
 
     it('has correct namespace', function () {
         $reflection = new ReflectionClass($this->action);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         expect($reflection->getNamespaceName())->toBe('Modules\Job\Actions');
     });
 
     it('uses strict types', function () {
         $reflection = new ReflectionClass($this->action);
         $filename = $reflection->getFileName();
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         if ($filename) {
             $content = file_get_contents($filename);
             expect($content)->toContain('declare(strict_types=1);');
@@ -140,15 +76,7 @@ describe('GetTaskFrequenciesAction', function () {
     it('has proper imports', function () {
         $reflection = new ReflectionClass($this->action);
         $filename = $reflection->getFileName();
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         if ($filename) {
             $content = file_get_contents($filename);
             expect($content)->toContain('use Exception;')
@@ -165,15 +93,7 @@ describe('GetTaskFrequenciesAction', function () {
     it('has correct method implementation structure', function () {
         $reflection = new ReflectionClass($this->action);
         $method = $reflection->getMethod('execute');
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         // Verify method is properly implemented
         expect($method->isPublic())->toBeTrue()
             ->and($method->isStatic())->toBeFalse()
@@ -188,30 +108,14 @@ describe('GetTaskFrequenciesAction', function () {
     it('can be used with dependency injection', function () {
         // Test that the action can be resolved from container
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         expect($actionFromContainer)->toBeInstanceOf(GetTaskFrequenciesAction::class);
     });
 
     it('has proper error handling implementation', function () {
         $reflection = new ReflectionClass($this->action);
         $filename = $reflection->getFileName();
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         if ($filename) {
             $content = file_get_contents($filename);
             expect($content)->toContain('throw new Exception');
@@ -221,26 +125,10 @@ describe('GetTaskFrequenciesAction', function () {
     it('validates config function usage', function () {
         $reflection = new ReflectionClass($this->action);
         $filename = $reflection->getFileName();
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         if ($filename) {
             $content = file_get_contents($filename);
             expect($content)->toContain('config(');
         }
     });
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 0c25c04 (.)
-=======
-});
->>>>>>> Stashed changes

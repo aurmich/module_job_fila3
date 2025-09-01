@@ -13,13 +13,6 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow query()
-<<<<<<< Updated upstream
-<<<<<<< HEAD
- *
-=======
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
  * @property int $id
  * @property array $data
  * @property int $import_id
@@ -28,13 +21,6 @@ namespace Modules\Job\Models;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
-<<<<<<< Updated upstream
-<<<<<<< HEAD
- *
-=======
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereData($value)
@@ -43,20 +29,8 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereValidationError($value)
-<<<<<<< Updated upstream
-<<<<<<< HEAD
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> 0c25c04 (.)
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> Stashed changes
  * @mixin IdeHelperFailedImportRow
  * @mixin \Eloquent
  */

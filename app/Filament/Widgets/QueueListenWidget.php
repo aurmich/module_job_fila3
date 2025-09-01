@@ -60,45 +60,7 @@ class QueueListenWidget extends Widget
         $output = new class() extends StreamOutput {
             public function __construct()
             {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                parent::__construct(\Safe\fopen('php://output', 'w'));
-=======
                 parent::__construct(fopen('php://output', 'w'));
->>>>>>> bbe7a8fa (.)
-=======
-=======
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> c1a71a4 (.)
-                parent::__construct(fopen('php://output', 'w'));
-=======
-                parent::__construct(\Safe\fopen('php://output', 'w'));
->>>>>>> e5461b8 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0c25c045 (.)
-=======
-                parent::__construct(fopen('php://output', 'w'));
->>>>>>> dcbe6e6c (.)
-=======
->>>>>>> 0c25c04 (.)
-=======
-=======
-                parent::__construct(fopen('php://output', 'w'));
->>>>>>> ae4cd76 (.)
->>>>>>> c1a71a4 (.)
-=======
-                parent::__construct(fopen('php://output', 'w'));
->>>>>>> 02c50a8 (.)
-=======
-                parent::__construct(fopen('php://output', 'w'));
->>>>>>> Stashed changes
             }
 
             protected function doWrite(string $message, bool $newline): void
@@ -117,45 +79,7 @@ class QueueListenWidget extends Widget
             }
         };
         */
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $resource = \Safe\fopen('php://stdout', 'w');
-=======
         $resource = fopen('php://stdout', 'w');
->>>>>>> bbe7a8fa (.)
-=======
-=======
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> c1a71a4 (.)
-        $resource = fopen('php://stdout', 'w');
-=======
-        $resource = \Safe\fopen('php://stdout', 'w');
->>>>>>> e5461b8 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0c25c045 (.)
-=======
-        $resource = fopen('php://stdout', 'w');
->>>>>>> dcbe6e6c (.)
-=======
->>>>>>> 0c25c04 (.)
-=======
-=======
-        $resource = fopen('php://stdout', 'w');
->>>>>>> ae4cd76 (.)
->>>>>>> c1a71a4 (.)
-=======
-        $resource = fopen('php://stdout', 'w');
->>>>>>> 02c50a8 (.)
-=======
-        $resource = fopen('php://stdout', 'w');
->>>>>>> Stashed changes
         if ($resource === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }

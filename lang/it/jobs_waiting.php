@@ -3,61 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Navigation Label',
-        'group' => 'Job',
-        'icon' => 'heroicon-o-cog',
-        'sort' => 50,
-=======
-  'navigation' => 
-  [
-    'label' => 'Navigation Label',
-    'group' => 'Job',
-    'icon' => 'heroicon-o-cog',
-    'sort' => 50,
-  ],
-  'fields' => 
-  [
-    'id' => 
-    [
-      'label' => 'ID',
-      'description' => 'Unique identifier for the job',
-      'helper_text' => 'Auto-generated job identifier',
->>>>>>> Stashed changes
-    ],
-    'queue' => 
-    [
-      'label' => 'Queue',
-      'description' => 'Queue name where the job is waiting',
-      'helper_text' => 'Name of the queue this job belongs to',
-    ],
-    'payload' => 
-    [
-      'label' => 'Payload',
-      'description' => 'Job data and parameters',
-      'helper_text' => 'Serialized job data and parameters',
-    ],
-    'attempts' => 
-    [
-      'label' => 'Attempts',
-      'description' => 'Number of execution attempts',
-      'helper_text' => 'How many times this job has been attempted',
-    ],
-    'reserved_at' => 
-    [
-      'label' => 'Reserved At',
-      'description' => 'When the job was reserved for processing',
-      'helper_text' => 'Timestamp when job was picked up for processing',
-    ],
-<<<<<<< Updated upstream
-    'priorities' => [
-        'low' => 'Bassa',
-        'normal' => 'Normale',
-        'high' => 'Alta',
-        'urgent' => 'Urgente',
-=======
   'navigation' => 
   [
     'label' => 'Navigation Label',
@@ -97,8 +42,6 @@ return [
       'description' => 'When the job was reserved for processing',
       'helper_text' => 'Timestamp when job was picked up for processing',
     ],
-=======
->>>>>>> Stashed changes
     'available_at' => 
     [
       'label' => 'Available At',
@@ -204,10 +147,6 @@ return [
     'normal' => 'Normale',
     'high' => 'Alta',
     'urgent' => 'Urgente',
-<<<<<<< Updated upstream
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
     ],
     'types' => [
         'default' => 'Default',

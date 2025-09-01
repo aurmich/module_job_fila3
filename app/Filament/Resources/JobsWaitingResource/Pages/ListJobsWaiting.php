@@ -8,23 +8,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Pages;
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-use Filament\Tables\Columns\TextColumn;
-=======
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Table;
->>>>>>> 0c25c04 (.)
-=======
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Enums\ActionsPosition;
-use Filament\Tables\Enums\FiltersLayout;
-use Filament\Tables\Table;
->>>>>>> Stashed changes
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOverview;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -33,16 +21,8 @@ class ListJobsWaiting extends XotBaseListRecords
 {
     public static string $resource = JobsWaitingResource::class;
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
     
 
->>>>>>> 0c25c04 (.)
-=======
-    
-
->>>>>>> Stashed changes
     public function getHeaderWidgets(): array
     {
         return [
@@ -50,16 +30,8 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
    
 
->>>>>>> 0c25c04 (.)
-=======
-   
-
->>>>>>> Stashed changes
     public function getTableColumns(): array
     {
         return [

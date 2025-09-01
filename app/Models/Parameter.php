@@ -19,13 +19,6 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Frequency|null $task
-<<<<<<< Updated upstream
-<<<<<<< HEAD
- *
-=======
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
  * @method static \Modules\Job\Database\Factories\ParameterFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Parameter newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Parameter newQuery()
@@ -38,20 +31,8 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Parameter whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Parameter whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Parameter whereValue($value)
-<<<<<<< Updated upstream
-<<<<<<< HEAD
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> 0c25c04 (.)
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> Stashed changes
  * @mixin IdeHelperParameter
  * @mixin \Eloquent
  */

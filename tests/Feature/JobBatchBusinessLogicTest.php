@@ -4,23 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Feature;
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Modules\Job\Models\Job;
-=======
->>>>>>> Stashed changes
-use Modules\Job\Models\JobBatch;
-use Modules\Job\Models\Job;
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Carbon;
-
-class JobBatchBusinessLogicTest extends TestCase
-{
-<<<<<<< Updated upstream
-
-=======
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Models\Job;
 use Tests\TestCase;
@@ -30,10 +13,6 @@ use Illuminate\Support\Carbon;
 class JobBatchBusinessLogicTest extends TestCase
 {
     use RefreshDatabase;
->>>>>>> 0c25c04 (.)
-=======
-    use RefreshDatabase;
->>>>>>> Stashed changes
 
     /** @test */
     public function it_can_create_job_batch_with_basic_information(): void
@@ -63,25 +42,11 @@ class JobBatchBusinessLogicTest extends TestCase
             'failed_jobs' => 0,
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect('batch-123', $batch->id);
-        expect('Processamento utenti batch', $batch->name);
-        expect(100, $batch->total_jobs);
-        expect(100, $batch->pending_jobs);
-        expect(0, $batch->failed_jobs);
-=======
-=======
->>>>>>> Stashed changes
         $this->assertEquals('batch-123', $batch->id);
         $this->assertEquals('Processamento utenti batch', $batch->name);
         $this->assertEquals(100, $batch->total_jobs);
         $this->assertEquals(100, $batch->pending_jobs);
         $this->assertEquals(0, $batch->failed_jobs);
-<<<<<<< Updated upstream
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -97,36 +62,16 @@ class JobBatchBusinessLogicTest extends TestCase
             'options' => json_encode([]),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(10, $batch->pending_jobs);
-        expect(0, $batch->failed_jobs);
-=======
         $this->assertEquals(10, $batch->pending_jobs);
         $this->assertEquals(0, $batch->failed_jobs);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(10, $batch->pending_jobs);
-        $this->assertEquals(0, $batch->failed_jobs);
->>>>>>> Stashed changes
 
         // Simula completamento di alcuni job
         $batch->update([
             'pending_jobs' => 7,
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(7, $batch->pending_jobs);
-        expect(3, $batch->total_jobs - $batch->pending_jobs);
-=======
         $this->assertEquals(7, $batch->pending_jobs);
         $this->assertEquals(3, $batch->total_jobs - $batch->pending_jobs);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(7, $batch->pending_jobs);
-        $this->assertEquals(3, $batch->total_jobs - $batch->pending_jobs);
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -150,21 +95,9 @@ class JobBatchBusinessLogicTest extends TestCase
             'pending_jobs' => 3,
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(2, $batch->failed_jobs);
-        expect(3, $batch->pending_jobs);
-        expect($failedJobIds, json_decode($batch->failed_job_ids, true));
-=======
         $this->assertEquals(2, $batch->failed_jobs);
         $this->assertEquals(3, $batch->pending_jobs);
         $this->assertEquals($failedJobIds, json_decode($batch->failed_job_ids, true));
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(2, $batch->failed_jobs);
-        $this->assertEquals(3, $batch->pending_jobs);
-        $this->assertEquals($failedJobIds, json_decode($batch->failed_job_ids, true));
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -180,18 +113,8 @@ class JobBatchBusinessLogicTest extends TestCase
             'options' => json_encode([]),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($batch->finished());
-        expect($batch->cancelled());
-=======
         $this->assertFalse($batch->finished());
         $this->assertFalse($batch->cancelled());
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertFalse($batch->finished());
-        $this->assertFalse($batch->cancelled());
->>>>>>> Stashed changes
 
         // Simula completamento
         $batch->update([
@@ -199,18 +122,8 @@ class JobBatchBusinessLogicTest extends TestCase
             'finished_at' => now(),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($batch->finished());
-        expect($batch->cancelled());
-=======
         $this->assertTrue($batch->finished());
         $this->assertFalse($batch->cancelled());
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertTrue($batch->finished());
-        $this->assertFalse($batch->cancelled());
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -226,30 +139,14 @@ class JobBatchBusinessLogicTest extends TestCase
             'options' => json_encode([]),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($batch->cancelled());
-=======
         $this->assertFalse($batch->cancelled());
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertFalse($batch->cancelled());
->>>>>>> Stashed changes
 
         // Cancella il batch
         $batch->update([
             'cancelled_at' => now(),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($batch->cancelled());
-=======
         $this->assertTrue($batch->cancelled());
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertTrue($batch->cancelled());
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -274,21 +171,9 @@ class JobBatchBusinessLogicTest extends TestCase
             'options' => json_encode($options),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($options, json_decode($batch->options, true));
-        expect('high', json_decode($batch->options, true)['priority']);
-        expect(json_decode($batch->options, true)['notify_on_completion']);
-=======
         $this->assertEquals($options, json_decode($batch->options, true));
         $this->assertEquals('high', json_decode($batch->options, true)['priority']);
         $this->assertTrue(json_decode($batch->options, true)['notify_on_completion']);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals($options, json_decode($batch->options, true));
-        $this->assertEquals('high', json_decode($batch->options, true)['priority']);
-        $this->assertTrue(json_decode($batch->options, true)['notify_on_completion']);
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -308,18 +193,8 @@ class JobBatchBusinessLogicTest extends TestCase
         $completedJobs = $batch->total_jobs - $batch->pending_jobs;
         $progressPercentage = ($completedJobs / $batch->total_jobs) * 100;
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(25, $completedJobs);
-        expect(25.0, $progressPercentage);
-=======
         $this->assertEquals(25, $completedJobs);
         $this->assertEquals(25.0, $progressPercentage);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(25, $completedJobs);
-        $this->assertEquals(25.0, $progressPercentage);
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -375,27 +250,11 @@ class JobBatchBusinessLogicTest extends TestCase
             'finished_at' => now()->subDays(7),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($batch->finished());
-        expect($batch->finished_at < now()->subDays(5));
-
-        // Verifica che il batch sia candidato per la pulizia
-        expect($batch->finished_at < now()->subDays(5));
-=======
         $this->assertTrue($batch->finished());
         $this->assertTrue($batch->finished_at < now()->subDays(5));
 
         // Verifica che il batch sia candidato per la pulizia
         $this->assertTrue($batch->finished_at < now()->subDays(5));
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertTrue($batch->finished());
-        $this->assertTrue($batch->finished_at < now()->subDays(5));
-
-        // Verifica che il batch sia candidato per la pulizia
-        $this->assertTrue($batch->finished_at < now()->subDays(5));
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -415,18 +274,8 @@ class JobBatchBusinessLogicTest extends TestCase
             'finished_at' => now(),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(3, $batch->failed_jobs);
-        expect(json_decode($batch->options, true)['retry_failed_jobs']);
-=======
         $this->assertEquals(3, $batch->failed_jobs);
         $this->assertTrue(json_decode($batch->options, true)['retry_failed_jobs']);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(3, $batch->failed_jobs);
-        $this->assertTrue(json_decode($batch->options, true)['retry_failed_jobs']);
->>>>>>> Stashed changes
 
         // Simula retry dei job falliti
         $batch->update([
@@ -436,21 +285,9 @@ class JobBatchBusinessLogicTest extends TestCase
             'finished_at' => null,
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(0, $batch->failed_jobs);
-        expect(3, $batch->pending_jobs);
-        expect($batch->finished());
-=======
         $this->assertEquals(0, $batch->failed_jobs);
         $this->assertEquals(3, $batch->pending_jobs);
         $this->assertFalse($batch->finished());
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertEquals(0, $batch->failed_jobs);
-        $this->assertEquals(3, $batch->pending_jobs);
-        $this->assertFalse($batch->finished());
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -472,23 +309,10 @@ class JobBatchBusinessLogicTest extends TestCase
         ]);
 
         $options = json_decode($batch->options, true);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($options['notify_on_completion']);
-        expect($options['notify_on_failure']);
-        expect('admin@example.com', $options['notification_email']);
-        expect('https://hooks.slack.com/...', $options['notification_slack']);
-=======
-=======
->>>>>>> Stashed changes
         $this->assertTrue($options['notify_on_completion']);
         $this->assertTrue($options['notify_on_failure']);
         $this->assertEquals('admin@example.com', $options['notification_email']);
         $this->assertEquals('https://hooks.slack.com/...', $options['notification_slack']);
-<<<<<<< Updated upstream
->>>>>>> 0c25c04 (.)
-=======
->>>>>>> Stashed changes
     }
 
     /** @test */
@@ -497,15 +321,7 @@ class JobBatchBusinessLogicTest extends TestCase
         // Crea un batch di batch per testare operazioni bulk
         $batchList = [];
         $statuses = ['active', 'completed', 'failed'];
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 0c25c04 (.)
-=======
-        
->>>>>>> Stashed changes
         for ($i = 1; $i <= 3; $i++) {
             $batchList[] = JobBatch::create([
                 'id' => "bulk-batch-{$i}",
@@ -519,30 +335,12 @@ class JobBatchBusinessLogicTest extends TestCase
             ]);
         }
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect(3, $batchList);
-
-        foreach ($batchList as $index => $batch) {
-            expect('bulk-batch-'.($index + 1), $batch->id);
-            expect(($index + 1) * 10, $batch->total_jobs);
-            expect($statuses[$index], $batch->status);
-=======
         $this->assertCount(3, $batchList);
         
         foreach ($batchList as $index => $batch) {
             $this->assertEquals("bulk-batch-" . ($index + 1), $batch->id);
             $this->assertEquals(($index + 1) * 10, $batch->total_jobs);
             $this->assertEquals($statuses[$index], $batch->status);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertCount(3, $batchList);
-        
-        foreach ($batchList as $index => $batch) {
-            $this->assertEquals("bulk-batch-" . ($index + 1), $batch->id);
-            $this->assertEquals(($index + 1) * 10, $batch->total_jobs);
-            $this->assertEquals($statuses[$index], $batch->status);
->>>>>>> Stashed changes
         }
     }
 
@@ -560,15 +358,7 @@ class JobBatchBusinessLogicTest extends TestCase
             'options' => json_encode([]),
         ]);
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        expect($validBatch->id);
-=======
         $this->assertNotNull($validBatch->id);
->>>>>>> 0c25c04 (.)
-=======
-        $this->assertNotNull($validBatch->id);
->>>>>>> Stashed changes
 
         // Verifica che i contatori siano coerenti
         $this->assertGreaterThanOrEqual(0, $validBatch->failed_jobs);
