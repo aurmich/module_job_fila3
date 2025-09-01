@@ -64,6 +64,7 @@ class QueueListenWidget extends Widget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 parent::__construct(\Safe\fopen('php://output', 'w'));
 =======
                 parent::__construct(fopen('php://output', 'w'));
@@ -71,10 +72,13 @@ class QueueListenWidget extends Widget
 =======
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> c1a71a4 (.)
                 parent::__construct(fopen('php://output', 'w'));
 =======
                 parent::__construct(\Safe\fopen('php://output', 'w'));
 >>>>>>> e5461b8 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0c25c045 (.)
 =======
@@ -82,6 +86,11 @@ class QueueListenWidget extends Widget
 >>>>>>> dcbe6e6c (.)
 =======
 >>>>>>> 0c25c04 (.)
+=======
+=======
+                parent::__construct(fopen('php://output', 'w'));
+>>>>>>> ae4cd76 (.)
+>>>>>>> c1a71a4 (.)
             }
 
             protected function doWrite(string $message, bool $newline): void
@@ -104,6 +113,7 @@ class QueueListenWidget extends Widget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $resource = \Safe\fopen('php://stdout', 'w');
 =======
         $resource = fopen('php://stdout', 'w');
@@ -111,10 +121,13 @@ class QueueListenWidget extends Widget
 =======
 =======
 >>>>>>> 0c25c04 (.)
+=======
+>>>>>>> c1a71a4 (.)
         $resource = fopen('php://stdout', 'w');
 =======
         $resource = \Safe\fopen('php://stdout', 'w');
 >>>>>>> e5461b8 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0c25c045 (.)
 =======
@@ -122,6 +135,11 @@ class QueueListenWidget extends Widget
 >>>>>>> dcbe6e6c (.)
 =======
 >>>>>>> 0c25c04 (.)
+=======
+=======
+        $resource = fopen('php://stdout', 'w');
+>>>>>>> ae4cd76 (.)
+>>>>>>> c1a71a4 (.)
         if ($resource === false) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }
