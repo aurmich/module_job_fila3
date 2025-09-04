@@ -305,14 +305,14 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Performance Tuning](./performance_tuning.md)
 
 ### Moduli Collegati
-- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Job medici
-- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Job notifiche
-- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Job processing media
-- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Job utenti
+- [SaluteOra Module](../../SaluteOra/project_docs/modelli_factory_seeder_analisi.md) - Job medici
+- [Notify Module](../../Notify/project_docs/modelli_factory_seeder_analisi.md) - Job notifiche
+- [Media Module](../../Media/project_docs/modelli_factory_seeder_analisi.md) - Job processing media
+- [User Module](../../User/project_docs/modelli_factory_seeder_analisi.md) - Job utenti
 
 ### Tecnologie Utilizzate
-- [Laravel Queues](https://laravel.com/docs/queues) - Sistema code Laravel
-- [Laravel Horizon](https://laravel.com/docs/horizon) - Dashboard code Redis
+- [Laravel Queues](https://laravel.com/project_docs/queues) - Sistema code Laravel
+- [Laravel Horizon](https://laravel.com/project_docs/horizon) - Dashboard code Redis
 - [Supervisor](http://supervisord.org/) - Process control system
 - [Redis](https://redis.io/) - Queue driver Redis
 

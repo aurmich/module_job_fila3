@@ -29,10 +29,10 @@ php artisan vendor:publish --tag=job-assets
 ```
 
 ## Documentazione correlata
-- [Modulo Xot](../../Xot/docs/README.md)
-- [Modulo User](../../User/docs/README.md)
-- [Modulo UI](../../UI/docs/README.md)
-- [README generali](../../../../docs/README.md)
+- [Modulo Xot](../../Xot/project_docs/README.md)
+- [Modulo User](../../User/project_docs/README.md)
+- [Modulo UI](../../UI/project_docs/README.md)
+- [README generali](../../../../project_docs/README.md)
 
 ## Analisi PHPStan
 ```bash
