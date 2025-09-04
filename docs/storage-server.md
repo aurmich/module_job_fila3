@@ -1,3 +1,7 @@
+# storage_server
+
+<!-- Contenuto migrato da _docs/storage_server.txt -->
+
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
