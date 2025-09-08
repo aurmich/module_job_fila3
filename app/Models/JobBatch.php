@@ -27,6 +27,7 @@ use Illuminate\Support\Collection;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
+ *
  * @method static \Modules\Job\Database\Factories\JobBatchFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch newQuery()
@@ -41,8 +42,18 @@ use Illuminate\Support\Collection;
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch whereOptions($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch wherePendingJobs($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch whereTotalJobs($value)
+ *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+ * @method static JobBatch|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, JobBatch> get()
+ * @method static JobBatch create(array $attributes = [])
+ * @method static JobBatch firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|JobBatch where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|JobBatch whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
  * @mixin IdeHelperJobBatch
  * @mixin \Eloquent
  */

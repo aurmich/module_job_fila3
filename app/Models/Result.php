@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\DB;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Task|null $task
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Result newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Result query()
@@ -34,10 +35,22 @@ use Illuminate\Support\Facades\DB;
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereUpdatedBy($value)
+ *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ *
  * @mixin IdeHelperResult
+ *
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+ *
  * @method static \Modules\Job\Database\Factories\ResultFactory factory($count = null, $state = [])
+ * @method static Result|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, Result> get()
+ * @method static Result create(array $attributes = [])
+ * @method static Result firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Result where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
  * @mixin \Eloquent
  */
 class Result extends BaseModel

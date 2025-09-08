@@ -185,6 +185,7 @@ php artisan queue:failed-table
 - [Modulo User](../../User/project_docs/README.md)
 - [Modulo UI](../../UI/project_docs/README.md)
 - [README generali](../../../../project_docs/README.md)
+<<<<<<< HEAD
 =======
 ## 📚 Documentazione Correlata
 
@@ -199,6 +200,8 @@ php artisan queue:failed-table
 
 ## 🔍 Analisi PHPStan
 >>>>>>> 1f60bdbd (.)
+=======
+>>>>>>> a510e52 (.)
 
 ```bash
 # Esegui analisi statica

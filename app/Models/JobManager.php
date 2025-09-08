@@ -26,6 +26,7 @@ use Illuminate\Support\Facades\Hash;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string $status
+ *
  * @method static \Modules\Job\Database\Factories\JobManagerFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager newQuery()
@@ -42,6 +43,14 @@ use Illuminate\Support\Facades\Hash;
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereQueue($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereStartedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereUpdatedAt($value)
+ * @method static JobManager|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, JobManager> get()
+ * @method static JobManager create(array $attributes = [])
+ * @method static JobManager firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|JobManager where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|JobManager whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
  * @mixin IdeHelperJobManager
  * @mixin \Eloquent
  */
