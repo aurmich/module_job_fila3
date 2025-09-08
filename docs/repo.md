@@ -4,8 +4,8 @@ https://github.com/mooxphp/jobs/tree/main
 
 
 ## Collegamenti tra versioni di repo.md
-* [repo.md](../../../Gdpr/project_docs/repo.md)
-* [repo.md](../../../Job/project_docs/repo.md)
+* [repo.md](../../../Gdpr/docs/repo.md)
+* [repo.md](../../../Job/docs/repo.md)
 
 
 ### Versione Incoming

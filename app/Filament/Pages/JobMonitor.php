@@ -17,7 +17,7 @@ class JobMonitor extends Page
 
     // public function mount(): void {
     //     $user = auth()->user();
-    //     if(!$user->hasRole('super-admin')/** @phpstan-ignore method.nonObject */){
+    //     if(!$user->hasRole('super-admin')){
     //         redirect('/admin');
     //     }
     // }

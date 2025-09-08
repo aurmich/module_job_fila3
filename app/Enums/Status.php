@@ -38,10 +38,10 @@ enum Status: string implements HasColor, HasIcon, HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::Active => (string) __('job::schedule.status.active'),
-            self::Inactive => (string) __('job::schedule.status.inactive'),
-            self::Trashed => (string) __('job::schedule.status.trashed'),
-            self::One => (string) __('job::schedule.status.one'),
+            self::Active => __('job::schedule.status.active'),
+            self::Inactive => __('job::schedule.status.inactive'),
+            self::Trashed => __('job::schedule.status.trashed'),
+            self::One => __('job::schedule.status.one'),
         };
     }
 }

@@ -208,7 +208,7 @@ class JobMetricsService
 
 ## 🔗 Collegamenti
 
-- [Laravel Queue Documentation](https://laravel.com/project_docs/queues)
+- [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Job Monitoring Best Practices](./monitoring.md)
 - [Performance Optimization](./performance.md)
 

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Pages;
 
+use Filament\Pages\Page;
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
@@ -14,7 +15,7 @@ class Dashboard extends XotBaseDashboard
 
     // public function mount(): void {
     //     $user = auth()->user();
-    //     if(!$user->hasRole('super-admin')/** @phpstan-ignore method.nonObject */){
+    //     if(!$user->hasRole('super-admin')){
     //         redirect('/admin');
     //     }
     // }

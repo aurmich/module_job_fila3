@@ -13,7 +13,6 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import query()
- *
  * @property int $id
  * @property \Illuminate\Support\Carbon|null $completed_at
  * @property string $file_name
@@ -29,7 +28,6 @@ namespace Modules\Job\Models;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCompletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedBy($value)
@@ -45,22 +43,10 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserId($value)
- *
  * @property string|null $user_type
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserType($value)
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static Import|null first()
- * @method static \Illuminate\Database\Eloquent\Collection<int, Import> get()
- * @method static Import create(array $attributes = [])
- * @method static Import firstOrCreate(array $attributes = [], array $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Import where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Import whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
- * @method static int count(string $columns = '*')
- *
  * @mixin IdeHelperImport
  * @mixin \Eloquent
  */

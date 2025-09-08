@@ -320,9 +320,9 @@ abstract class BaseJob
 
 ``` 
 ## Collegamenti tra versioni di bottlenecks_detailed.md
-* [bottlenecks_detailed.md](../../../Xot/project_docs/bottlenecks_detailed.md)
-* [bottlenecks_detailed.md](../../../Job/project_docs/bottlenecks_detailed.md)
-* [bottlenecks_detailed.md](../../../Media/project_docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../Xot/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../Job/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../Media/docs/bottlenecks_detailed.md)
 
 
 ### Versione Incoming

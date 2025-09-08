@@ -56,13 +56,13 @@ class ListSchedules extends XotBaseListRecords
         return [
             Tables\Actions\EditAction::make()
                 ->hidden(fn ($record) => $record->trashed())
-                ->tooltip((string) __('filament-support::actions/edit.single.label')),
+                ->tooltip(__('filament-support::actions/edit.single.label')),
             Tables\Actions\RestoreAction::make()
-                ->tooltip((string) __('filament-support::actions/restore.single.label')),
+                ->tooltip(__('filament-support::actions/restore.single.label')),
             Tables\Actions\DeleteAction::make()
-                ->tooltip((string) __('filament-support::actions/delete.single.label')),
+                ->tooltip(__('filament-support::actions/delete.single.label')),
             Tables\Actions\ForceDeleteAction::make()
-                ->tooltip((string) __('filament-support::actions/force-delete.single.label')),
+                ->tooltip(__('filament-support::actions/force-delete.single.label')),
             Tables\Actions\ViewAction::make()
                 ->icon('history')
                 ->color('gray')

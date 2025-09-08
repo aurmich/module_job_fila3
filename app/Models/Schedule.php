@@ -46,7 +46,6 @@ use Webmozart\Assert\Assert;
  * @property string|null $deleted_by
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule active()
  * @method static \Modules\Job\Database\Factories\ScheduleFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule inactive()
@@ -83,14 +82,6 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule whereWithoutOverlapping($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withoutTrashed()
- * @method static Schedule|null first()
- * @method static \Illuminate\Database\Eloquent\Collection<int, Schedule> get()
- * @method static Schedule create(array $attributes = [])
- * @method static Schedule firstOrCreate(array $attributes = [], array $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Schedule where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Schedule whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
- * @method static int count(string $columns = '*')
- *
  * @mixin IdeHelperSchedule
  * @mixin \Eloquent
  */
@@ -237,9 +228,9 @@ class Schedule extends BaseModel
     /**
      * Safely evaluate function strings (avoiding eval).
      *
-     * @param  string  $functionString  Il nome della funzione da valutare
+     * @param string $functionString Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
-     *
+     * 
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -264,7 +255,7 @@ class Schedule extends BaseModel
                 return null;
             }
         }
-
+        
         // Funzione non consentita
         return null;
     }

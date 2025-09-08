@@ -24,7 +24,6 @@ use Illuminate\Support\Carbon;
  * @property Collection<int, \Modules\Job\Models\Parameter> $parameters
  * @property int|null $parameters_count
  * @property Task|null $task
- *
  * @method static \Modules\Job\Database\Factories\FrequencyFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Frequency newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Frequency newQuery()
@@ -37,18 +36,8 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Frequency whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Frequency whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Frequency whereUpdatedBy($value)
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static Frequency|null first()
- * @method static \Illuminate\Database\Eloquent\Collection<int, Frequency> get()
- * @method static Frequency create(array $attributes = [])
- * @method static Frequency firstOrCreate(array $attributes = [], array $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Frequency where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Frequency whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
- * @method static int count(string $columns = '*')
- *
  * @mixin IdeHelperFrequency
  * @mixin \Eloquent
  */

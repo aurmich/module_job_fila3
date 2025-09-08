@@ -32,12 +32,12 @@ class JobStatsOverview extends BaseWidget
 
         if ($aggregatedInfo) {
             $averageTime = app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
-                ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0') ?
+                ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0') ? 
                 ceil((float) app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
                     ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0')).'s' : '0';
-
+            
             $totalTime = app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
-                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0') ?
+                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0') ? 
                 $this->formatSeconds((int) app(\Modules\Xot\Actions\Cast\SafeEloquentCastAction::class)
                     ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0')).'s' : '0';
         } else {
@@ -46,9 +46,9 @@ class JobStatsOverview extends BaseWidget
         }
 
         return [
-            Stat::make((string) __('jobs::translations.total_jobs'), $aggregatedInfo->count ?? 0),
-            Stat::make((string) __('jobs::translations.execution_time'), $totalTime),
-            Stat::make((string) __('jobs::translations.average_time'), $averageTime),
+            Stat::make(__('jobs::translations.total_jobs'), $aggregatedInfo->count ?? 0),
+            Stat::make(__('jobs::translations.execution_time'), $totalTime),
+            Stat::make(__('jobs::translations.average_time'), $averageTime),
         ];
     }
 }

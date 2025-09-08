@@ -1,7 +1,3 @@
-# storage_server
-
-<!-- Contenuto migrato da _docs/storage_server.txt -->
-
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
@@ -40,7 +36,7 @@ composer require spatie/flysystem-dropbox
 ----------------------------------------------
 Minio
 https://laravel-news.com/minio-s3-compliant-storage
-https://github.com/amincheloh/cookbook/blob/master/project_docs/how-to-use-minio-as-laravel-file-storage.md
+https://github.com/amincheloh/cookbook/blob/master/docs/how-to-use-minio-as-laravel-file-storage.md
 ------------------------------------------------
 
 

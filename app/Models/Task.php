@@ -51,7 +51,6 @@ use Webmozart\Assert\Assert;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result> $results
  * @property int|null $results_count
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task query()
@@ -81,17 +80,7 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
- *
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- *
- * @method static Task|null first()
- * @method static \Illuminate\Database\Eloquent\Collection<int, Task> get()
- * @method static Task create(array $attributes = [])
- * @method static Task firstOrCreate(array $attributes = [], array $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Task where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
- * @method static int count(string $columns = '*')
- *
  * @mixin IdeHelperTask
  * @mixin \Eloquent
  */
@@ -105,12 +94,12 @@ class Task extends BaseModel
     /**
      * Compila i parametri del task per l'esecuzione.
      *
-     * @param  bool  $forScheduler  Se true, i parametri vengono formattati per lo scheduler
+     * @param bool $forScheduler Se true, i parametri vengono formattati per lo scheduler
      * @return array<int, string>|string
      */
     public function compileParameters(bool $forScheduler = false): array|string
     {
-        if ($this->parameters === null) {
+        if (null === $this->parameters) {
             return [];
         }
 
@@ -123,7 +112,6 @@ class Task extends BaseModel
 
         return $parameters;
     }
-
     protected $fillable = [
         'id',
         'description',
@@ -262,7 +250,7 @@ class Task extends BaseModel
                     Result::query()
                         ->whereIn('id', $rowsToDelete)
                         ->delete();
-                } while ($rowsToDelete->count()/** @phpstan-ignore method.nonObject */ > 0);
+                } while ($rowsToDelete->count() > 0);
             } else {
                 do {
                     $rowsToDelete = $this->results()
@@ -275,7 +263,7 @@ class Task extends BaseModel
                     Result::query()
                         ->whereIn('id', $rowsToDelete)
                         ->delete();
-                } while ($rowsToDelete->count()/** @phpstan-ignore method.nonObject */ > 0);
+                } while ($rowsToDelete->count() > 0);
             }
         }
     }

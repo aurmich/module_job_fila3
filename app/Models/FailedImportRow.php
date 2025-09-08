@@ -13,7 +13,6 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow query()
- *
  * @property int $id
  * @property array $data
  * @property int $import_id
@@ -22,7 +21,6 @@ namespace Modules\Job\Models;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- *
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereData($value)
@@ -31,18 +29,8 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow whereValidationError($value)
- *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static FailedImportRow|null first()
- * @method static \Illuminate\Database\Eloquent\Collection<int, FailedImportRow> get()
- * @method static FailedImportRow create(array $attributes = [])
- * @method static FailedImportRow firstOrCreate(array $attributes = [], array $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|FailedImportRow where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|FailedImportRow whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
- * @method static int count(string $columns = '*')
- *
  * @mixin IdeHelperFailedImportRow
  * @mixin \Eloquent
  */

@@ -75,7 +75,7 @@
                                     @endunless
 
                                     <span class="sr-only">
-                                        {{ (string) __('filament-table-repeater::components.repeater.row_actions.label') }}
+                                        {{ __('filament-table-repeater::components.repeater.row_actions.label') }}
                                     </span>
                             </div>
                         </th>
@@ -111,7 +111,7 @@
                                     <div class="flex items-center md:justify-center">
                                         @unless ($isItemMovementDisabled)
                                             <button
-                                                title="{{ (string) __('forms::components.repeater.buttons.move_item.label') }}"
+                                                title="{{ __('forms::components.repeater.buttons.move_item.label') }}"
                                                 x-on:click.stop wire:sortable.handle
                                                 wire:keydown.prevent.arrow-up="dispatchFormEvent('repeater::moveItemUp', '{{ $getStatePath() }}', '{{ $uuid }}')"
                                                 wire:keydown.prevent.arrow-down="dispatchFormEvent('repeater::moveItemDown', '{{ $getStatePath() }}', '{{ $uuid }}')"
@@ -120,7 +120,7 @@
                                                     'dark:border-gray-700' => config('forms.dark_mode'),
                                                 ])>
                                                 <span class="sr-only">
-                                                    {{ (string) __('forms::components.repeater.buttons.move_item.label') }}
+                                                    {{ __('forms::components.repeater.buttons.move_item.label') }}
                                                 </span>
 
                                                 <x-heroicon-o-arrows-up-down class="w-5 h-5 md:!w-4 md:!h-4" />
@@ -129,14 +129,14 @@
 
                                         @if ($isCloneable)
                                             <button
-                                                title="{{ (string) __('forms::components.repeater.buttons.clone_item.label') }}"
+                                                title="{{ __('forms::components.repeater.buttons.clone_item.label') }}"
                                                 wire:click="dispatchFormEvent('repeater::cloneItem', '{{ $getStatePath() }}', '{{ $uuid }}')"
                                                 type="button" @class([
                                                     'flex items-center justify-center flex-none w-8 h-8 text-gray-400 transition hover:text-gray-500',
                                                     'dark:border-gray-700' => config('forms.dark_mode'),
                                                 ])>
                                                 <span class="sr-only">
-                                                    {{ (string) __('forms::components.repeater.buttons.clone_item.label') }}
+                                                    {{ __('forms::components.repeater.buttons.clone_item.label') }}
                                                 </span>
 
                                                 <x-heroicon-o-document-duplicate class="w-5 h-5 md:!w-4 md:!h-4" />
@@ -145,7 +145,7 @@
 
                                         @unless ($isItemDeletionDisabled)
                                             <button
-                                                title="{{ (string) __('forms::components.repeater.buttons.delete_item.label') }}"
+                                                title="{{ __('forms::components.repeater.buttons.delete_item.label') }}"
                                                 wire:click.stop="dispatchFormEvent('repeater::deleteItem', '{{ $getStatePath() }}', '{{ $uuid }}')"
                                                 type="button" @class([
                                                     'flex items-center justify-center flex-none w-8 h-8 text-danger-600 transition hover:text-danger-500',
@@ -153,7 +153,7 @@
                                                         'forms.dark_mode'),
                                                 ])>
                                                 <span class="sr-only">
-                                                    {{ (string) __('forms::components.repeater.buttons.delete_item.label') }}
+                                                    {{ __('forms::components.repeater.buttons.delete_item.label') }}
                                                 </span>
 
                                                 <x-heroicon-s-trash class="w-5 h-5 md:!w-4 md:!h-4" />
@@ -172,7 +172,7 @@
                 ])>
                     <td colspan="{{ count($headers) + intval($hasActions) }}"
                         class="w-px p-4 italic text-center filament-table-repeater-column">
-                        {{ $getEmptyLabel() ?? (string) __('filament-table-repeater::components.repeater.empty.label') }}
+                        {{ $getEmptyLabel() ?? __('filament-table-repeater::components.repeater.empty.label') }}
                     </td>
                 </tr>
             @endif
