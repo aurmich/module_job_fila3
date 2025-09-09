@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4f546674 (.)
-<?php return array (
-  'actions' => 
-  array (
-    'create' => 
-    array (
-      'label' => 'create',
-    ),
-  ),
-  'fields' => 
-  array (
-    'status' => 
-    array (
-      'label' => 'status',
-    ),
-    'name' => 
-    array (
-      'label' => 'Nome',
-    ),
-    'queue' => 
-    array (
-      'label' => 'queue',
-    ),
-    'progress' => 
-    array (
-      'label' => 'progress',
-    ),
-    'started_at' => 
-    array (
-      'label' => 'started_at',
-    ),
-  ),
-<<<<<<< HEAD
-);
-=======
 <?php
 
 return [
@@ -62,7 +24,3 @@ return [
         ],
     ],
 ];
->>>>>>> 1b7d3cd6 (.)
-=======
-);
->>>>>>> 4f546674 (.)
