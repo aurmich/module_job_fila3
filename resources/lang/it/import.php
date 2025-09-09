@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php return array (
   'actions' => 
   array (
@@ -13,4 +14,20 @@
       'label' => 'edit',
     ),
   ),
-);
+);
+=======
+<?php
+
+return [
+    'actions' => [
+        'create' => [
+            'label' => 'create',
+        ],
+    ],
+    'fields' => [
+        'edit' => [
+            'label' => 'edit',
+        ],
+    ],
+];
+>>>>>>> 1b7d3cd6 (.)

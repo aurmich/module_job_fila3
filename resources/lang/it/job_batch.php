@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php return array (
   'actions' => 
   array (
@@ -13,4 +14,20 @@
       'label' => 'failed_job_ids',
     ),
   ),
-);
+);
+=======
+<?php
+
+return [
+    'actions' => [
+        'prune_batches' => [
+            'label' => 'prune_batches',
+        ],
+    ],
+    'fields' => [
+        'failed_job_ids' => [
+            'label' => 'failed_job_ids',
+        ],
+    ],
+];
+>>>>>>> 1b7d3cd6 (.)
