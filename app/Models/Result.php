@@ -22,10 +22,6 @@ use Illuminate\Support\Facades\DB;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Task|null $task
-<<<<<<< HEAD
- *
-=======
->>>>>>> 0f9e524e (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Result newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Result query()
@@ -38,22 +34,10 @@ use Illuminate\Support\Facades\DB;
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereUpdatedBy($value)
-<<<<<<< HEAD
- *
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- *
- * @mixin IdeHelperResult
- *
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static \Modules\Job\Database\Factories\ResultFactory factory($count = null, $state = [])
- *
-=======
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @mixin IdeHelperResult
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
  * @method static \Modules\Job\Database\Factories\ResultFactory factory($count = null, $state = [])
->>>>>>> 0f9e524e (.)
  * @mixin \Eloquent
  */
 class Result extends BaseModel

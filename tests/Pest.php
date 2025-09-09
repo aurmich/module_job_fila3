@@ -2,15 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Job\Tests;
-=======
 use Modules\Job\Tests\TestCase;
->>>>>>> 0f9e524e (.)
-=======
-namespace Modules\Job\Tests;
->>>>>>> e71e4755 (.)
 
 /*
 |--------------------------------------------------------------------------
@@ -23,17 +15,7 @@ namespace Modules\Job\Tests;
 |
 */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(\Modules\Job\Tests\TestCase::class)
-    ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
-=======
 pest()->extend(TestCase::class)
->>>>>>> 0f9e524e (.)
-=======
-uses(\Modules\Job\Tests\TestCase::class)
-    ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
->>>>>>> e71e4755 (.)
     ->in('Feature', 'Unit');
 
 /*
