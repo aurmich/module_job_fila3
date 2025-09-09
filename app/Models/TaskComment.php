@@ -23,6 +23,7 @@ use Modules\Xot\Traits\Updater;
  * @property-read \Modules\Job\Models\Task $task
  * @property-read \Modules\User\Models\User $user
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property-read \Modules\Predict\Models\Profile|null $creator
  * @property-read \Modules\Predict\Models\Profile|null $updater
@@ -43,6 +44,8 @@ use Modules\Xot\Traits\Updater;
  *
  * @mixin \Eloquent
 >>>>>>> 1b7d3cd6 (.)
+=======
+>>>>>>> 4f546674 (.)
  */
 class TaskComment extends Model
 {

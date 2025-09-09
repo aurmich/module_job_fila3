@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Job\Models\BaseModel;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Database\Eloquent\Model;
@@ -16,12 +17,23 @@ beforeEach(function () {
     $this->baseModel = new class extends BaseModel {
 =======
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 4f546674 (.)
 use Modules\Job\Models\BaseModel;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Database\Eloquent\Model;
+use Tests\TestCase;
+
+uses(TestCase::class, RefreshDatabase::class);
 
 beforeEach(function () {
+<<<<<<< HEAD
     $this->baseModel = new class extends BaseModel
     {
 >>>>>>> 1b7d3cd6 (.)
+=======
+    $this->baseModel = new class extends BaseModel {
+>>>>>>> 4f546674 (.)
         protected $table = 'test_job_table';
     };
 });
