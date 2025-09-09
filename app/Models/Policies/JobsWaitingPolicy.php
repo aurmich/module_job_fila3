@@ -7,7 +7,11 @@ namespace Modules\Job\Models\Policies;
 use Modules\Job\Models\JobsWaiting;
 use Modules\Xot\Contracts\UserContract;
 
+<<<<<<< HEAD
 class JobsWaitingPolicy extends \Modules\Xot\Models\Policies\XotBasePolicy
+=======
+class JobsWaitingPolicy extends JobBasePolicy
+>>>>>>> 0f9e524e (.)
 {
     /**
      * Determine whether the user can view any models.

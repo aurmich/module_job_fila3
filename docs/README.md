@@ -250,6 +250,7 @@ php artisan test --filter=ResultBusinessLogicTest
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo User](../../User/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
+<<<<<<< HEAD
 # Job Module Documentation
 
 Job module for Laraxot PTVX providing specialized functionality and business logic.
@@ -294,11 +295,16 @@ $result = app(JobService::class)->process($data);
 ### Problemi Identificati
 
 Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti file:
+=======
+
+---
+>>>>>>> 0f9e524e (.)
 
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
+<<<<<<< HEAD
 - `app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php` - Widget statistiche job manager
 - `app/Filament/Resources/JobsWaitingResource/Widgets/JobsWaitingOverview.php` - Widget statistiche job in attesa
 
@@ -323,3 +329,5 @@ I conflitti riguardavano principalmente:
 - Verificare i conflitti prima di ogni commit
 - Mantenere la struttura dei widget coerente e documentata
 - Testare i widget dopo ogni modifica per verificare la correttezza dei calcoli
+=======
+>>>>>>> 0f9e524e (.)

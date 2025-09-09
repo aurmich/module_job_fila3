@@ -7,7 +7,11 @@ namespace Modules\Job\Models\Policies;
 use Modules\Job\Models\Task;
 use Modules\Xot\Contracts\UserContract;
 
+<<<<<<< HEAD
 class TaskPolicy extends \Modules\Xot\Models\Policies\XotBasePolicy
+=======
+class TaskPolicy extends JobBasePolicy
+>>>>>>> 0f9e524e (.)
 {
     /**
      * Determine whether the user can view any models.

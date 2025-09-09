@@ -39,7 +39,11 @@ use Webmozart\Assert\Assert;
  * @property int $order_column
  * @property string $status
  * @property string $priority_id
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+=======
+ *                               property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+>>>>>>> 0f9e524e (.)
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Frequency> $frequencies
  * @property int|null $frequencies_count
  * @property bool $activated
@@ -51,7 +55,10 @@ use Webmozart\Assert\Assert;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result> $results
  * @property int|null $results_count
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 0f9e524e (.)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task query()
@@ -81,9 +88,13 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
+<<<<<<< HEAD
  *
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  *
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+>>>>>>> 0f9e524e (.)
  * @mixin IdeHelperTask
  * @mixin \Eloquent
  */
@@ -97,12 +108,20 @@ class Task extends BaseModel
     /**
      * Compila i parametri del task per l'esecuzione.
      *
+<<<<<<< HEAD
      * @param  bool  $forScheduler  Se true, i parametri vengono formattati per lo scheduler
+=======
+     * @param bool $forScheduler Se true, i parametri vengono formattati per lo scheduler
+>>>>>>> 0f9e524e (.)
      * @return array<int, string>|string
      */
     public function compileParameters(bool $forScheduler = false): array|string
     {
+<<<<<<< HEAD
         if ($this->parameters === null) {
+=======
+        if (null === $this->parameters) {
+>>>>>>> 0f9e524e (.)
             return [];
         }
 
@@ -115,7 +134,10 @@ class Task extends BaseModel
 
         return $parameters;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f9e524e (.)
     protected $fillable = [
         'id',
         'description',

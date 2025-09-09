@@ -36,9 +36,15 @@ Il `RouteServiceProvider` gestisce:
 - Namespace dei controller `Modules\Job\Http\Controllers`
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Documentazione Generale dei Moduli](/project_docs/modules.md)
 - [Configurazione Job](/project_docs/module_job.md)
 - [Best Practices PHPStan](/project_docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+=======
+- [Documentazione Generale dei Moduli](/docs/modules.md)
+- [Configurazione Job](/docs/module_job.md)
+- [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+>>>>>>> 0f9e524e (.)
 
 # Analisi Dettagliata del Modulo Job
 
@@ -130,6 +136,7 @@ namespace Modules\Job\App\Filament\Resources;
 
 ## Collegamenti alla documentazione generale
 
+<<<<<<< HEAD
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
 - [Documentazione Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/project_docs/README.md)
@@ -153,9 +160,38 @@ namespace Modules\Job\App\Filament\Resources;
 * [structure.md](../../../Cms/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/themes/structure.md)
 * [structure.md](../../../Cms/project_docs/components/structure.md)
+=======
+- [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
+- [Report PHPStan](/docs/phpstan/)
+- [Documentazione Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/README.md)
+- [Documentazione UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/README.md)
+- [Convenzioni dei Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs/MODULE_NAMESPACE_RULES.md)
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](../../../Xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../../Job/docs/structure.md)
+* [structure.md](../../../Media/docs/structure.md)
+* [structure.md](../../../Tenant/docs/structure.md)
+* [structure.md](../../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> 0f9e524e (.)
 
 
 ### Versione Incoming
 
 
+<<<<<<< HEAD
 * [structure.md](../../../Cms/project_docs/components/structure.md)
+=======
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> 0f9e524e (.)

@@ -7,7 +7,11 @@ namespace Modules\Job\Models\Policies;
 use Modules\Job\Models\Schedule;
 use Modules\Xot\Contracts\UserContract;
 
+<<<<<<< HEAD
 class SchedulePolicy extends \Modules\Xot\Models\Policies\XotBasePolicy
+=======
+class SchedulePolicy extends JobBasePolicy
+>>>>>>> 0f9e524e (.)
 {
     /**
      * Determine whether the user can view any models.

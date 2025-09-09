@@ -3,10 +3,18 @@
 declare(strict_types=1);
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
+<<<<<<< HEAD
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction;
+=======
+use Modules\Job\Models\TaskFrequency;
+
+describe('GetTaskFrequenciesAction Integration', function () {
+    beforeEach(function () {
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> 0f9e524e (.)
     });
 
     it('returns array when config exists', function () {
@@ -29,7 +37,11 @@ describe('GetTaskFrequenciesAction Integration', function () {
                 'hourly',
                 'daily',
                 'weekly',
+<<<<<<< HEAD
                 'monthly',
+=======
+                'monthly'
+>>>>>>> 0f9e524e (.)
             ])
             ->and($result['everyMinute'])->toBe('Every Minute')
             ->and($result['hourly'])->toBe('Hourly')
@@ -69,7 +81,11 @@ describe('GetTaskFrequenciesAction Integration', function () {
     it('integrates with Laravel service container', function () {
         // Test that the action can be resolved from container
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 0f9e524e (.)
         expect($actionFromContainer)->toBeInstanceOf(GetTaskFrequenciesAction::class);
     });
 

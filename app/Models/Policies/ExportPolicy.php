@@ -6,9 +6,14 @@ namespace Modules\Job\Models\Policies;
 
 use Modules\Job\Models\Export;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 class ExportPolicy extends XotBasePolicy
+=======
+
+class ExportPolicy extends JobBasePolicy
+>>>>>>> 0f9e524e (.)
 {
     /**
      * Determine whether the user can view any models.
