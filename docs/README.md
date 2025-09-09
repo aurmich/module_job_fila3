@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -251,7 +250,6 @@ php artisan test --filter=ResultBusinessLogicTest
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo User](../../User/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
-=======
 # Job Module Documentation
 
 Job module for Laraxot PTVX providing specialized functionality and business logic.
@@ -294,16 +292,13 @@ $result = app(JobService::class)->process($data);
 ## Risoluzione Conflitti Git
 
 ### Problemi Identificati
->>>>>>> 97e08af (.)
 
 Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti file:
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
-=======
 - `app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php` - Widget statistiche job manager
 - `app/Filament/Resources/JobsWaitingResource/Widgets/JobsWaitingOverview.php` - Widget statistiche job in attesa
 
@@ -328,4 +323,3 @@ I conflitti riguardavano principalmente:
 - Verificare i conflitti prima di ogni commit
 - Mantenere la struttura dei widget coerente e documentata
 - Testare i widget dopo ogni modifica per verificare la correttezza dei calcoli
->>>>>>> 97e08af (.)

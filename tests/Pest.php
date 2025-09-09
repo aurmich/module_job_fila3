@@ -15,12 +15,8 @@ namespace Modules\Job\Tests;
 |
 */
 
-<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class)
     ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
-=======
-pest()->extend(TestCase::class)
->>>>>>> 97e08af (.)
     ->in('Feature', 'Unit');
 
 /*
