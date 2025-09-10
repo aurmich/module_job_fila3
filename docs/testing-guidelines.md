@@ -7,11 +7,8 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=sqlite
-<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
-=======
 DB_DATABASE=saluteora_data_test
->>>>>>> a8a9f0b7 (.)
 QUEUE_CONNECTION=sync
 ```
 
@@ -383,10 +380,7 @@ describe('Job Performance', function () {
         expect($memoryIncrease)->toBeLessThan(50 * 1024 * 1024); // 50MB max increase
     });
 });
-<<<<<<< HEAD
 ```
-=======
->>>>>>> a8a9f0b7 (.)
 
 ## Quality Standards
 

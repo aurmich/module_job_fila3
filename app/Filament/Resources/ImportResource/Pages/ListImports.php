@@ -72,12 +72,8 @@ class ListImports extends XotBaseListRecords
     public function getTableActions(): array
     {
         return [
-<<<<<<< HEAD
             'edit' => EditAction::make()
                 ,
-=======
-            'edit' => EditAction::make(),
->>>>>>> a8a9f0b7 (.)
         ];
     }
 

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -140,12 +135,6 @@
 
 ---
 
-=======
-=======
->>>>>>> 0c25c045 (.)
-=======
->>>>>>> dcbe6e6c (.)
->>>>>>> a8a9f0b7 (.)
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -342,11 +331,8 @@ php artisan queue:failed-table
 
 ```bash
 # Esegui analisi statica
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
 cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> a8a9f0b7 (.)
 ./vendor/bin/phpstan analyze Modules/Job --level=9
 ```
 
@@ -409,13 +395,6 @@ php artisan test --filter=ResultBusinessLogicTest
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bbe7a8fa (.)
-=======
-=======
 # Modulo Job
 
 ## Struttura
@@ -553,8 +532,3 @@ php artisan test --filter=ResultBusinessLogicTest
 
 ---
 
->>>>>>> e5461b8 (.)
->>>>>>> 0c25c045 (.)
-=======
->>>>>>> dcbe6e6c (.)
->>>>>>> a8a9f0b7 (.)

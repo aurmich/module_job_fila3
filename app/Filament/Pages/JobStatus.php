@@ -6,17 +6,12 @@ namespace Modules\Job\Filament\Pages;
 
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Artisan;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Process;
 use Modules\Job\Filament\Widgets\ClockWidget;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
 
 use function Safe\mb_convert_encoding;
-=======
-use Modules\Job\Filament\Widgets\ClockWidget;
-use Modules\Xot\Filament\Traits\NavigationLabelTrait;
->>>>>>> a8a9f0b7 (.)
 
 class JobStatus extends Page
 {
@@ -35,11 +30,8 @@ class JobStatus extends Page
         ];
     }
 
-<<<<<<< HEAD
     
 
-=======
->>>>>>> a8a9f0b7 (.)
     public function artisan(string $cmd): void
     {
         $this->out = '';

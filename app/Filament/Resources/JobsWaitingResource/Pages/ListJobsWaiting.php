@@ -8,15 +8,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Pages;
 
-<<<<<<< HEAD
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Table;
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> a8a9f0b7 (.)
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOverview;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -25,11 +21,8 @@ class ListJobsWaiting extends XotBaseListRecords
 {
     public static string $resource = JobsWaitingResource::class;
 
-<<<<<<< HEAD
     
 
-=======
->>>>>>> a8a9f0b7 (.)
     public function getHeaderWidgets(): array
     {
         return [
@@ -37,11 +30,8 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
    
 
-=======
->>>>>>> a8a9f0b7 (.)
     public function getTableColumns(): array
     {
         return [

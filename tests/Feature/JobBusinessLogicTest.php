@@ -3,10 +3,7 @@
 declare(strict_types=1);
 
 use Modules\Job\Models\Job;
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
->>>>>>> a8a9f0b7 (.)
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
@@ -141,11 +138,7 @@ describe('Job Business Logic', function () {
 
     it('can handle job scheduling and delays', function () {
         $futureTime = now()->addHours(2);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> a8a9f0b7 (.)
         $job = Job::create([
             'queue' => 'scheduled',
             'payload' => json_encode(['displayName' => 'ScheduledJob']),
@@ -276,11 +269,7 @@ describe('Job Business Logic', function () {
         }
 
         expect($batchJobs)->toHaveCount(5);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> a8a9f0b7 (.)
         foreach ($batchJobs as $job) {
             expect($job->queue)->toBe('batch')
                 ->and($job->display_name)->toBe('BatchJob')

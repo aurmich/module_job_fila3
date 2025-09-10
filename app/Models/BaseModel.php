@@ -11,16 +11,10 @@ use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
-<<<<<<< HEAD
  * 
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * 
-=======
- *
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> a8a9f0b7 (.)
  */
 abstract class BaseModel extends Model
 {
