@@ -9,11 +9,7 @@ Trovati 1 errori al livello 4.
 
 ## Errori e suggerimenti
 
-<<<<<<< HEAD
-### File: `/var/www/html/saluteora/laravel/Modules/Job/app/Models/Task.php`
-=======
 ### File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Job/app/Models/Task.php`
->>>>>>> 72017b5 (.)
 
 #### Linea 86: PHPDoc tag @property-read for property Modules\Job\Models\Task::$creator contains unknown class Modules\Broker\Models\Profile.
 

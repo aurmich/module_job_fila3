@@ -22,13 +22,8 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $deleted_at
  * @property-read \Modules\Job\Models\Task $task
  * @property-read \Modules\User\Models\User $user
-<<<<<<< HEAD
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
-=======
  * @property-read \Modules\Ptv\Models\Profile|null $creator
  * @property-read \Modules\Ptv\Models\Profile|null $updater
->>>>>>> 72017b5 (.)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment onlyTrashed()
