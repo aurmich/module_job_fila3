@@ -13,6 +13,10 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import query()
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @property int $id
  * @property \Illuminate\Support\Carbon|null $completed_at
  * @property string $file_name
@@ -28,6 +32,10 @@ namespace Modules\Job\Models;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCompletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereCreatedBy($value)
@@ -43,10 +51,21 @@ namespace Modules\Job\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserId($value)
+<<<<<<< HEAD
  * @property string|null $user_type
  * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserType($value)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+=======
+ *
+ * @property string|null $user_type
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Import whereUserType($value)
+ *
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+>>>>>>> a8a9f0b7 (.)
  * @mixin IdeHelperImport
  * @mixin \Eloquent
  */

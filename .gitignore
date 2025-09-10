@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Dependencies and packages
 node_modules/
@@ -35,4 +36,42 @@ docs/phpstan/
 
 # Other
 /docs/cache
+=======
+# Dependencies
+vendor/
+node_modules/
+package-lock.json
+composer.lock
+
+# Build and compiled files
+/build
+/docs/cache
+cache/
+docs/cache/
+
+# Cache and temporary files
+*.cache
+*.lock
+*.phar
+*:Zone.Identifier
+.php-cs-fixer.cache
+
+# Git related
+.git-rewrite/
+.git-blame-ignore-revs
+
+# Backup files
+*.old
+*.old1
+*.backup
+*.bak
+
+# File di log
+*.log
+
+# PHPStan documentation
+docs/phpstan/
+
+# Other
+>>>>>>> a8a9f0b7 (.)
 -e

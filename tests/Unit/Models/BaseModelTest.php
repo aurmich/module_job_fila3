@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Job\Models\BaseModel;
 use Tests\TestCase;
 
 uses(TestCase::class, RefreshDatabase::class);
+=======
+use Modules\Job\Models\BaseModel;
+>>>>>>> a8a9f0b7 (.)
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel

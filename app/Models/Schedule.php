@@ -46,6 +46,10 @@ use Webmozart\Assert\Assert;
  * @property string|null $deleted_by
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule active()
  * @method static \Modules\Job\Database\Factories\ScheduleFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule inactive()
@@ -82,6 +86,10 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule whereWithoutOverlapping($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Schedule withoutTrashed()
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @mixin IdeHelperSchedule
  * @mixin \Eloquent
  */
@@ -228,9 +236,15 @@ class Schedule extends BaseModel
     /**
      * Safely evaluate function strings (avoiding eval).
      *
+<<<<<<< HEAD
      * @param string $functionString Il nome della funzione da valutare
      * @return string|null Il risultato della funzione o null se la funzione non è consentita
      * 
+=======
+     * @param  string  $functionString  Il nome della funzione da valutare
+     * @return string|null Il risultato della funzione o null se la funzione non è consentita
+     *
+>>>>>>> a8a9f0b7 (.)
      * @throws \InvalidArgumentException Se viene passato un argomento non valido
      */
     private function evaluateFunction(string $functionString): ?string
@@ -255,7 +269,11 @@ class Schedule extends BaseModel
                 return null;
             }
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> a8a9f0b7 (.)
         // Funzione non consentita
         return null;
     }

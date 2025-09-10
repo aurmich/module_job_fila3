@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Job\Tests\TestCase;
+=======
+namespace Modules\Job\Tests;
+>>>>>>> a8a9f0b7 (.)
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +19,12 @@ use Modules\Job\Tests\TestCase;
 |
 */
 
+<<<<<<< HEAD
 pest()->extend(TestCase::class)
+=======
+uses(\Modules\Job\Tests\TestCase::class)
+    ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
+>>>>>>> a8a9f0b7 (.)
     ->in('Feature', 'Unit');
 
 /*

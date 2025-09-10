@@ -27,6 +27,10 @@ use Illuminate\Support\Collection;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @method static \Modules\Job\Database\Factories\JobBatchFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch newQuery()
@@ -41,8 +45,15 @@ use Illuminate\Support\Collection;
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch whereOptions($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch wherePendingJobs($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobBatch whereTotalJobs($value)
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+=======
+ *
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+>>>>>>> a8a9f0b7 (.)
  * @mixin IdeHelperJobBatch
  * @mixin \Eloquent
  */

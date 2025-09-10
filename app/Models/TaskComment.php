@@ -22,6 +22,7 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $deleted_at
  * @property-read \Modules\Job\Models\Task $task
  * @property-read \Modules\User\Models\User $user
+<<<<<<< HEAD
  * @property-read \Modules\Ptv\Models\Profile|null $creator
  * @property-read \Modules\Ptv\Models\Profile|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment newModelQuery()
@@ -31,6 +32,8 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment withoutTrashed()
  * @mixin \Eloquent
+=======
+>>>>>>> a8a9f0b7 (.)
  */
 class TaskComment extends Model
 {

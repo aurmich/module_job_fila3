@@ -26,6 +26,10 @@ use Illuminate\Support\Facades\Hash;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string $status
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @method static \Modules\Job\Database\Factories\JobManagerFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager newQuery()
@@ -42,6 +46,10 @@ use Illuminate\Support\Facades\Hash;
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereQueue($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereStartedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JobManager whereUpdatedAt($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> a8a9f0b7 (.)
  * @mixin IdeHelperJobManager
  * @mixin \Eloquent
  */

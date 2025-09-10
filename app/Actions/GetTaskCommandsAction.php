@@ -4,11 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> a8a9f0b7 (.)
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> a8a9f0b7 (.)
 
 class GetTaskCommandsAction
 {

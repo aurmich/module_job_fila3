@@ -40,6 +40,9 @@ class CreateSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreate
             ->danger()
             ->send();
     }
+<<<<<<< HEAD
 
    
+=======
+>>>>>>> a8a9f0b7 (.)
 }
