@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -136,8 +135,6 @@
 
 ---
 
-=======
->>>>>>> 21744dc9 (.)
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -398,7 +395,6 @@ php artisan test --filter=ResultBusinessLogicTest
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
-<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -536,5 +532,3 @@ php artisan test --filter=ResultBusinessLogicTest
 
 ---
 
-=======
->>>>>>> 21744dc9 (.)
