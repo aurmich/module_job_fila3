@@ -27,6 +27,11 @@ class ScheduleHistoryFactory extends Factory
      */
     public function definition()
     {
+<<<<<<< HEAD
         return [];
+=======
+        return [
+        ];
+>>>>>>> 1b7d3cd (.)
     }
 }

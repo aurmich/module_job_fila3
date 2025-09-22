@@ -62,7 +62,10 @@ Questo documento analizza tutti i modelli del modulo Job verificando la presenza
 - **Progress Tracking**: Monitoraggio avanzamento
 - **Resource Management**: Gestione risorse sistema
 
+<<<<<<< HEAD
 **Business Logic <nome progetto>**:
+=======
+>>>>>>> 1b7d3cd (.)
 **Business Logic SaluteOra**:
 - **Report Generation**: Generazione referti asincrona
 - **Email Sending**: Invio email massive
@@ -146,7 +149,10 @@ Questo documento analizza tutti i modelli del modulo Job verificando la presenza
 - **Error Handling**: Gestione errori import
 - **Rollback Support**: Supporto rollback
 
+<<<<<<< HEAD
 **Business Logic <nome progetto>**:
+=======
+>>>>>>> 1b7d3cd (.)
 **Business Logic SaluteOra**:
 - **Patient Import**: Import pazienti massivo
 - **Appointment Import**: Import appuntamenti
@@ -162,7 +168,10 @@ Questo documento analizza tutti i modelli del modulo Job verificando la presenza
 - **Secure Export**: Export sicuro dati sensibili
 - **Scheduling**: Programmazione export
 
+<<<<<<< HEAD
 **Business Logic <nome progetto>**:
+=======
+>>>>>>> 1b7d3cd (.)
 **Business Logic SaluteOra**:
 - **Report Export**: Export referti
 - **Patient Data**: Export dati pazienti
@@ -236,7 +245,10 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 1. **Creare seeder core**: JobBatchSeeder, TaskSeeder, JobManagerSeeder
 2. **Creare seeder config**: ParameterSeeder, FrequencySeeder
 3. **Valutare modelli .aaa**: Decidere se riattivare monitoraggio schedule
+<<<<<<< HEAD
 4. **Documentare integrazione**: Aggiornare documentazione job <nome progetto>
+=======
+>>>>>>> 1b7d3cd (.)
 4. **Documentare integrazione**: Aggiornare documentazione job SaluteOra
 
 ### Azioni Future
@@ -273,7 +285,10 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 - **Queue Monitoring**: Monitoraggio code native
 - **Job Middleware**: Middleware job personalizzati
 
+<<<<<<< HEAD
 #### <nome progetto> Integration
+=======
+>>>>>>> 1b7d3cd (.)
 #### SaluteOra Integration
 - **Medical Jobs**: Job specifici sanitari
 - **Appointment Processing**: Elaborazione appuntamenti
@@ -310,7 +325,10 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Performance Tuning](./performance_tuning.md)
 
 ### Moduli Collegati
+<<<<<<< HEAD
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Job medici
+=======
+>>>>>>> 1b7d3cd (.)
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Job medici
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Job notifiche
 - [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Job processing media

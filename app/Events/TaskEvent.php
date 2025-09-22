@@ -16,7 +16,11 @@ class TaskEvent extends Event
     /**
      * Constructor.
      */
+<<<<<<< HEAD
     public function __construct(
         public Task $task,
     ) {}
+=======
+    public function __construct(public Task $task) {}
+>>>>>>> 1b7d3cd (.)
 }

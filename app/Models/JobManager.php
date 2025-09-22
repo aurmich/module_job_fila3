@@ -74,6 +74,7 @@ class JobManager extends BaseModel
 
     public function status(): Attribute
     {
+<<<<<<< HEAD
         return Attribute::make(get: function (): string {
             if ($this->isFinished()) {
                 return $this->failed ? 'failed' : 'succeeded';
@@ -81,6 +82,17 @@ class JobManager extends BaseModel
 
             return 'running';
         });
+=======
+        return Attribute::make(
+            get: function (): string {
+                if ($this->isFinished()) {
+                    return $this->failed ? 'failed' : 'succeeded';
+                }
+
+                return 'running';
+            },
+        );
+>>>>>>> 1b7d3cd (.)
     }
 
     public function isFinished(): bool
@@ -99,18 +111,30 @@ class JobManager extends BaseModel
 
     public function hasSucceeded(): bool
     {
+<<<<<<< HEAD
         if (!$this->isFinished()) {
             return false;
         }
 
         return !$this->hasFailed();
+=======
+        if (! $this->isFinished()) {
+            return false;
+        }
+
+        return ! $this->hasFailed();
+>>>>>>> 1b7d3cd (.)
     }
 
     public function prunable(): \Illuminate\Database\Eloquent\Builder
     {
         if (config('jobs.pruning.activate')) {
             $retention_days = config('jobs.pruning.retention_days');
+<<<<<<< HEAD
             if (!is_int($retention_days)) {
+=======
+            if (! is_int($retention_days)) {
+>>>>>>> 1b7d3cd (.)
                 $retention_days = 365;
             }
 
@@ -120,7 +144,10 @@ class JobManager extends BaseModel
         return static::query();
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     protected function casts(): array
     {
         return [
@@ -129,9 +156,17 @@ class JobManager extends BaseModel
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
+<<<<<<< HEAD
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+=======
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+>>>>>>> 1b7d3cd (.)
             'failed' => 'bool',
             'started_at' => 'datetime',
             'finished_at' => 'datetime',

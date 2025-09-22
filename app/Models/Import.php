@@ -64,7 +64,10 @@ class Import extends BaseModel
         'user_id',
     ];
 
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     protected function casts(): array
     {
         return [
@@ -74,9 +77,17 @@ class Import extends BaseModel
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
+<<<<<<< HEAD
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+=======
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+>>>>>>> 1b7d3cd (.)
             'payload' => 'array',
             'completed_at' => 'datetime',
             // 'updated_at' => 'datetime:Y-m-d H:00',

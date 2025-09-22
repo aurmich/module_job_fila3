@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ImportResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static null|string $model = Import::class;
 
     #[\Override]
@@ -24,6 +25,19 @@ class ImportResource extends XotBaseResource
                     'application/vnd.ms-excel',
                     'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 ])
+=======
+    protected static ?string $model = Import::class;
+
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => \Filament\Forms\Components\TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+            'file' => \Filament\Forms\Components\FileUpload::make('file')
+                ->required()
+                ->acceptedFileTypes(['text/csv', 'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'])
+>>>>>>> 1b7d3cd (.)
                 ->maxSize(10240),
             'status' => \Filament\Forms\Components\Select::make('status')
                 ->required()
@@ -34,6 +48,7 @@ class ImportResource extends XotBaseResource
                     'failed' => 'Failed',
                 ])
                 ->default('pending'),
+<<<<<<< HEAD
             'error_message' => \Filament\Forms\Components\Textarea::make('error_message')->maxLength(65535),
             'total_rows' => \Filament\Forms\Components\TextInput::make('total_rows')->numeric(),
             'processed_rows' => \Filament\Forms\Components\TextInput::make('processed_rows')->numeric(),
@@ -44,5 +59,20 @@ class ImportResource extends XotBaseResource
     public static function getRelations(): array
     {
         return [];
+=======
+            'error_message' => \Filament\Forms\Components\Textarea::make('error_message')
+                ->maxLength(65535),
+            'total_rows' => \Filament\Forms\Components\TextInput::make('total_rows')
+                ->numeric(),
+            'processed_rows' => \Filament\Forms\Components\TextInput::make('processed_rows')
+                ->numeric(),
+        ];
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+        ];
+>>>>>>> 1b7d3cd (.)
     }
 }

@@ -42,6 +42,10 @@ namespace Modules\Job\Models;
  * @mixin IdeHelperJobsWaiting
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class JobsWaiting extends Job
 {
 }
+=======
+class JobsWaiting extends Job {}
+>>>>>>> 1b7d3cd (.)

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Job\Models\BaseModel;
 use Tests\TestCase;
@@ -13,6 +14,13 @@ uses(TestCase::class, RefreshDatabase::class);
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel {
+=======
+use Modules\Job\Models\BaseModel;
+
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel
+    {
+>>>>>>> 1b7d3cd (.)
         protected $table = 'test_job_table';
     };
 });

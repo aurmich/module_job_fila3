@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> 1b7d3cd (.)
 <div>
     <form wire:submit.prevent="store">
         <div class="uk-flex uk-flex-between uk-flex-middle">

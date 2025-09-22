@@ -107,12 +107,19 @@ class Task extends BaseModel
         Assert::isArray($parameters);
 
         if ($forScheduler) {
+<<<<<<< HEAD
             return array_map(fn($value) => is_bool($value) ? ($value ? '1' : '0') : ((string) $value), $parameters);
+=======
+            return array_map(fn ($value) => is_bool($value) ? ($value ? '1' : '0') : (string) $value, $parameters);
+>>>>>>> 1b7d3cd (.)
         }
 
         return $parameters;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1b7d3cd (.)
     protected $fillable = [
         'id',
         'description',
@@ -183,10 +190,17 @@ class Task extends BaseModel
     /**
      * Returns the most recent result entry for this task.
      */
+<<<<<<< HEAD
     public function getLastResultAttribute(): null|Result
     {
         $res = $this->results()->orderBy('id', 'desc')->first();
         if ($res === null) {
+=======
+    public function getLastResultAttribute(): ?Result
+    {
+        $res = $this->results()->orderBy('id', 'desc')->first();
+        if ($res == null) {
+>>>>>>> 1b7d3cd (.)
             return null;
         }
         Assert::isInstanceOf($res, Result::class);
@@ -207,7 +221,11 @@ class Task extends BaseModel
     /**
      * Route notifications for the mail channel.
      */
+<<<<<<< HEAD
     public function routeNotificationForMail(): null|string
+=======
+    public function routeNotificationForMail(): ?string
+>>>>>>> 1b7d3cd (.)
     {
         return $this->notification_email_address;
     }
@@ -215,7 +233,11 @@ class Task extends BaseModel
     /**
      * Route notifications for the Nexmo channel.
      */
+<<<<<<< HEAD
     public function routeNotificationForNexmo(): null|string
+=======
+    public function routeNotificationForNexmo(): ?string
+>>>>>>> 1b7d3cd (.)
     {
         return $this->notification_phone_number;
     }
@@ -223,7 +245,11 @@ class Task extends BaseModel
     /**
      * Route notifications for the Slack channel.
      */
+<<<<<<< HEAD
     public function routeNotificationForSlack(): null|string
+=======
+    public function routeNotificationForSlack(): ?string
+>>>>>>> 1b7d3cd (.)
     {
         return $this->notification_slack_webhook;
     }
@@ -248,7 +274,13 @@ class Task extends BaseModel
                         ->select('id')
                         ->pluck('id');
 
+<<<<<<< HEAD
                     Result::query()->whereIn('id', $rowsToDelete)->delete();
+=======
+                    Result::query()
+                        ->whereIn('id', $rowsToDelete)
+                        ->delete();
+>>>>>>> 1b7d3cd (.)
                 } while ($rowsToDelete->count() > 0);
             } else {
                 do {
@@ -259,7 +291,13 @@ class Task extends BaseModel
                         ->select('id')
                         ->pluck('id');
 
+<<<<<<< HEAD
                     Result::query()->whereIn('id', $rowsToDelete)->delete();
+=======
+                    Result::query()
+                        ->whereIn('id', $rowsToDelete)
+                        ->delete();
+>>>>>>> 1b7d3cd (.)
                 } while ($rowsToDelete->count() > 0);
             }
         }

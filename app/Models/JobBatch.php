@@ -82,7 +82,11 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
+<<<<<<< HEAD
         $progress = $this->total_jobs > 0 ? round(($this->processedJobs() / $this->total_jobs) * 100) : 0;
+=======
+        $progress = $this->total_jobs > 0 ? round($this->processedJobs() / $this->total_jobs * 100) : 0;
+>>>>>>> 1b7d3cd (.)
 
         return (int) $progress;
     }
@@ -128,7 +132,10 @@ class JobBatch extends BaseModel
     }
 
     /**  @return array<string, string>  */
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     protected function casts(): array
     {
         return [
@@ -137,9 +144,17 @@ class JobBatch extends BaseModel
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
+<<<<<<< HEAD
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+=======
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+>>>>>>> 1b7d3cd (.)
             'options' => 'collection',
             'failed_jobs' => 'integer',
             'cancelled_at' => 'datetime',

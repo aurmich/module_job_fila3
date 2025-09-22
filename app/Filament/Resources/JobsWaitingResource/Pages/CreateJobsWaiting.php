@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
+=======
+>>>>>>> 1b7d3cd (.)
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Pages;
 
 use Modules\Job\Filament\Resources\JobsWaitingResource;

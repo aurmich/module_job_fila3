@@ -20,10 +20,19 @@ class Executed extends BroadcastingEvent
 
         $time_elapsed_secs = microtime(true) - $started;
 
+<<<<<<< HEAD
         $task->results()->create([
             'duration' => $time_elapsed_secs * 1000,
             'result' => $output,
         ]);
+=======
+        $task->results()->create(
+            [
+                'duration' => $time_elapsed_secs * 1000,
+                'result' => $output,
+            ]
+        );
+>>>>>>> 1b7d3cd (.)
 
         $task->notify(new TaskCompleted($output));
         $task->autoCleanup();

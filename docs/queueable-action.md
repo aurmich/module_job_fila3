@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Standard : spatie/laravel-queueable-action
 
 In tutto il progetto , **NON si utilizzano Service class custom**. La business logic asincrona e le azioni riutilizzabili sono gestite SEMPRE tramite [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action).
+=======
+>>>>>>> 1b7d3cd (.)
 # Standard SaluteOra: spatie/laravel-queueable-action
 
 In tutto il progetto SaluteOra, **NON si utilizzano Service class custom**. La business logic asincrona e le azioni riutilizzabili sono gestite SEMPRE tramite [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action).

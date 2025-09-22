@@ -25,6 +25,7 @@ class ListJobBatches extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     #[\Override]
     public function getTableColumns(): array
     {
@@ -32,6 +33,11 @@ class ListJobBatches extends XotBaseListRecords
             $date_format = config('app.date_format'),
             '[' . __LINE__ . '][' . class_basename(__CLASS__) . ']',
         );
+=======
+    public function getTableColumns(): array
+    {
+        Assert::string($date_format = config('app.date_format'), '['.__LINE__.']['.class_basename(__CLASS__).']');
+>>>>>>> 1b7d3cd (.)
 
         return [
             'id' => TextColumn::make('id')
@@ -42,18 +48,41 @@ class ListJobBatches extends XotBaseListRecords
                 ->searchable()
                 ->sortable()
                 ->wrap(),
+<<<<<<< HEAD
             'total_jobs' => TextColumn::make('total_jobs')->numeric()->sortable(),
             'pending_jobs' => TextColumn::make('pending_jobs')->numeric()->sortable(),
             'failed_jobs' => TextColumn::make('failed_jobs')->numeric()->sortable(),
             'progress' => TextColumn::make('progress')
                 ->formatStateUsing(fn($record) => $record->progress() . '%')
+=======
+            'total_jobs' => TextColumn::make('total_jobs')
+                ->numeric()
+                ->sortable(),
+            'pending_jobs' => TextColumn::make('pending_jobs')
+                ->numeric()
+                ->sortable(),
+            'failed_jobs' => TextColumn::make('failed_jobs')
+                ->numeric()
+                ->sortable(),
+            'progress' => TextColumn::make('progress')
+                ->formatStateUsing(fn ($record) => $record->progress().'%')
+>>>>>>> 1b7d3cd (.)
                 ->sortable(),
             'failed_job_ids' => TextColumn::make('failed_job_ids')
                 ->wrap()
                 ->searchable()
                 ->limit(50),
+<<<<<<< HEAD
             'options' => TextColumn::make('options')->wrap()->searchable(),
             'cancelled_at' => TextColumn::make('cancelled_at')->dateTime($date_format)->sortable(),
+=======
+            'options' => TextColumn::make('options')
+                ->wrap()
+                ->searchable(),
+            'cancelled_at' => TextColumn::make('cancelled_at')
+                ->dateTime($date_format)
+                ->sortable(),
+>>>>>>> 1b7d3cd (.)
             'created_at' => TextColumn::make('created_at')
                 ->dateTime($date_format)
                 ->sortable()
@@ -68,7 +97,10 @@ class ListJobBatches extends XotBaseListRecords
     /**
      * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     public function getTableActions(): array
     {
         return [];
@@ -77,7 +109,10 @@ class ListJobBatches extends XotBaseListRecords
     /**
      * @return array<string, Tables\Actions\BulkAction>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     public function getTableBulkActions(): array
     {
         return [
@@ -88,13 +123,17 @@ class ListJobBatches extends XotBaseListRecords
     /**
      * @return array<Action>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+>>>>>>> 1b7d3cd (.)
     protected function getHeaderActions(): array
     {
         return [
             Action::make('prune_batches')
                 ->requiresConfirmation()
                 ->color('danger')
+<<<<<<< HEAD
                 ->action(static function (): void {
                     Artisan::call('queue:prune-batches');
                     Notification::make()
@@ -102,6 +141,17 @@ class ListJobBatches extends XotBaseListRecords
                         ->success()
                         ->send();
                 }),
+=======
+                ->action(
+                    static function (): void {
+                        Artisan::call('queue:prune-batches');
+                        Notification::make()
+                            ->title('All batches have been pruned.')
+                            ->success()
+                            ->send();
+                    }
+                ),
+>>>>>>> 1b7d3cd (.)
         ];
     }
 }

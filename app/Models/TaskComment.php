@@ -22,6 +22,27 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $deleted_at
  * @property-read \Modules\Job\Models\Task $task
  * @property-read \Modules\User\Models\User $user
+<<<<<<< HEAD
+=======
+ * @property-read \Modules\Predict\Models\Profile|null $creator
+ * @property-read \Modules\Predict\Models\Profile|null $updater
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment withoutTrashed()
+ * @method static TaskComment|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, TaskComment> get()
+ * @method static TaskComment create(array $attributes = [])
+ * @method static TaskComment firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TaskComment whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
+ * @mixin \Eloquent
+>>>>>>> 1b7d3cd (.)
  */
 class TaskComment extends Model
 {
