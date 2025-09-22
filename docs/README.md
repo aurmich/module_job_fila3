@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -141,6 +142,8 @@
 >>>>>>> 1b7d3cd (.)
 =======
 >>>>>>> 07b4046 (.)
+=======
+>>>>>>> 56391e6 (.)
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -397,58 +400,14 @@ php artisan test --filter=ResultBusinessLogicTest
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo User](../../User/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
-=======
-# Job Module Documentation
-
-Job module for Laraxot PTVX providing specialized functionality and business logic.
-
-## Quick Reference
-
-### Core Components
-- **Business Logic**: Core Job functionality
-- **Data Models**: Job-specific models and relationships
-- **API Integration**: External service integrations
-- **User Interface**: Filament resources and components
-- **Configuration**: Module settings and options
-
-## Documentation Structure
-
-1. [Core Functionality](core-functionality.md) - Main business logic
-2. [Data Models](data-models.md) - Models and relationships
-3. [API Integration](api-integration.md) - External integrations
-4. [User Interface](user-interface.md) - Filament components
-5. [Configuration](configuration.md) - Settings and options
-6. [Migration Patterns](migration-patterns.md) - Database patterns
-7. [Best Practices](best-practices.md) - Development guidelines
-8. [Troubleshooting](troubleshooting.md) - Common issues
-
-## Business Logic Focus
-
-- **Domain expertise**: Specialized Job functionality
-- **Data integrity**: Robust data validation and storage
-- **Integration**: Seamless system integration
-- **Performance**: Optimized for business requirements
-- **Scalability**: Designed for growth and expansion
-
-## Quick Start
-
-```php
-// Basic usage example
-$result = app(JobService::class)->process($data);
-```
-
-## Risoluzione Conflitti Git
-
-### Problemi Identificati
->>>>>>> 97e08af (.)
 
 Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti file:
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Modulo Job
@@ -618,3 +577,5 @@ I conflitti riguardavano principalmente:
 - Testare i widget dopo ogni modifica per verificare la correttezza dei calcoli
 >>>>>>> 97e08af (.)
 >>>>>>> 07b4046 (.)
+=======
+>>>>>>> 56391e6 (.)
