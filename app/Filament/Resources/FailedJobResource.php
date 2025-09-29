@@ -15,19 +15,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class FailedJobResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    protected static null|string $model = FailedJob::class;
-
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'uuid' => Forms\Components\TextInput::make('uuid')->disabled()->columnSpan(4),
-            'failed_at' => Forms\Components\TextInput::make('failed_at')->disabled(),
-            'id' => Forms\Components\TextInput::make('id')->disabled(),
-            'connection' => Forms\Components\TextInput::make('connection')->disabled(),
-            'queue' => Forms\Components\TextInput::make('queue')->disabled(),
-=======
     protected static ?string $model = FailedJob::class;
 
     public static function getFormSchema(): array
@@ -44,7 +31,6 @@ class FailedJobResource extends XotBaseResource
                 ->disabled(),
             'queue' => Forms\Components\TextInput::make('queue')
                 ->disabled(),
->>>>>>> 1b7d3cd (.)
             'exception' => Forms\Components\Textarea::make('exception')
                 ->disabled()
                 ->columnSpan(4)
@@ -56,22 +42,12 @@ class FailedJobResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
-    #[\Override]
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    #[\Override]
-=======
     public static function getRelations(): array
     {
         return [
         ];
     }
 
->>>>>>> 1b7d3cd (.)
     public static function getPages(): array
     {
         return [

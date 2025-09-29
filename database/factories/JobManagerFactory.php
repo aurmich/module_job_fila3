@@ -24,11 +24,7 @@ class JobManagerFactory extends Factory
      */
     public function definition(): array
     {
-<<<<<<< HEAD
-        return [];
-=======
         return [
         ];
->>>>>>> 1b7d3cd (.)
     }
 }

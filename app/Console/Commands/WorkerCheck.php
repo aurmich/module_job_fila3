@@ -36,29 +36,19 @@ class WorkerCheck extends Command
     /**
      * Create a new command instance.
      */
-<<<<<<< HEAD
-    
-=======
     public function __construct()
     {
         parent::__construct();
     }
->>>>>>> 1b7d3cd (.)
 
     /**
      * Execute the console command.
      */
     public function handle(): void
     {
-<<<<<<< HEAD
-        if (!$this->isQueueListenerRunning()) {
-            $pid = $this->startQueueListener();
-            $this->comment('Queue listener is being started. pid[' . $pid . ']');
-=======
         if (! $this->isQueueListenerRunning()) {
             $pid = $this->startQueueListener();
             $this->comment('Queue listener is being started. pid['.$pid.']');
->>>>>>> 1b7d3cd (.)
             $this->saveQueueListenerPID($pid);
         }
 
@@ -70,16 +60,7 @@ class WorkerCheck extends Command
      */
     private function isQueueListenerRunning(): bool
     {
-<<<<<<< HEAD
-        if (
-            ($pid = $this->getLastQueueListenerPID()) === '' ||
-                ($pid = $this->getLastQueueListenerPID()) === '0' ||
-                ($pid = $this->getLastQueueListenerPID()) === false ||
-                ($pid = $this->getLastQueueListenerPID()) === null
-        ) {
-=======
         if (($pid = $this->getLastQueueListenerPID()) === '' || ($pid = $this->getLastQueueListenerPID()) === '0' || ($pid = $this->getLastQueueListenerPID()) === false || ($pid = $this->getLastQueueListenerPID()) === null) {
->>>>>>> 1b7d3cd (.)
             return false;
         }
 
@@ -104,11 +85,7 @@ class WorkerCheck extends Command
      */
     private function getLastQueueListenerPID(): string|bool|null
     {
-<<<<<<< HEAD
-        if (!Storage::disk('cache')->exists($this->filename)) {
-=======
         if (! Storage::disk('cache')->exists($this->filename)) {
->>>>>>> 1b7d3cd (.)
             return false;
         }
 
@@ -123,11 +100,7 @@ class WorkerCheck extends Command
         Storage::disk('cache')->put($this->filename, $pid);
         $path = Storage::disk('cache')->path($this->filename);
         $size = Storage::disk('cache')->size($this->filename);
-<<<<<<< HEAD
-        $this->comment('saved on [' . $path . '] size [' . $size . ']');
-=======
         $this->comment('saved on ['.$path.'] size ['.$size.']');
->>>>>>> 1b7d3cd (.)
     }
 
     /*
@@ -135,22 +108,6 @@ class WorkerCheck extends Command
      *
      * @return string
      * @method Modules\Job\Console\Commands\WorkerCheck::restartQueue() is unused
-<<<<<<< HEAD
-     *
-     * private function restartQueue() {
-     * // $command = 'php-cli ' . base_path() . '/artisan queue:listen --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!'; // 5.1
-     * // $command = 'php-cli '.base_path().'/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo //$!'; // 5.6 - see comments
-     *
-     * $command = ' /usr/local/bin/php '.base_path().'/artisan queue:restart --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
-     * // $this->comment($command);
-     *
-     * $pid = exec($command);
-     * $this->comment($pid);
-     *
-     * return is_string($pid) ? $pid : (string) $pid;
-     * }
-     */
-=======
 
     private function restartQueue() {
         // $command = 'php-cli ' . base_path() . '/artisan queue:listen --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!'; // 5.1
@@ -165,7 +122,6 @@ class WorkerCheck extends Command
         return is_string($pid) ? $pid : (string) $pid;
     }
     */
->>>>>>> 1b7d3cd (.)
     /**
      * Start the queue listener.
      */
@@ -174,14 +130,7 @@ class WorkerCheck extends Command
         // $command = 'php-cli ' . base_path() . '/artisan queue:listen --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!'; // 5.1
         // $command = 'php-cli '.base_path().'/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo //$!'; // 5.6 - see comments
 
-<<<<<<< HEAD
-        $command =
-            ' /usr/local/bin/php ' .
-            base_path() .
-            '/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
-=======
         $command = ' /usr/local/bin/php '.base_path().'/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
->>>>>>> 1b7d3cd (.)
         // $this->comment($command);
 
         // dd($command);

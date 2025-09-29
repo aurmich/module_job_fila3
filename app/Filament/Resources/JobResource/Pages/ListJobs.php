@@ -21,19 +21,6 @@ class ListJobs extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
-<<<<<<< HEAD
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'payload' => TextColumn::make('payload')->wrap()->searchable(),
-            'attempts' => TextColumn::make('attempts')->numeric()->sortable(),
-            'status' => TextColumn::make('status')
-                ->badge()
-                ->color(fn(string $state): string => match ($state) {
-=======
     public function getTableColumns(): array
     {
         return [
@@ -52,17 +39,10 @@ class ListJobs extends XotBaseListRecords
             'status' => TextColumn::make('status')
                 ->badge()
                 ->color(fn (string $state): string => match ($state) {
->>>>>>> 1b7d3cd (.)
                     'running' => 'primary',
                     'waiting' => 'warning',
                     default => 'danger',
                 }),
-<<<<<<< HEAD
-            'reserved_at' => TextColumn::make('reserved_at')->dateTime()->sortable(),
-            'available_at' => TextColumn::make('available_at')->dateTime()->sortable(),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'payload_view' => ViewColumn::make('payload')->view('job::filament.tables.columns.array'),
-=======
             'reserved_at' => TextColumn::make('reserved_at')
                 ->dateTime()
                 ->sortable(),
@@ -74,25 +54,12 @@ class ListJobs extends XotBaseListRecords
                 ->sortable(),
             'payload_view' => ViewColumn::make('payload')
                 ->view('job::filament.tables.columns.array'),
->>>>>>> 1b7d3cd (.)
         ];
     }
 
     /**
      * @return array<string, Tables\Filters\BaseFilter>
      */
-<<<<<<< HEAD
-    #[\Override]
-    public function getTableFilters(): array
-    {
-        return [
-            'status' => SelectFilter::make('status')->options([
-                'running' => 'Running',
-                'waiting' => 'Waiting',
-                'failed' => 'Failed',
-            ]),
-            'queue' => SelectFilter::make('queue')->options(Job::distinct()->pluck('queue', 'queue')->toArray(...)),
-=======
     public function getTableFilters(): array
     {
         return [
@@ -104,17 +71,12 @@ class ListJobs extends XotBaseListRecords
                 ]),
             'queue' => SelectFilter::make('queue')
                 ->options(fn () => Job::distinct()->pluck('queue', 'queue')->toArray()),
->>>>>>> 1b7d3cd (.)
         ];
     }
 
     /**
      * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getTableActions(): array
     {
         return [

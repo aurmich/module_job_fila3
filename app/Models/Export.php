@@ -81,10 +81,7 @@ class Export extends BaseExport
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
-<<<<<<< HEAD
-=======
 
->>>>>>> 1b7d3cd (.)
             'payload' => 'array',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

@@ -10,17 +10,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ExportResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    protected static null|string $model = Export::class;
-
-    protected static null|string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'name' => \Filament\Forms\Components\TextInput::make('name')->required()->maxLength(255),
-=======
     protected static ?string $model = Export::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
@@ -31,7 +20,6 @@ class ExportResource extends XotBaseResource
             'name' => \Filament\Forms\Components\TextInput::make('name')
                 ->required()
                 ->maxLength(255),
->>>>>>> 1b7d3cd (.)
             'type' => \Filament\Forms\Components\Select::make('type')
                 ->required()
                 ->options([
@@ -52,15 +40,10 @@ class ExportResource extends XotBaseResource
             'error_message' => \Filament\Forms\Components\Textarea::make('error_message')
                 ->maxLength(65535)
                 ->columnSpanFull(),
-<<<<<<< HEAD
-            'created_at' => \Filament\Forms\Components\DateTimePicker::make('created_at')->disabled(),
-            'updated_at' => \Filament\Forms\Components\DateTimePicker::make('updated_at')->disabled(),
-=======
             'created_at' => \Filament\Forms\Components\DateTimePicker::make('created_at')
                 ->disabled(),
             'updated_at' => \Filament\Forms\Components\DateTimePicker::make('updated_at')
                 ->disabled(),
->>>>>>> 1b7d3cd (.)
         ];
     }
 }

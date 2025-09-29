@@ -20,10 +20,6 @@ class ListJobManagers extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getTableColumns(): array
     {
         return [
@@ -31,13 +27,6 @@ class ListJobManagers extends XotBaseListRecords
                 ->numeric()
                 ->sortable()
                 ->searchable(),
-<<<<<<< HEAD
-            'queue' => TextColumn::make('queue')->sortable()->searchable(),
-            'payload' => TextColumn::make('payload')->wrap()->searchable(),
-            'attempts' => TextColumn::make('attempts')->numeric()->sortable(),
-            'reserved_at' => TextColumn::make('reserved_at')->dateTime()->sortable(),
-            'available_at' => TextColumn::make('available_at')->dateTime()->sortable(),
-=======
             'queue' => TextColumn::make('queue')
                 ->sortable()
                 ->searchable(),
@@ -53,7 +42,6 @@ class ListJobManagers extends XotBaseListRecords
             'available_at' => TextColumn::make('available_at')
                 ->dateTime()
                 ->sortable(),
->>>>>>> 1b7d3cd (.)
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
@@ -64,10 +52,6 @@ class ListJobManagers extends XotBaseListRecords
     /**
      * @return array<string, Tables\Actions\BulkAction>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getTableBulkActions(): array
     {
         return [

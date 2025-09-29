@@ -22,23 +22,13 @@ class PrivateEvent implements ShouldBroadcast
      *
      * @return void
      */
-<<<<<<< HEAD
-    public function __construct(
-        public string $message,
-    ) {}
-=======
     public function __construct(public string $message) {}
->>>>>>> 1b7d3cd (.)
 
     /**
      * Get the channels the event should broadcast on.
      */
     public function broadcastOn(): Channel
     {
-<<<<<<< HEAD
-        return new PrivateChannel('private.' . auth()->id());
-=======
         return new PrivateChannel('private.'.auth()->id());
->>>>>>> 1b7d3cd (.)
     }
 }

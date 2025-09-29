@@ -20,35 +20,22 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
-<<<<<<< HEAD
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-=======
     public function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')
                 ->searchable()
                 ->sortable(),
->>>>>>> 1b7d3cd (.)
             'uuid' => TextColumn::make('uuid')
                 ->searchable()
                 ->sortable()
                 ->copyable(),
-<<<<<<< HEAD
-            'connection' => TextColumn::make('connection')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-=======
             'connection' => TextColumn::make('connection')
                 ->searchable()
                 ->sortable(),
             'queue' => TextColumn::make('queue')
                 ->searchable()
                 ->sortable(),
->>>>>>> 1b7d3cd (.)
             'payload' => TextColumn::make('payload')
                 ->searchable()
                 ->wrap()
@@ -57,47 +44,20 @@ class ListFailedJobs extends XotBaseListRecords
                 ->searchable()
                 ->wrap()
                 ->limit(100),
-<<<<<<< HEAD
-            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
-=======
             'failed_at' => TextColumn::make('failed_at')
                 ->dateTime()
                 ->sortable(),
->>>>>>> 1b7d3cd (.)
         ];
     }
 
     /**
      * @return array<string, \Filament\Actions\Action>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     protected function getHeaderActions(): array
     {
         return [
             'retry_all' => Action::make('retry_all')
                 ->requiresConfirmation()
-<<<<<<< HEAD
-                ->action(static function (): void {
-                    Artisan::call('queue:retry all');
-                    Notification::make()
-                        ->title('All failed jobs have been pushed back onto the queue.')
-                        ->success()
-                        ->send();
-                }),
-            'delete_all' => Action::make('delete_all')
-                ->requiresConfirmation()
-                ->color('danger')
-                ->action(static function (): void {
-                    FailedJob::truncate();
-                    Notification::make()
-                        ->title('All failed jobs have been removed.')
-                        ->success()
-                        ->send();
-                }),
-=======
                 ->action(
                     static function (): void {
                         Artisan::call('queue:retry all');
@@ -120,7 +80,6 @@ class ListFailedJobs extends XotBaseListRecords
                             ->send();
                     }
                 ),
->>>>>>> 1b7d3cd (.)
         ];
     }
 }

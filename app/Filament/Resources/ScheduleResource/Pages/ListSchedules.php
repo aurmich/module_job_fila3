@@ -12,10 +12,6 @@ class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
 
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getTableColumns(): array
     {
         return [
@@ -23,15 +19,6 @@ class ListSchedules extends XotBaseListRecords
                 ->numeric()
                 ->sortable()
                 ->searchable(),
-<<<<<<< HEAD
-            'command' => Tables\Columns\TextColumn::make('command')->sortable()->searchable(),
-            'params' => Tables\Columns\TextColumn::make('params')->wrap()->searchable(),
-            'expression' => Tables\Columns\TextColumn::make('expression')->sortable()->searchable(),
-            'timezone' => Tables\Columns\TextColumn::make('timezone')->sortable()->searchable(),
-            'is_active' => Tables\Columns\IconColumn::make('is_active')->boolean()->sortable(),
-            'without_overlapping' => Tables\Columns\IconColumn::make('without_overlapping')->boolean()->sortable(),
-            'on_one_server' => Tables\Columns\IconColumn::make('on_one_server')->boolean()->sortable(),
-=======
             'command' => Tables\Columns\TextColumn::make('command')
                 ->sortable()
                 ->searchable(),
@@ -53,7 +40,6 @@ class ListSchedules extends XotBaseListRecords
             'on_one_server' => Tables\Columns\IconColumn::make('on_one_server')
                 ->boolean()
                 ->sortable(),
->>>>>>> 1b7d3cd (.)
             'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
@@ -69,15 +55,6 @@ class ListSchedules extends XotBaseListRecords
     {
         return [
             Tables\Actions\EditAction::make()
-<<<<<<< HEAD
-                ->hidden(fn($record) => $record->trashed())
-                ->tooltip(__('filament-support::actions/edit.single.label')),
-            Tables\Actions\RestoreAction::make()->tooltip(__('filament-support::actions/restore.single.label')),
-            Tables\Actions\DeleteAction::make()->tooltip(__('filament-support::actions/delete.single.label')),
-            Tables\Actions\ForceDeleteAction::make()->tooltip(__(
-                'filament-support::actions/force-delete.single.label',
-            )),
-=======
                 ->hidden(fn ($record) => $record->trashed())
                 ->tooltip(__('filament-support::actions/edit.single.label')),
             Tables\Actions\RestoreAction::make()
@@ -86,7 +63,6 @@ class ListSchedules extends XotBaseListRecords
                 ->tooltip(__('filament-support::actions/delete.single.label')),
             Tables\Actions\ForceDeleteAction::make()
                 ->tooltip(__('filament-support::actions/force-delete.single.label')),
->>>>>>> 1b7d3cd (.)
             Tables\Actions\ViewAction::make()
                 ->icon('history')
                 ->color('gray')
@@ -101,14 +77,8 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-    protected function getTableRecordUrlUsing(): null|\Closure
-    {
-        return static fn(): null|string => null;
-=======
     protected function getTableRecordUrlUsing(): ?\Closure
     {
         return static fn (): ?string => null;
->>>>>>> 1b7d3cd (.)
     }
 }

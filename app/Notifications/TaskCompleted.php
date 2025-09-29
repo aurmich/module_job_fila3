@@ -19,13 +19,7 @@ class TaskCompleted extends Notification implements ShouldQueue
      *
      * @return void
      */
-<<<<<<< HEAD
-    public function __construct(
-        private readonly string $output,
-    ) {}
-=======
     public function __construct(private readonly string $output) {}
->>>>>>> 1b7d3cd (.)
 
     /**
      * Get the notification's delivery channels.
@@ -54,11 +48,7 @@ class TaskCompleted extends Notification implements ShouldQueue
      */
     public function toMail(Task $task): MailMessage
     {
-<<<<<<< HEAD
-        return new MailMessage()
-=======
         return (new MailMessage)
->>>>>>> 1b7d3cd (.)
             ->subject($task->description)
             ->greeting('Hi,')
             ->line(sprintf('%s just finished running.', $task->description))
@@ -67,29 +57,6 @@ class TaskCompleted extends Notification implements ShouldQueue
 
     /*
      * Get the Nexmo / SMS representation of the notification.
-<<<<<<< HEAD
-     *
-     * public function toNexmo(mixed $notifiable): NexmoMessage
-     * {
-     * return (new NexmoMessage())
-     * ->content($notifiable->description.' just finished running.');
-     * }
-     */
-    /*
-     * Get the Slack representation of the notification.
-     *
-     * public function toSlack(mixed $notifiable): SlackMessage
-     * {
-     * return (new SlackMessage())
-     * ->content(config('app.name'))
-     * ->attachment(function (SlackAttachment $attachment) use ($notifiable) {
-     * $attachment
-     * ->title('Totem Task')
-     * ->content($notifiable->description.' just finished running.');
-     * });
-     * }
-     */
-=======
 
     public function toNexmo(mixed $notifiable): NexmoMessage
     {
@@ -112,5 +79,4 @@ class TaskCompleted extends Notification implements ShouldQueue
             });
     }
     */
->>>>>>> 1b7d3cd (.)
 }

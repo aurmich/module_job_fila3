@@ -20,10 +20,6 @@ class EditSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditReco
 
     protected static string $resource = ScheduleResource::class;
 
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getformSchema(): array
     {
         Assert::isArray($res = $this->getResource()::getFormSchema());
@@ -31,17 +27,10 @@ class EditSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditReco
         return $res;
     }
 
-<<<<<<< HEAD
-    #[\Override]
-    public function form(Form $form): Form
-    {
-        return $form->schema($this->getFormSchema());
-=======
     public function form(Form $form): Form
     {
         return $form
             ->schema($this->getFormSchema());
->>>>>>> 1b7d3cd (.)
     }
 
     protected function onValidationError(ValidationException $exception): void

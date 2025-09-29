@@ -29,11 +29,7 @@ class FailedJobPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-<<<<<<< HEAD
-    public function create(UserContract $_user): bool
-=======
     public function create(UserContract $user): bool
->>>>>>> 1b7d3cd (.)
     {
         return true;
     }
@@ -42,11 +38,7 @@ class FailedJobPolicy extends UserBasePolicy
      * Determine whether the user can update the model.
      */
     // public function update(UserContract $user, Team $team): bool
-<<<<<<< HEAD
-    public function update(UserContract $_user): bool
-=======
     public function update(UserContract $user): bool
->>>>>>> 1b7d3cd (.)
     {
         // return $user->ownsTeam($team);
         return false;

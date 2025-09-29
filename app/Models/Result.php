@@ -36,11 +36,7 @@ use Illuminate\Support\Facades\DB;
  * @method static \Illuminate\Database\Eloquent\Builder|Result whereUpdatedBy($value)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @mixin IdeHelperResult
-<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> 1b7d3cd (.)
  * @method static \Modules\Job\Database\Factories\ResultFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
@@ -75,10 +71,6 @@ class Result extends BaseModel
             ->getQuery();
     }
 
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     protected function casts(): array
     {
         return [
@@ -87,17 +79,11 @@ class Result extends BaseModel
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
-<<<<<<< HEAD
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-=======
 
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
 
->>>>>>> 1b7d3cd (.)
             'ran_at' => 'datetime',
         ];
     }

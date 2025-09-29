@@ -30,11 +30,7 @@ class ViewSchedule extends Page implements HasTable
     }
 
     #[Url]
-<<<<<<< HEAD
-    public null|string $activeTab = null;
-=======
     public ?string $activeTab = null;
->>>>>>> 1b7d3cd (.)
 
     protected static string $resource = ScheduleResource::class;
 
@@ -55,33 +51,6 @@ class ViewSchedule extends Page implements HasTable
      *
      * @param string $record
      * @return void
-<<<<<<< HEAD
-     *
-     * public function mount($record): void
-     * {
-     * static::authorizeResourceAccess();
-     *
-     * $this->record = $this->resolveRecord($record);
-     *
-     * abort_unless(static::getResource()::canView($this->getRecord()), 403);
-     * }
-     *
-     * protected function getRelationManagers(): array
-     * {
-     * return [];
-     * }
-     *
-     *
-     * protected function getTableQuery(): Builder
-     * {
-     * return ScheduleHistory::where('schedule_id', $this->record->id)->latest();
-     * }
-     */
-
-    protected function getTableColumns(): array
-    {
-        $date_format = Assert::string(config('app.date_format'), '[' . __LINE__ . '][' . class_basename($this) . ']');
-=======
 
     public function mount($record): void
     {
@@ -107,38 +76,10 @@ class ViewSchedule extends Page implements HasTable
     protected function getTableColumns(): array
     {
         $date_format = Assert::string(config('app.date_format'), '['.__LINE__.']['.class_basename($this).']');
->>>>>>> 1b7d3cd (.)
 
         return [
             Tables\Columns\Layout\Split::make([
                 Tables\Columns\TextColumn::make('command'),
-<<<<<<< HEAD
-                Tables\Columns\TextColumn::make('created_at')->dateTime($date_format),
-                Tables\Columns\TextColumn::make('updated_at')->formatStateUsing(static function (
-                    $state,
-                    $record,
-                ): string {
-                    if ($state === $record->created_at) {
-                        return 'Processing...';
-                    }
-
-                    return $state->diffInSeconds($record->created_at) . ' seconds';
-                }),
-                Tables\Columns\TextColumn::make('output')->formatStateUsing(
-                    static fn(string $state): string => (
-                        (count(explode('<br />', nl2br($state))) - 1) . ' rows of output'
-                    ),
-                ),
-            ]),
-            Tables\Columns\Layout\Panel::make([
-                Tables\Columns\TextColumn::make('output')
-                    ->extraAttributes(['class' => '!max-w-max'], true)
-                    ->formatStateUsing(static fn(string $state): \Illuminate\Support\HtmlString => new HtmlString(nl2br(
-                        $state,
-                    ))),
-            ])->collapsible(),
-            // ->collapsed(config('job::history_collapsed'))
-=======
                 Tables\Columns\TextColumn::make('created_at')
 
                     ->dateTime($date_format),
@@ -159,7 +100,6 @@ class ViewSchedule extends Page implements HasTable
             ])->collapsible()
             // ->collapsed(config('job::history_collapsed'))
             ,
->>>>>>> 1b7d3cd (.)
         ];
     }
 }

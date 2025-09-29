@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -138,12 +135,6 @@
 
 ---
 
-=======
->>>>>>> 1b7d3cd (.)
-=======
->>>>>>> 07b4046 (.)
-=======
->>>>>>> 56391e6 (.)
 # ⚡ Modulo Job - Sistema di Code e Job Avanzato
 
 ## 📊 Stato del Modulo
@@ -340,10 +331,7 @@ php artisan queue:failed-table
 
 ```bash
 # Esegui analisi statica
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
->>>>>>> 1b7d3cd (.)
 cd /var/www/html/_bases/base_saluteora/laravel
 ./vendor/bin/phpstan analyze Modules/Job --level=9
 ```
@@ -401,15 +389,12 @@ php artisan test --filter=ResultBusinessLogicTest
 - [Modulo User](../../User/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
 
-Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti file:
+---
 
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: Test business logic implementati (85% copertura)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Modulo Job
 
 ## Struttura
@@ -547,35 +532,3 @@ Durante l'aggiornamento del modulo sono stati risolti conflitti Git nei seguenti
 
 ---
 
-=======
->>>>>>> 1b7d3cd (.)
-=======
-=======
-- `app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php` - Widget statistiche job manager
-- `app/Filament/Resources/JobsWaitingResource/Widgets/JobsWaitingOverview.php` - Widget statistiche job in attesa
-
-### Soluzioni Implementate
-
-1. **Rimozione duplicazioni**: Eliminati blocchi di codice duplicato causati da merge
-2. **Consolidamento logica**: Mantenuta la logica di calcolo più recente e completa
-3. **Verifica coerenza**: Controllata la coerenza tra tutti i widget statistiche
-4. **Aggiornamento documentazione**: Documentate le modifiche e le best practices
-
-### Dettagli Tecniche
-
-I conflitti riguardavano principalmente:
-- Calcolo del tempo medio di esecuzione dei job
-- Calcolo del tempo totale di esecuzione
-- Gestione dei valori null per i campi temporali
-- Formattazione dei secondi per la visualizzazione
-
-### Prevenzione Futura
-
-- Utilizzare sempre `git pull --rebase` per evitare merge commits
-- Verificare i conflitti prima di ogni commit
-- Mantenere la struttura dei widget coerente e documentata
-- Testare i widget dopo ogni modifica per verificare la correttezza dei calcoli
->>>>>>> 97e08af (.)
->>>>>>> 07b4046 (.)
-=======
->>>>>>> 56391e6 (.)

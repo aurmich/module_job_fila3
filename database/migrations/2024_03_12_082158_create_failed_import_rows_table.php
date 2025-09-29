@@ -5,31 +5,14 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-return new class extends XotBaseMigration {
-=======
 return new class extends XotBaseMigration
 {
->>>>>>> 1b7d3cd (.)
     /**
      * Run the migrations.
      */
     public function up(): void
     {
         // -- CREATE --
-<<<<<<< HEAD
-        $this->tableCreate(static function (Blueprint $table): void {
-            $table->id();
-            $table->json('data');
-            $table->foreignId('import_id')->constrained()->cascadeOnDelete();
-            $table->text('validation_error')->nullable();
-        });
-
-        // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            $this->updateTimestamps($table, false);
-        });
-=======
         $this->tableCreate(
             static function (Blueprint $table): void {
                 $table->id();
@@ -45,6 +28,5 @@ return new class extends XotBaseMigration
                 $this->updateTimestamps($table, false);
             }
         );
->>>>>>> 1b7d3cd (.)
     }
 };

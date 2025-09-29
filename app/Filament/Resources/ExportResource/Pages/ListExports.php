@@ -16,10 +16,6 @@ class ListExports extends XotBaseListRecords
     /**
      * @return array<string, Column>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> 1b7d3cd (.)
     public function getTableColumns(): array
     {
         return [
@@ -27,17 +23,12 @@ class ListExports extends XotBaseListRecords
                 ->numeric()
                 ->sortable()
                 ->searchable(),
-<<<<<<< HEAD
-            'name' => TextColumn::make('name')->sortable()->searchable(),
-            'status' => TextColumn::make('status')->sortable()->searchable(),
-=======
             'name' => TextColumn::make('name')
                 ->sortable()
                 ->searchable(),
             'status' => TextColumn::make('status')
                 ->sortable()
                 ->searchable(),
->>>>>>> 1b7d3cd (.)
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()

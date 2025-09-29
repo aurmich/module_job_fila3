@@ -11,25 +11,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class FailedImportRowResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    protected static null|string $model = FailedImportRow::class;
-
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'import_class' => Forms\Components\TextInput::make('import_class')->required()->maxLength(255),
-            'row_number' => Forms\Components\TextInput::make('row_number')->numeric()->required(),
-            'row_data' => Forms\Components\Textarea::make('row_data')->required()->columnSpanFull(),
-            'error_message' => Forms\Components\Textarea::make('error_message')->required()->columnSpanFull(),
-        ];
-    }
-
-    #[\Override]
-    public static function getRelations(): array
-    {
-        return [];
-=======
     protected static ?string $model = FailedImportRow::class;
 
     public static function getFormSchema(): array
@@ -54,6 +35,5 @@ class FailedImportRowResource extends XotBaseResource
     {
         return [
         ];
->>>>>>> 1b7d3cd (.)
     }
 }

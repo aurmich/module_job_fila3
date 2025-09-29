@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> 1b7d3cd (.)
 @php
     /*
     try{
@@ -27,8 +19,4 @@ declare(strict_types=1);
     @else
         {{ $value }}
     @endif
-<<<<<<< HEAD
 </li>
-=======
-</li>
->>>>>>> 1b7d3cd (.)

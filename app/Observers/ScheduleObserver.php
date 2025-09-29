@@ -25,11 +25,7 @@ class ScheduleObserver
     /**
      * Undocumented function.
      */
-<<<<<<< HEAD
-    public function updated(Schedule $_schedule): void
-=======
     public function updated(Schedule $schedule): void
->>>>>>> 1b7d3cd (.)
     {
         $this->clearCache();
     }
@@ -56,11 +52,7 @@ class ScheduleObserver
     /**
      * Undocumented function.
      */
-<<<<<<< HEAD
-    public function saved(Schedule $_schedule): void
-=======
     public function saved(Schedule $schedule): void
->>>>>>> 1b7d3cd (.)
     {
         $this->clearCache();
     }
